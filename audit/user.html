@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人信息</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/user.css" />
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/global.js"></script>
+</head>
+
+<body>
+    <div class="container col-lg-12">
+        <div class="navigation">
+            <img class="nav-logo float-left" src="./img/logo.png" alt="logo">
+            <div class="nav-text float-left">标准版</div>
+            <div class="nav-drop dropdown float-right">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">ADMIN <span class="caret"></span></a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">个人信息</a></li>
+                    <li><a href="#">修改密码</a></li>
+                </ul>
+            </div>
+            <img class="nav-avatar float-right" src="./img/avatar.png" alt="头像">
+        </div>
+        <div id="sidebar" class="sidebar float-left">
+            <ul>
+                <li><a href="home.html"> 首页</a></li>
+                <li><a href="file-task.html"> 文件传输任务</a></li>
+                <li><a href="#"> 执行列表</a></li>
+                <li><a href="#"> 文件传输任务配置</a></li>
+                <li><a href="#"> 光盘摆渡任务</a></li>
+                <li><a href="#"> 日志管理</a></li>
+                <li class="active"><a href="user.html"> 个人中心</a></li>
+            </ul>
+            <ul class="m-hide icon-sidebar">
+                <li><a href="home.html" data-toggle="tooltipp" data-placement="right" title="首页"> </a></li>
+                <li><a href="file-task.html"  data-toggle="tooltipp" data-placement="right" title="文件传输任务"> </a></li>
+                <li><a href="#" data-toggle="tooltipp" data-placement="right" title="执行列表"> </a></li>
+                <li><a href="#" data-toggle="tooltipp" data-placement="right" title="文件传输任务配置"> </a></li>
+                <li><a href="#" data-toggle="tooltipp" data-placement="right" title="光盘摆渡任务"> </a></li>
+                <li><a href="#" data-toggle="tooltipp" data-placement="right" title="日志管理"> </a></li>
+                <li class="active"><a href="#" data-toggle="tooltipp" data-placement="right" title="个人中心"> </a></li>
+            </ul>
+            <img id="flod-btn" src="./img/fold.png"/>
+        </div>
+        <div id="m-content" class="content float-right clearfloat">
+            <p class="ren">个人中心</p>
+            <div class="card panel">
+                <div class="" style="height: 626px;">
+                    <div class="title">
+                        <ul class="nav nav-tabs ">
+                            <li class="active"><a href="#tab1" data-toggle="tab">个人信息</a></li>
+                            <li><a href="#tab2" data-toggle="tab">修改密码</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content table_zi">
+                        <div class=" tab-pane active table_zi" id="tab1">
+                            <form class="">
+                                <ul class="ul_ul">
+                                    <li class="left_li">归属机构：</li>
+                                    <li  class="right_li">办公厅</li>
+                                </ul>
+                                <ul class="ul_ul">
+                                    <li class="left_li">归属部门：</li>
+                                    <li class="right_li">财务处</li>
+                                </ul>
+                                <ul class="ul_ul">
+                                    <li class="left_li">用户名：</li>
+                                    <li class="right_li"><input type="text" placeholder="admin"></li>
+                                </ul>
+                                <ul class="ul_ul">
+                                    <li class="left_li">邮箱：</li>
+                                    <li class="right_li"><input type="text" placeholder="1163552650@qq.com"></li>
+                                </ul>
+                                <ul class="ul_ul">
+                                    <li class="left_li">手机：</li>
+                                    <li class="right_li"><input type="text" placeholder="18181041173"></li>
+                                </ul> 
+                                <ul class="ul_bei">
+                                    <li class="left_li">备注：</li>
+                                    <li class="right_bei"><textarea type="text" placeholder="请输入"></textarea></li>
+                                </ul>
+                                <ul class="ul_ul">
+                                    <li class="left_li">用户角色：</li>
+                                    <li class="right_li">安全管理员</li>
+                                </ul>
+                                <ul class="ul_ul">
+                                    <li class="left_li">上次登录：</li>
+                                    <li class="right_li"><span style="margin-right: 30px;">IP:200.0.0.149</span><span>时间：2020年10月27日 星期一 13:57:53</span></li>
+                                </ul>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="tab2">
+                            <form class="">
+                                <ul class="ul_ul">
+                                    <li class="left_li"><span>*</span>旧密码：</li>
+                                    <li class="right_li"><input type="text"></li>
+                                </ul>
+                                <ul class="ul_ul">
+                                    <li class="left_li"><span>*</span>新密码：</li>
+                                    <li class="right_li"><input type="text"></li>
+                                </ul>
+                                <ul class="ul_ul">
+                                    <li class="left_li"><span>*</span>确定新密码：</li>
+                                    <li class="right_li"><input type="text"></li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="table_foot">
+                        <button class="btn_b">保存</button>
+                        <button class="btn_q">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

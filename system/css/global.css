@@ -1,0 +1,380 @@
+/* 全局通用样式 */
+*{margin:0;padding: 0;border: none; text-decoration: none;font-family:'PingFangSC-Regular', 'PingFang SC';font-size: 14px;}
+
+a:hover{
+    text-decoration:none;
+}
+html,body{
+    width:100%;
+    height: 100%;
+}
+textarea:focus,input:focus{
+    outline:none !important;
+    border:2px solid #00499D !important;
+}
+
+button:focus{
+    box-shadow:none!important;   
+    outline:none !important;
+}
+.tooltip-inner{
+    background: #8EA4BC !important; /*修改背景色*/
+    color:#fff !important;/*字体颜色*/
+}
+.tooltip-arrow{
+    border-right-color: #8EA4BC !important;
+}
+.container{
+    min-width: 1366px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.col-lg-12{
+    padding: 0 !important;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.dot-waring-bg{
+    background: #FFB776;
+}
+.dot-success-bg{
+    background: #A4DA4E;
+}
+.dot-danger-bg{
+    background: #FF3D3D;
+}
+.m-text-waring{
+    color: #FFB776;
+}
+.m-text-success{
+    color: #A4DA4E;
+}
+.m-text-danger{
+    color: #FF3D3D;
+}
+.m-text-blue{
+    color: #28ACFF;
+}
+/*在父元素清除浮动*/
+.clearfloat:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+}
+
+/* 在最后加元素清除浮动 */
+.clear{
+    clear:both;
+}
+.clearborder{
+    border: none !important;
+}
+/* 头部 */
+.navigation{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(180deg, #E7F2FF 0%, #C3DFF3 100%);
+}
+.nav-logo{
+    width: 262px;
+    height: 36px;
+    margin: 7px 6px 7px 14px;
+}
+.nav-text{
+    width: 36px;
+    height: 16px;
+    background: #82B3D8;
+    border-radius: 2px;
+    opacity: 0.69;
+    font-size: 10px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 16px;
+    margin-top: 18px;
+}
+.nav-avatar{
+    width: 27px;
+    height: 27px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    margin-top: 13px;
+}
+.nav-drop{
+    margin: 18px 28px auto 10px;
+    
+}
+.nav-drop>a{
+    font-size: 11px;
+    text-decoration:none;
+    color: #333;
+}
+/* 左侧边栏导航 */
+.sidebar{
+    width: 9.27%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 4px 0 0 8.54px;
+    background: #F0FAFF;
+    position: relative;
+}
+.sidebar>img{
+    position: absolute;
+    top: 315.18px;
+    right: 0;
+    width: 12.81px;
+    height: 25.61px;
+}
+.sidebar ul{
+    width: 100%;
+    height: auto;
+}
+
+.sidebar ul li{
+    border-radius: 4px 0px 0px 5px;
+    list-style:none;
+}
+.sidebar ul li a{
+    width: 100%;
+    height: 43px;
+    color:#280029;
+    box-sizing: border-box;
+    padding:14.23px 0 14.23px 32.17px;
+    background: url('../img/icon-home2.png') 5.69px 10.67px no-repeat;
+    background-size: 21px 21px;
+    font-size:10px;
+    text-decoration:none;
+    display:block;
+    white-space: nowrap;
+}
+.m-hide{
+    display: none;
+}
+.sidebar-flod{
+    width: 3.65%;
+    padding:14px;
+}
+.sidebar-flod ul li a{
+    width: 100%;
+    height: 21px;
+    padding: 0;
+    background: url('../img/icon-home2.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+    margin-bottom: 22px;
+    white-space: nowrap;
+}
+.sidebar ul li:nth-child(2)>a{
+    background: url('../img/icon-task2.png') 5.69px 10.67px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar ul li:nth-child(3)>a{
+    background: url('../img/icon-list2.png') 5.69px 10.67px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar ul li:nth-child(4)>a{
+    background: url('../img/icon-set2.png') 5.69px 10.67px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar ul li:nth-child(5)>a{
+    background: url('../img/icon-cd2.png') 5.69px 10.67px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar ul li:nth-child(6)>a{
+    background: url('../img/icon-log2.png') 5.69px 10.67px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar ul li:last-child>a{
+    background: url('../img/icon-user2.png') 5.69px 10.67px no-repeat;
+    background-size: 21px 21px;
+}
+
+.sidebar-flod ul li:nth-child(2)>a{
+    background: url('../img/icon-task2.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(3)>a{
+    background: url('../img/icon-list2.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(4)>a{
+    background: url('../img/icon-set2.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(5)>a{
+    background: url('../img/icon-cd2.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(6)>a{
+    background: url('../img/icon-log2.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:last-child>a{
+    background: url('../img/icon-user2.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar ul .active{
+    background: #E7F2FF;
+}
+.sidebar ul li:hover{
+    background: #E7F2FF;
+}
+.sidebar-flod ul .active{
+    background: #F0FAFF;
+}
+.sidebar-flod ul li:hover{
+    background: #F0FAFF;
+}
+
+.sidebar>ul>.active>a{
+    background: url('../img/icon-home.png') 5.69px 10.67px no-repeat;
+    background-size: 21px 21px;
+}
+.content{
+    width: 90.73%;
+    height: 1080px;
+    box-sizing: border-box;
+    padding: 14px;
+}
+.content-flod{
+    width: 96.35%;
+}
+/* 无数据状态 */
+.no-data{
+    width: 285px;
+    height: 138px;
+    margin: 45px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.no-data>img{
+    width: 138px;
+    height: 138px;
+}
+.no-data>div>p{
+    margin: 30px 0 19px 0;
+}
+.no-data>div>button{
+    width: 88px;
+    height: 28px;
+    padding: 3px 16px;
+    background: #fff;
+    color: #00499D;
+    border: 1px solid #BDDDF4;
+}
+/* 1920状态下头部导航 左侧边栏的css */
+@media screen and (min-width:1920px){
+    .navigation{
+        height: 70px;
+    }
+    .nav-logo{
+        width: 340px;
+        height: 43px;
+        margin: 15px 8px auto 19px;
+    }
+    .nav-text{
+        width: 50px;
+        height: 22px;
+        line-height: 22px;
+        margin-top: 26px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .nav-drop{
+        margin: 26px 39px 26px 14px;
+    }
+    .nav-drop>a{
+        font-size: 16px;
+    }
+    .nav-avatar{
+        width: 37px;
+        height: 37px;
+        margin: 18px 0;
+    }
+    .sidebar-flod{
+        padding: 20px;
+    }
+    .sidebar>img{
+        position: absolute;
+        top: 443px;
+        right: 0;
+        width: 18px;
+        height: 36px;
+    }
+    .sidebar ul li a{
+        height: 60px;
+        padding:20px 0 20px 44px;
+        font-size: 14px;
+        background: url('../img/icon-home2.png') 8px 15px no-repeat;
+        background-size: 30px 30px;
+    }
+    .sidebar-flod ul li a{
+        width: 100%;
+        height: 30px;
+        padding: 0;
+        background: url('../img/icon-home2.png') 0px 0px no-repeat;
+        background-size: 30px 30px;
+        margin-bottom:30px;
+    }
+    .sidebar ul li:nth-child(2)>a{
+        background: url('../img/icon-task2.png') 8px 15px no-repeat;
+        background-size: 30px 30px;
+    }
+    .sidebar ul li:nth-child(3)>a{
+        background: url('../img/icon-list2.png') 8px 15px no-repeat;
+        background-size: 30px 30px;
+    }
+    .sidebar ul li:nth-child(4)>a{
+        background: url('../img/icon-set2.png') 8px 15px no-repeat;
+        background-size: 30px 30px;
+    }
+    .sidebar ul li:nth-child(5)>a{
+        background: url('../img/icon-cd2.png') 8px 15px no-repeat;
+        background-size: 30px 30px;
+    }
+    .sidebar ul li:nth-child(6)>a{
+        background: url('../img/icon-log2.png') 8px 15px no-repeat;
+        background-size: 30px 30px;
+    }
+    .sidebar ul li:last-child>a{
+        background: url('../img/icon-user2.png') 8px 15px no-repeat;
+        background-size: 30px 30px;
+    }
+    .sidebar>ul>.active>a{
+        background: url('../img/icon-home.png') 8px 15px no-repeat;
+        background-size: 30px 30px;
+    }
+    .sidebar-flod ul li:nth-child(2)>a{
+        background: url('../img/icon-task2.png') 0px 0px no-repeat;
+        background-size: 30px 30px;
+    }
+    .sidebar-flod ul li:nth-child(3)>a{
+        background: url('../img/icon-list2.png') 0px 0px no-repeat;
+        background-size: 30px 30px;
+    }
+    .sidebar-flod ul li:nth-child(4)>a{
+        background: url('../img/icon-set2.png') 0px 0px no-repeat;
+        background-size: 30px 30px;
+    }
+    .sidebar-flod ul li:nth-child(5)>a{
+        background: url('../img/icon-cd2.png') 0px 0px no-repeat;
+        background-size: 30px 30px;
+    }
+    .sidebar-flod ul li:nth-child(6)>a{
+        background: url('../img/icon-log2.png') 0px 0px no-repeat;
+        background-size: 30px 30px;
+    }
+    .sidebar-flod ul li:last-child>a{
+        background: url('../img/icon-user2.png') 0px 0px no-repeat;
+        background-size: 30px 30px;
+    }
+    .sidebar-flod>ul>.active>a{
+        background: url('../img/icon-home.png') 0px 0px no-repeat;
+        background-size: 30px 30px;
+    }
+}

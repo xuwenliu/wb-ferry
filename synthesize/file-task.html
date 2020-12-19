@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件传输任务</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link href="./bootstrap/css/datetimepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/file-task.css" />
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/js/moment.js"></script>
+    <script src="./bootstrap/js/datetimepicker.js"></script>
+    <script src="./js/global.js"></script>
+</head>
+
+<body>
+    <div class="container col-lg-12">
+        <div class="navigation">
+            <img class="nav-logo float-left" src="./img/logo.png" alt="logo">
+            <div class="nav-text float-left">标准版</div>
+            <div class="nav-drop dropdown float-right">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">ADMIN <span class="caret"></span></a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">个人信息</a></li>
+                    <li><a href="#">修改密码</a></li>
+                </ul>
+            </div>
+            <img class="nav-avatar float-right" src="./img/avatar.png" alt="头像">
+        </div>
+        <div id="sidebar" class="sidebar float-left">
+            <ul>
+                <li><a href="home.html"> 首页</a></li>
+                <li class="active"><a href="file-task.html"> 文件传输任务</a></li>
+                <li><a href="#"> 执行列表</a></li>
+                <li><a href="#"> 文件传输任务配置</a></li>
+                <li><a href="#"> 光盘摆渡任务</a></li>
+                <li><a href="#"> 日志管理</a></li>
+                <li><a href="user.html"> 个人中心</a></li>
+            </ul>
+            <ul class="m-hide icon-sidebar">
+                <li><a href="home.html" data-toggle="tooltipp" data-placement="right" title="首页"> </a></li>
+                <li class="active"><a href="#" data-toggle="tooltipp" data-placement="right" title="文件传输任务"> </a></li>
+                <li><a href="#" data-toggle="tooltipp" data-placement="right" title="执行列表"> </a></li>
+                <li><a href="#" data-toggle="tooltipp" data-placement="right" title="文件传输任务配置"> </a></li>
+                <li><a href="#" data-toggle="tooltipp" data-placement="right" title="光盘摆渡任务"> </a></li>
+                <li><a href="#" data-toggle="tooltipp" data-placement="right" title="日志管理"> </a></li>
+                <li><a href="user.html" data-toggle="tooltipp" data-placement="right" title="个人中心"> </a></li>
+            </ul>
+            <img id="flod-btn" src="./img/fold.png" />
+        </div>
+        <div id="m-content" class="content float-right clearfloat">
+            <p>文件传输任务</p>
+            <div class="card-1 float-left  panel">
+                <ul>
+                    <p>发送任务</p>
+                    <li>未审核</li>
+                    <li>审核通过</li>
+                    <li>审核未通过</li>
+                    <li>正在收集</li>
+                    <li>等待刻录</li>
+                    <li class="active">正在刻录</li>
+                    <li>刻录成功</li>
+                    <li>刻录失败</li>
+                </ul>
+                <div></div>
+                <ul>
+                    <p>接收任务</p>
+                    <li>未审核</li>
+                    <li>审核通过</li>
+                    <li>审核未通过</li>
+                    <li>正在收集</li>
+                    <li>等待刻录</li>
+                    <li>正在刻录</li>
+                    <li>刻录成功</li>
+                    <li>刻录失败</li>
+                </ul>
+            </div>
+            <div class="card-2 float-right  panel">
+                <div class="title">
+                    <ul>
+                        <li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#myModal">
+                            新增</li>
+                        <li class="btn btn-xs float-left m-btn">修改</li>
+                        <li class="btn btn-default btn-xs float-left m-btn m-text-danger">删除</li>
+                        <li class="btn btn-default btn-xs float-left m-btn">提交审核</li>
+                        <li class="btn btn-default btn-xs float-left m-btn">光盘列表</li>
+                        <li class="btn btn-default btn-xs float-left m-btn">文件列表</li>
+                        <li class="btn btn-default btn-xs float-left m-btn">浏览</li>
+                        <li class="btn btn-default btn-xs float-left m-btn">状态详情</li>
+                        <li class="btn btn-default btn-xs float-left m-btn">操作日志</li>
+                    </ul>
+                    <i class="float-right glyphicon glyphicon-refresh"></i>
+                    <div class="input-group float-right">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">任务名称 <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">任务1</a></li>
+                                <li><a href="#">任务2</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" class="form-control input-sm" aria-label="...">
+                    </div>
+                </div>
+                <div class="table-cont">
+                    <div class="table-bottom">
+                        <table id="m-tab-bottom" class="table text-center"
+                            style="text-overflow: ellipsis;white-space: nowrap">
+                            <thead>
+                                <tr>
+                                    <td>发送部门</td>
+                                    <td>发送人</td>
+                                    <td>接收部门</td>
+                                    <td>接收人</td>
+                                    <td>审核人</td>
+                                    <td>源端</td>
+                                    <td>目标端</td>
+                                    <td>创建时间</td>
+                                    <td>计划执行</td>
+                                    <td>最新状态</td>
+                                    <td>创建时间</td>
+                                    <td>计划执行</td>
+                                    <td>最新状态</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>审核员a</td>
+                                    <td>200.0.0.10</td>
+                                    <td>200.0.0.10</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                </tr>
+                                <tr>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>审核员a</td>
+                                    <td>200.0.0.10</td>
+                                    <td>200.0.0.10</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                </tr>
+                                <tr>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>审核员a</td>
+                                    <td>200.0.0.10</td>
+                                    <td>200.0.0.10</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                </tr>
+                                <tr>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>审核员a</td>
+                                    <td>200.0.0.10</td>
+                                    <td>200.0.0.10</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                </tr>
+                                <tr>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>审核员a</td>
+                                    <td>200.0.0.10</td>
+                                    <td>200.0.0.10</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                </tr>
+                                <tr>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>审核员a</td>
+                                    <td>200.0.0.10</td>
+                                    <td>200.0.0.10</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                </tr>
+                                <tr>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>审核员a</td>
+                                    <td>200.0.0.10</td>
+                                    <td>200.0.0.10</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                </tr>
+                                <tr>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>审核员a</td>
+                                    <td>200.0.0.10</td>
+                                    <td>200.0.0.10</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                </tr>
+                                <tr>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>审核员a</td>
+                                    <td>200.0.0.10</td>
+                                    <td>200.0.0.10</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                </tr>
+                                <tr>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>审核员a</td>
+                                    <td>200.0.0.10</td>
+                                    <td>200.0.0.10</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                </tr>
+                                <tr>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>审核员a</td>
+                                    <td>200.0.0.10</td>
+                                    <td>200.0.0.10</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                </tr>
+                                <tr>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>审核员a</td>
+                                    <td>200.0.0.10</td>
+                                    <td>200.0.0.10</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                </tr>
+                                <tr>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>办公室</td>
+                                    <td>操作员a</td>
+                                    <td>审核员a</td>
+                                    <td>200.0.0.10</td>
+                                    <td>200.0.0.10</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                    <td>2020-03-16</td>
+                                    <td>2020-03-16 19:13:00</td>
+                                    <td>待执行</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-top">
+                        <table id="m-tab-top" class="table text-center">
+                            <thead>
+                                <tr>
+                                    <td>状态</td>
+                                    <td>任务名称</td>
+                                    <td>摆渡类型</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="dot dot-waring-bg"></span></td>
+                                    <td>任务名称...</td>
+                                    <td>立即摆渡</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dot dot-success-bg"></span></td>
+                                    <td>任务名称...</td>
+                                    <td>立即摆渡</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dot dot-waring-bg"></span></td>
+                                    <td>任务名称...</td>
+                                    <td>立即摆渡</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dot dot-success-bg"></span></td>
+                                    <td>任务名称...</td>
+                                    <td>立即摆渡</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dot  dot-waring-bg"></span></td>
+                                    <td>任务名称...</td>
+                                    <td>立即摆渡</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dot dot-danger-bg"></span></td>
+                                    <td>任务名称...</td>
+                                    <td>立即摆渡</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dot dot-success-bg"></span></td>
+                                    <td>任务名称...</td>
+                                    <td>立即摆渡</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dot dot-success-bg"></span></td>
+                                    <td>任务名称...</td>
+                                    <td>立即摆渡</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dot dot-success-bg"></span></td>
+                                    <td>任务名称...</td>
+                                    <td>立即摆渡</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dot dot-success-bg"></span></td>
+                                    <td>任务名称...</td>
+                                    <td>立即摆渡</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dot dot-success-bg"></span></td>
+                                    <td>任务名称...</td>
+                                    <td>立即摆渡</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dot dot-success-bg"></span></td>
+                                    <td>任务名称...</td>
+                                    <td>立即摆渡</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="dot dot-success-bg"></span></td>
+                                    <td>任务名称...</td>
+                                    <td>立即摆渡</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="paging">
+                    <span>共29条</span>
+                    <div class="dropdown ">
+                        <button class="btn m-btn btn-xs btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            20条/页
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">5条/页</a></li>
+                            <li><a href="#">10条/页</a></li>
+                        </ul>
+                    </div>
+                    <p><button class="btn m-btn btn-default btn-xs">首页</button></p>
+                    <nav aria-label="Page navigation ">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p>
+                        <button class="btn m-btn btn-default btn-xs">尾页</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">新增</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="modal-form">
+                            <ul class="ul_ul">
+                                <li class="left_li">任务名称：</li>
+                                <li class="right_li margin-l "><input class="input-padding" type="text"
+                                        placeholder="asf5636"></li>
+                            </ul>
+                            <ul class="ul_ul">
+                                <li class="left_li">任务编号：</li>
+                                <li class="right_li margin-l"><input class="input-padding" disabled type="text"
+                                        placeholder="sdjg25ds1g5sfdgsv15d"></li>
+                            </ul>
+                            <ul class="ul_ul">
+                                <li class="left_li">文件传输：</li>
+                                <li class="right_li margin-l">
+                                    <div class="form-group right_li" style="width: 401px;">
+                                        <select class="form-control">
+                                            <option>请选择...</option>
+                                            <option>SFTP</option>
+                                            <option>FTP</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="ul_ul">
+                                <li class="left_li">源配置：</li>
+                                <li class="right_li margin-l">
+                                    <div class="form-group right_li" style="width: 401px;">
+                                        <select class="form-control">
+                                            <option>请选择...</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="ul_ul">
+                                <li class="left_li">目标配置：</li>
+                                <li class="right_li margin-l">
+                                    <div class="form-group right_li" style="width: 401px;">
+                                        <select class="form-control">
+                                            <option>请选择...</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="ul_ul">
+                                <li class="left_li">发件人：</li>
+                                <li class="right_li margin-l">
+                                    <input type="text" class="input-padding" disabled placeholder="操作员a">
+                                </li>
+                            </ul>
+                            <ul class="ul_ul">
+                                <li class="left_li">收件人：</li>
+                                <li class="right_li margin-l">
+                                    <input type="text" class="input-padding" disabled placeholder="操作员a">
+                                </li>
+                            </ul>
+                            <ul class="ul_ul">
+                                <li class="left_li">审核人：</li>
+                                <li class="right_li margin-l">
+                                    <div class="form-group right_li" style="width: 401px;">
+                                        <select class="form-control">
+                                            <option>杨发财</option>
+                                            <option>杨挣钱</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="ul_ul">
+                                <li class="left_li">摆渡策略：</li>
+                                <li class="right_li margin-l">
+                                    <div class="form-group right_li" style="width: 401px;">
+                                        <select class="form-control">
+                                            <option>周期摆渡</option>
+                                            <option>定时摆渡</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="ul_ul">
+                                <li class="left_li">摆渡模式：</li>
+                                <li class="right_li margin-l">
+                                    <span><input class="cl_checked input-padding" type="checkbox" checked="checked"
+                                            value="a"> 独享模式</span>
+                                    <span><input class="cl_checked input-padding" type="checkbox" value="b"> 共享模式</span>
+
+                                </li>
+                            </ul>
+
+                            <ul class="ul_ul">
+                                <li class="left_li">开始日期：</li>
+                                <li class="right_li margin-l">
+                                    <input id='datetimepicker1'
+                                        class="form_datetime form-control input-padding icon-time" type="text" value=""
+                                        id="startConsignedTm" name="startConsignedTm" placeholder="选择日期">
+
+                                </li>
+                            </ul>
+                            <ul class="ul_ul">
+                                <li class="left_li">结束日期：</li>
+                                <li class="right_li margin-l">
+                                    <input id='datetimepicker2'
+                                        class="form_datetime form-control input-padding icon-time" type="text" value=""
+                                        id="endConsignedTm" name="endConsignedTm" placeholder="选择日期">
+                                </li>
+                            </ul>
+                            <ul class="ul_ul">
+                                <li class="left_li">时间区间：</li>
+                                <li class="right_li margin-l">
+                                    <div class="select-group">
+                                        <select class="form-control">
+                                            <option>0:00</option>
+                                            <option>0:30</option>
+                                        </select>
+                                        <span style="margin:0 12px;"> —— </span>
+                                        <select class="form-control">
+                                            <option>0:00</option>
+                                            <option>0:30</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="ul_ul">
+                                <li class="left_li">时间间隔：</li>
+                                <li class="right_li margin-l">
+                                    <div class="select-group">
+                                        <select class="form-control">
+                                            <option>30</option>
+                                            <option>60</option>
+                                        </select>
+                                        <span style="margin:0 12px;"> —— </span>
+                                        <select class="form-control">
+                                            <option>分钟</option>
+                                            <option>小时</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="ul_bei">
+                                <li class="left_li">备注：</li>
+                                <li class="right_bei margin-l"><textarea class="input-padding" type="text"
+                                        placeholder="请输入"></textarea></li>
+                            </ul>
+                        </form>
+                        <div class="modal-table">
+                            <table></table>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn_b">保存</button>
+                        <button type="button" class="btn_q" data-dismiss="modal">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            // 列表点击选中的效果
+            $('#m-tab-top>tbody>tr,#m-tab-bottom>tbody>tr').click(function () {
+                var i = $(this).index();
+                $($('#m-tab-top>tbody>tr')[i]).toggleClass('tr-active').siblings().removeClass('tr-active');
+                $($('#m-tab-bottom>tbody>tr')[i]).toggleClass('tr-active').siblings().removeClass('tr-active');
+            });
+            $('#datetimepicker1,#datetimepicker2').datetimepicker({
+                format: 'YYYY-MM-DD',
+                locale: moment.locale('zh-cn'),
+                defaultDate: "",
+            });
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+.container{
+    background:#E7F2FF;
+}
+
+.sidebar>ul>.active>a{
+    background: url('../img/icon-home.png') 5.69px 10.67px no-repeat !important;
+    background-size: 21px 21px !important;
+}
+.sidebar-flod>ul>.active>a{
+    background: url('../img/icon-home.png') 0px 0px no-repeat !important;
+    background-size: 21px 21px !important;
+}
+
+.content-top{
+    width: 100%;
+}
+.task-data{
+    width: 32.66%;
+    height: 178px;
+    margin-right: 1%; 
+    background: #FFFFFF;
+    border: 1px solid #BDDDF4;
+    border-radius: 4px;
+}
+.content .task-data:last-child{
+    margin-right:0;
+}
+.task-data .title{
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+    padding-left: 17px;
+    background: linear-gradient(360deg, #EFF5FC 0%, #FFFFFF 100%);
+    border-radius: 4px 4px 0px 0px;
+    font-size: 10px;
+    color: #00499D;
+}
+.task-data .data{
+    width: 100%;
+    height: 143px;
+    box-sizing: border-box;
+    padding: 2.47% 4.35%;
+}
+.data .table>tbody>tr:first-child>td{
+    border-top: none;
+}
+.data .table>tbody>tr>td:first-child{
+    border-right:1px solid #EEEEEE ;
+}
+.data .table>tbody>tr>td{
+    font-size: 11px;
+    color: #333333;
+    line-height: 24px;
+    padding-left: 55px;
+    background: url('../img/icon1.png') 30px 9px no-repeat;
+    background-size: 21px 21px;
+}
+.data .table>tbody>tr:first-child>td:last-child{
+    background: url('../img/icon2.png') 30px 9px no-repeat;
+    background-size: 21px 21px;
+}
+.data .table>tbody>tr:nth-child(2)>td:first-child{
+    background: url('../img/icon3.png') 30px 9px no-repeat;
+    background-size: 21px 21px;
+}
+.data .table>tbody>tr:nth-child(2)>td:last-child{
+    background: url('../img/icon4.png') 30px 9px no-repeat;
+    background-size: 21px 21px;
+}
+.data .table>tbody>tr:last-child>td:first-child{
+    background: url('../img/icon2.png') 30px 9px no-repeat;
+    background-size: 21px 21px;
+}
+.data .table>tbody>tr:last-child>td:last-child{
+    background: url('../img/icon2.png') 30px 9px no-repeat;
+    background-size: 21px 21px;
+}
+.data-table{
+    width: 100%;
+    height: 320px;
+    margin-top: 14px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #BDDDF4;
+}
+.data-table .title{
+    width: 100%;
+    height: 33px;
+    background: linear-gradient(360deg, #EFF5FC 0%, #FFFFFF 100%);
+    padding-top: 4px;
+    padding-left: 9px;
+}
+.title .nav-tabs{
+    border-color: #BDDDF4;
+}
+.title .nav>a{
+    font-size:10px;
+    color: #00499D;
+    margin-top: 4px;
+    margin-right: 17px;
+}
+
+.title .nav>li>a{
+    padding: 5px 9px;
+    font-size: 10px;
+}
+.title .nav>li>a>i{
+    color: #ccc;
+    margin-right: 5px;
+}
+.nav-tabs>li.active>a>i{
+    color: rgb(99, 165, 219);
+}
+.nav-tabs>li.active>a{
+    color: #00499D !important;
+}
+.data-list{
+    width: 100%;
+    height: 287px;
+}
+
+/* 标签页tab1的 固定列的table.css */
+.table-cont{
+    width: 100%;
+    max-height: 450px;
+    overflow: hidden;
+    position: relative;
+    background: #F6F8FA;
+}
+/* 清除table的bottom */
+.table{
+    margin-bottom: 0;
+}
+.table-bottom>table,.table-top>table{
+    font-size: 10px;
+    color: #666;
+}
+.table-bottom{
+    overflow: auto;
+}
+.table-top table{
+    background: #ffffff;
+}
+.table-bottom table{
+    margin-left: 285px;
+    background: #ffffff;
+}
+.table-cont .table>tbody>tr>td{
+    border-top: 0.5px solid #ddd;
+    height: 32px;
+}
+.table-cont .table-bottom>table>thead td,.table-cont .table-top>table>thead td{
+    height: 36px;
+    color: #000000;
+    font-weight: 600;
+    background: #ffffff;
+}
+.table-top{
+    width: 280px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+/* 修改滚动条的样式 */
+div::-webkit-scrollbar{
+    width:10px;
+    height:8px;
+    /**/
+  }
+  div::-webkit-scrollbar-track{
+    background: #F7F7F7;
+    border-radius:2px;
+  }
+  div::-webkit-scrollbar-thumb{
+    background: #ddd;
+    border-radius:10px;
+  }
+  div::-webkit-scrollbar-thumb:hover{
+    background: #4AA3FF;
+  }
+  div::-webkit-scrollbar-corner{
+    background: #179a16;
+  }
+/* 固定列表css结束 */
+
+
+
+
+
+.data-table-two{
+    width: 49.5%;
+    height: 259px;
+}
+.down-btn{
+    width: 158px;
+    display: flex;
+    font-size: 10px;
+}
+.down-btn>span{
+    font-size: 10px;
+    color: #00499D;
+    line-height: 28px;
+    margin-right: 10px;
+}
+.down-btn .btn{
+    font-size: 10px;
+    color: #333333;
+    padding: 4px 9px;
+}
+.data-table-two .table thead tr{
+    font-size: 10px;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+}
+.data-table-two .table tbody tr{
+    height: 32px;
+    font-size: 10px;
+    color: #666;
+    text-align: center;
+}
+.data-table-two .table>tbody>tr>td{
+    height: 32px;
+    padding: 7px;
+}
+/* 圆点 */
+.dot{
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: inline-block;
+}
+.data-graph{
+    width: 49.5%;
+    height: 259px;
+    margin-top: 14px;
+    border-radius: 4px;
+    border: 1px solid #BDDDF4;
+    background: #ffffff;
+}
+.data-graph .title{
+    width: 100%;
+    height: 33px;
+    padding: 6px 17px 6px 17px;
+}
+.graph-title-left{
+    width: auto;
+    box-sizing: border-box;
+}
+.graph-title-right{
+    width: auto;
+    box-sizing: border-box;
+}
+.graph-title-right>a{
+    font-size: 10px;
+    color: #00499D;
+}
+
+@media screen and (min-width:1920px){
+    .sidebar ul>.active>a{
+        background: url('../img/icon-home.png') 8px 15px no-repeat !important;
+        background-size: 30px 30px !important;
+    }
+    .sidebar-flod ul>.active>a{
+        background: url('../img/icon-home.png') 0px 0px no-repeat !important;
+        background-size: 30px 30px !important;
+    }
+    .task-data{
+        height: 200px;
+    }
+    .task-data .title{
+        height: 44px;
+        font-size: 14px;
+        line-height: 44px;
+    }
+    .data .table>tbody>tr>td{
+        font-size: 16px;
+        padding-left: 60px;
+
+    }
+
+    .data-table{
+        height: 370px;
+    }
+    .data-table .title{
+        height: 46px;
+        padding-top:12px ;
+        padding-left: 12px;
+    }
+    .title .nav>li>a{
+        font-size: 14px;
+    }
+    .title .nav>li>a{
+        margin-right: 10px;
+    }
+    .table-cont .table-bottom>table>thead td, .table-cont .table-top>table>thead td{
+        height: 45px;
+        background: #FFFFFF;
+    }
+    .table-cont .table>thead>tr>td{
+        padding: 15px 10px;
+    }
+    .table-bottom>table, .table-top>table{
+        font-size: 14px;
+    }
+    .data-table-two{
+        height: 275px;
+    }
+    .data-table-two .table>thead td{
+        height: 40px;
+    }
+    .data-table-two  .table>thead>tr>td{
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+    .data-table-two .table>tbody>tr>td{
+        height: 35px;
+        padding: 8px;
+        font-size: 14px;
+    }
+    .data-graph{
+        height: 275px;
+    }
+    .down-btn{
+        font-size: 14px;
+    }
+    .down-btn>span{
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .graph-title-right>a{
+        font-size: 14px;
+    }
+    .title .nav>a{
+        font-size:14px;
+        margin-top: 2px;
+    }
+}
