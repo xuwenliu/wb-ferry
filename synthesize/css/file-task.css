@@ -1,4 +1,7 @@
 .container {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
   background: #e7f2ff;
 }
 
@@ -530,7 +533,7 @@ div::-webkit-scrollbar-corner {
 
 .choose-file {
   width: 88px;
-  line-height: 32px;
+  line-height: 28px;
   background: linear-gradient(180deg, #75ceff 0%, #1976c4 100%);
   border-radius: 3px;
   border: 1px solid #ffffff;

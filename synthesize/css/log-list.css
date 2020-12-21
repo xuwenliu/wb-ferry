@@ -1,0 +1,8 @@
+.sidebar > ul > .active > a {
+  background: url("../img/icon-log.png") 5.69px 10.67px no-repeat !important;
+  background-size: 21px 21px !important;
+}
+.sidebar-flod > ul > .active > a {
+  background: url("../img/icon-log.png") 0px 0px no-repeat !important;
+  background-size: 21px 21px !important;
+}
