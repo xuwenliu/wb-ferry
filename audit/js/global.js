@@ -12,6 +12,7 @@ $(function () {
 
     // Variables privadas
     var links = this.el.find(".link");
+    console.log("links",links)
     // Evento
     links.on("click", { el: this.el, multiple: this.multiple }, this.dropdown);
   };
@@ -19,13 +20,12 @@ $(function () {
   Accordion.prototype.dropdown = function (e) {
     var $el = e.data.el;
     ($this = $(this)), ($next = $this.next());
-
     $next.slideToggle();
 
     if (!e.data.multiple) {
-      $el.find(".submenu").not($next).slideUp().parent().removeClass("open");
+      $el.find(".submenu").not($next).slideUp()
     }
   };
 
-  var accordion = new Accordion($("#sidebar"), false);
+  var accordion = new Accordion($("#accordion"), false);
 });
