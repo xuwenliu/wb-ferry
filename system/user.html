@@ -11,6 +11,7 @@
     <script src="./js/jquery-1.11.3.min.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     <script src="./js/global.js"></script>
+    <script src="./js/accordion.js"></script>
 </head>
 
 <body>
@@ -29,25 +30,28 @@
             <img class="nav-avatar float-right" src="./img/avatar.png" alt="头像">
         </div>
         <div id="sidebar" class="sidebar float-left">
-            <ul>
-                <li><a href="home.html"> 首页</a></li>
-                <li><a href="file-task.html"> 文件传输任务</a></li>
-                <li><a href="#"> 执行列表</a></li>
-                <li><a href="#"> 文件传输任务配置</a></li>
-                <li><a href="#"> 光盘摆渡任务</a></li>
-                <li><a href="#"> 日志管理</a></li>
-                <li class="active"><a href="user.html"> 个人中心</a></li>
+            <ul id="accordion" class="accordion">
+                <li class="a1"><a href="organization.html"> 组织机构管理</a></li>
+                <li class="a2"><a href="user-management.html"> 用户管理</a></li>
+                <li>
+                    <div class="link"><i class="icon"></i>管理员管理</div>
+                    <ul class="submenu">
+                        <li><a href="admin-list.html" style="background: none;padding-left: 44px;">管理员列表</a></li>
+                        <li><a href="role-list.html" style="background: none;padding-left: 44px;">管理员角色列表</a></li>
+                    </ul>
+                </li>
+                <li class="a4 active"><a href="user.html"> 个人中心</a></li>
             </ul>
             <ul class="m-hide icon-sidebar">
                 <li><a href="home.html" data-toggle="tooltipp" data-placement="right" title="首页"> </a></li>
-                <li><a href="file-task.html"  data-toggle="tooltipp" data-placement="right" title="文件传输任务"> </a></li>
+                <li><a href="file-task.html" data-toggle="tooltipp" data-placement="right" title="文件传输任务"> </a></li>
                 <li><a href="#" data-toggle="tooltipp" data-placement="right" title="执行列表"> </a></li>
                 <li><a href="#" data-toggle="tooltipp" data-placement="right" title="文件传输任务配置"> </a></li>
                 <li><a href="#" data-toggle="tooltipp" data-placement="right" title="光盘摆渡任务"> </a></li>
                 <li><a href="#" data-toggle="tooltipp" data-placement="right" title="日志管理"> </a></li>
                 <li class="active"><a href="#" data-toggle="tooltipp" data-placement="right" title="个人中心"> </a></li>
             </ul>
-            <img id="flod-btn" src="./img/fold.png"/>
+            <img id="flod-btn" src="./img/fold.png" />
         </div>
         <div id="m-content" class="content float-right clearfloat">
             <p class="ren">个人中心</p>
@@ -64,7 +68,7 @@
                             <form class="">
                                 <ul class="ul_ul">
                                     <li class="left_li">归属机构：</li>
-                                    <li  class="right_li">办公厅</li>
+                                    <li class="right_li">办公厅</li>
                                 </ul>
                                 <ul class="ul_ul">
                                     <li class="left_li">归属部门：</li>
@@ -81,7 +85,7 @@
                                 <ul class="ul_ul">
                                     <li class="left_li">手机：</li>
                                     <li class="right_li"><input type="text" placeholder="18181041173"></li>
-                                </ul> 
+                                </ul>
                                 <ul class="ul_bei">
                                     <li class="left_li">备注：</li>
                                     <li class="right_bei"><textarea type="text" placeholder="请输入"></textarea></li>
@@ -92,7 +96,9 @@
                                 </ul>
                                 <ul class="ul_ul">
                                     <li class="left_li">上次登录：</li>
-                                    <li class="right_li"><span style="margin-right: 30px;">IP:200.0.0.149</span><span>时间：2020年10月27日 星期一 13:57:53</span></li>
+                                    <li class="right_li"><span
+                                            style="margin-right: 30px;">IP:200.0.0.149</span><span>时间：2020年10月27日 星期一
+                                            13:57:53</span></li>
                                 </ul>
                             </form>
                         </div>
@@ -122,4 +128,5 @@
         </div>
     </div>
 </body>
+
 </html>

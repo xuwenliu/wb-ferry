@@ -1,22 +1,43 @@
 .container{
     background:#E7F2FF;
 }
+.link{
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+.icon-source{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url('../img/icon1-no.png') 0px 0px no-repeat;
+    background-size: 30px 30px;
+    margin:0 5px 0 8px;
+}
+.icon-ferry{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url('../img/icon-cd2.png') 0px 0px no-repeat;
+    background-size: 30px 30px;
+    margin:0 5px 0 8px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url('../img/a33.png') 0px 0px no-repeat;
+    background-size: 30px 30px;
+    margin:0 5px 0 8px;
+}
 
-.sidebar>ul>.active>a{
-    background: url('../img/icon-task.png') 5.69px 10.67px no-repeat !important;
-    background-size: 21px 21px !important;
-}
-.sidebar-flod>ul>.active>a{
-    background: url('../img/icon-task.png') 0px 0px no-repeat !important;
-    background-size: 21px 21px !important;
-}
 .content>p{
     font-size: 16px;
     color: #00499D;
     margin-bottom: 0;
 }
 .card-1,.card-2{
-    width: 10%;
+    width: 15%;
     height: 566px;
     margin-top: 14px;
     border-radius: 5px;
@@ -27,7 +48,7 @@
     padding: 13px 14px;
 }
 .card-2{
-    width: 89%;
+    width: 84%;
 }
 .card-1>div{
     width: 100%;
@@ -52,7 +73,7 @@
     margin-left: 0;
     color: #999999;
 }
-.card-2 .title{
+.card-2>.title{
     height: 38px;
     background: linear-gradient(360deg, #EFF5FC 0%, #FFFFFF 100%);
     border-bottom: 1px solid #BDDDF4;
@@ -73,11 +94,16 @@
     background: linear-gradient(180deg, #75CEFF 0%, #1976C4 100%);
     border-color: #75CEFF;
 }
-.card-2 .title>ul>.m-btn:nth-child(2){
+.title>ul>.m-btn:first-child{
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #75CEFF 0%, #1976C4 100%);
+    border-color: #75CEFF;
+}
+/* .card-2 .title>ul>.m-btn:nth-child(2){
     color: #FFFFFF;
     background: linear-gradient(180deg, #73CB24 0%, #439308 100%);
     border-color: #73CB24;
-}
+} */
 .card-2 .title>i{
     color: #ccc;
     line-height: 18px;
@@ -104,7 +130,14 @@
     display: inline-block;
 }
 
-
+.icon-an {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url('../img/icon-an.png') no-repeat no-repeat !important;
+    background-size: 14px 14px;
+    margin-top: 5px;
+}
 /* 固定列的table.css */
 .table-cont{
     width: 100%;
@@ -128,7 +161,6 @@
     background: #ffffff;
 }
 .table-bottom table{
-    margin-left: 285px;
     background: #ffffff;
 }
 .table-cont .table>tbody>tr>td{
@@ -209,6 +241,7 @@ div::-webkit-scrollbar{
     width: 925px;
     margin: 0 auto !important;
 }
+
 .modal-content {
     width: 100%;
     max-height: 889px;
@@ -228,11 +261,33 @@ div::-webkit-scrollbar{
 .modal-form{
     width: 500px;
 }
+.modal-form ul {
+    margin-bottom: 20px;
+}
 .modal-table{
     width: 363px;
     height: 497px;
     background: #00499D;
     margin-left: 40px;
+}
+.uploadModal {
+    width: 550px;
+}
+.uploadModal .modal-body {
+    height: 200px;
+    padding: 25px;
+}
+#ipModal .modal-body, #bindIpModal .modal-body{
+    height: 500px;
+}
+.glyphicon-exclamation-sign {
+    color: #FFAD00;
+}
+.uploadModal .modal-body>p {
+    
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
 }
 .ul_ul {
     display: flex;
@@ -244,9 +299,17 @@ div::-webkit-scrollbar{
     list-style: none;
     position: relative;
 }
-
+.chooseBox {
+    width: 400px;
+    height: 345px;
+    border: 1px solid #ccc;
+}
+.chooseBox .treebox {
+    height: 100%;
+    overflow: scroll;
+}
 .left_li {
-    width: 64px;
+    width: 90px;
     font-size: 10px;
     font-weight: 600;
     color: #000000;
@@ -343,26 +406,100 @@ div::-webkit-scrollbar{
     box-shadow:none!important;   
     outline:none !important;
 }
-.sidebar ul .a1 a {
+.sidebar ul .a1 .link {
     height: 60px;
-    padding: 20px 0 20px 44px;
-    font-size: 14px;
-    background: url(../img/a11.png) 8px 15px no-repeat;
-    background-size: 30px 30px;
 }
 .sidebar ul .a2 a {
     height: 60px;
     padding: 20px 0 20px 44px;
-    font-size: 14px;
-    background: url(../img/a2(2).png) 8px 15px no-repeat;
+    font-size: 10px;
+    background: url('../img/icon-drive.png') 8px 15px no-repeat !important;
     background-size: 30px 30px;
 }
-.sidebar ul .a3 a {
+.sidebar ul .a3 .link{
+    height: 60px;
+}  
+.sidebar ul .a4 a {
     height: 60px;
     padding: 20px 0 20px 44px;
-    font-size: 14px;
-    background: url(../img/a33.png) 8px 15px no-repeat !important;
+    font-size: 10px;
+    background: url('../img/icon-system.png') 8px 15px no-repeat !important;
     background-size: 30px 30px;
+}
+.sidebar ul .a5 a {
+    height: 60px;
+    padding: 20px 0 20px 44px;
+    font-size: 10px;
+    background: url('../img/icon-user-management.png') 8px 15px no-repeat !important;
+    background-size: 30px 30px;
+}
+.sidebar ul .a6 a {
+    height: 60px;
+    padding: 20px 0 20px 44px;
+    font-size: 10px;
+    background: url('../img/icon-menu-select.png') 8px 15px no-repeat !important;
+    background-size: 30px 30px;
+}
+.sidebar ul .a7 a {
+    height: 60px;
+    padding: 20px 0 20px 44px;
+    font-size: 10px;
+    background: url('../img/icon-role-management.png') 8px 15px no-repeat !important;
+    background-size: 30px 30px;
+}
+.sidebar ul .a8 .link {
+    height: 60px;
+}
+.sidebar ul .a9 a {
+    height: 60px;
+    padding: 20px 0 20px 44px;
+    font-size: 10px;
+    background: url('../img/icon-user2.png') 8px 15px no-repeat !important;
+    background-size: 30px 30px;
+}
+.sidebar-flod ul li:first-child>a{
+    background: url('../img/icon1.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(2)>a{
+    background: url('../img/icon-drive.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(3)>a{
+    background: url('../img/icon-cd2.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(4)>a{
+    background: url('../img/icon-system.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(5)>a{
+    background: url('../img/icon-user-management-select.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(6)>a{
+    background: url('../img/icon-menu.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(7)>a{
+    background: url('../img/icon-role-management.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(8)>a{
+    background: url('../img/a33.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(9)>a{
+    background: url('../img/icon-user2.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar ul .active a{
+    background: url('../img/a1.png') 8px 15px no-repeat !important;
+    background-size: 30px 30px !important;
+}
+.sidebar-flod>ul>.active>a{
+    background: url('../img/icon1.png') 0px 0px no-repeat !important;
+    background-size: 21px 21px !important;
 }
 @media screen and (min-width:1920px){
     .sidebar ul>.active>a{

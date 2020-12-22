@@ -1,17 +1,22 @@
 .container{
     background:#E7F2FF;
 }
+.link{
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url('../img/a33.png') 0px 0px no-repeat;
+    background-size: 30px 30px;
+    margin:0 5px 0 8px;
+}
 
-.sidebar>ul>.active>a{
-    background: url('../img/icon-user.png') 5.69px 10.67px no-repeat !important;
-    background-size: 21px 21px !important;
-}
-.sidebar-flod>ul>.active>a{
-    background: url('../img/icon-user.png') 0px 0px no-repeat !important;
-    background-size: 21px 21px !important;
-}
 .ren{
-    font-size: 11px;
+    font-size: 16px;
     color: #00499D;
     margin-bottom: 0;
 }
@@ -136,6 +141,42 @@
 }
 .left_li span{
     color: red;
+}
+.sidebar ul .a1 a {
+    height: 60px;
+    padding: 20px 0 20px 44px;
+    font-size: 10px;
+    background: url(../img/a11.png) 8px 15px no-repeat !important;
+    background-size: 30px 30px;
+}
+.sidebar ul .a2 a {
+    height: 60px;
+    padding: 20px 0 20px 44px;
+    font-size: 10px;
+    background: url(../img/a2-1.png) 8px 15px no-repeat !important;
+    background-size: 30px 30px;
+}
+.sidebar ul .a3 a {
+    height: 60px;
+    padding: 20px 0 20px 44px;
+    font-size: 10px;
+    background: url(../img/a33.png) 8px 15px no-repeat !important;
+    background-size: 30px 30px;
+}
+.sidebar ul .a4 a {
+    height: 60px;
+    padding: 20px 0 20px 44px;
+    font-size: 10px;
+    background: url(../img/icon-user2.png) 8px 15px no-repeat !important;
+    background-size: 30px 30px;
+}
+.sidebar>ul>.active>a{
+    background: url('../img/icon-user.png') 8px 15px no-repeat !important;
+    background-size: 30px 30px !important;
+}
+.sidebar-flod>ul>.active>a{
+    background: url('../img/icon-user.png') 0px 0px no-repeat !important;
+    background-size: 30px 30px !important;
 }
 @media screen and (min-width:1920px){
     .sidebar>ul>.active>a{

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>用户管理</title>
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<link href="./bootstrap/css/datetimepicker.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/global.css" />
+	<link rel="stylesheet" href="./css/admin-list.css" />
+	<link rel="stylesheet" href="./css/tree.css" />
+	<script src="./js/jquery-1.11.3.min.js"></script>
+	<script src="./bootstrap/js/bootstrap.min.js"></script>
+	<script src="./bootstrap/js/moment.js"></script>
+	<script src="./bootstrap/js/datetimepicker.js"></script>
+	<script src="./js/global.js"></script>
+	<script src="./js/treescroll.min.js"></script>
+	<script src="./js/accordion.js"></script>
+</head>
+
+<body>
+	<div class="container col-lg-12">
+		<div class="navigation">
+			<img class="nav-logo float-left" src="./img/logo.png" alt="logo">
+			<div class="nav-text float-left">标准版</div>
+			<div class="nav-drop dropdown float-right">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false">ADMIN <span class="caret"></span></a>
+				<ul class="dropdown-menu dropdown-menu-right">
+					<li><a href="#">个人信息</a></li>
+					<li><a href="#">修改密码</a></li>
+				</ul>
+			</div>
+			<img class="nav-avatar float-right" src="./img/avatar.png" alt="头像">
+		</div>
+		<div id="sidebar" class="sidebar float-left">
+			<ul id="accordion" class="accordion">
+				<li class="a1"><a href="organization.html"> 组织机构管理</a></li>
+				<li class="a2"><a href="user-management.html"> 用户管理</a></li>
+				<li>
+					<div class="link"><i class="icon"></i>管理员管理</div>
+					<ul class="submenu">
+						<li><a href="admin-list.html" style="background: none;padding-left: 44px;">管理员列表</a></li>
+						<li><a href="role-list.html" style="background: none;padding-left: 44px;">管理员角色列表</a></li>
+					</ul>
+				</li>
+				<li class="a4"><a href="user.html"> 个人中心</a></li>
+
+			</ul>
+			<ul class="m-hide icon-sidebar">
+				<li class="active"><a href="organization.html" data-toggle="tooltipp" data-placement="right" title="组织机构管理">
+					</a></li>
+				<li><a href="user-management.html" data-toggle="tooltipp" data-placement="right" title="用户管理">
+					</a></li>
+				<li><a href="#" data-toggle="tooltipp" data-placement="right" title="管理员管理"> </a></li>
+				<li><a href="user.html" data-toggle="tooltipp" data-placement="right" title="个人中心"> </a></li>
+			</ul>
+			<img id="flod-btn" src="./img/fold.png" />
+		</div>
+		<div id="m-content" class="content float-right clearfloat">
+			<p>管理员管理/<span style="font-size: 16px; color: black;">管理员列表</span></p>
+			<div class="card-1 float-left  panel">
+				<ul>
+					<p>办公厅</p>
+					<li>
+						<div class="treebox">
+							<div class="tree">
+								<ul>
+									<li>
+										<div class="close_menu"><span></span><a title="一级菜单">业务一处</a></div>
+										<ul>
+											<li>办公室</li>
+											<li>办公室1</li>
+										</ul>
+									</li>
+									<li>
+										<div class="close_menu"><span></span><a title="一级菜单">业务二处</a></div>
+										<ul>
+											<li>办公室</li>
+											<li>办公室1</li>
+											<li>办公室2</li>
+											<li>
+												<div class="close_menu"><span></span><a title="二级菜单">财务处</a></div>
+												<ul>
+													<li>财务1</li>
+													<li>财务2</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<p>办公厅</p>
+					<li>
+						<div class="treebox">
+							<div class="tree">
+								<ul>
+									<li>
+										<div class="close_menu"><span></span><a title="一级菜单">业务一处</a></div>
+										<ul>
+											<li>办公室</li>
+											<li>办公室1</li>
+										</ul>
+									</li>
+									<li>
+										<div class="close_menu"><span></span><a title="一级菜单">业务二处</a></div>
+										<ul>
+											<li>办公室</li>
+											<li>办公室1</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="card-2 float-right  panel">
+				<div class="title">
+					<ul>
+						<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#myModal">管理员添加</li>
+						<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#myModal">修改</li>
+						<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">分配角色</li>
+						<li class="btn btn-default btn-xs float-left m-btn m-text-danger" data-toggle="modal"
+							data-target="#myModalDelete">删除</li>
+
+					</ul>
+					<i class="float-right glyphicon glyphicon-refresh"></i>
+					<div class="input-group float-right">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false">登录名<span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">任务1</a></li>
+								<li><a href="#">任务2</a></li>
+							</ul>
+						</div>
+						<input type="text" class="form-control input-sm" aria-label="...">
+					</div>
+				</div>
+				<div class="table-cont">
+					<div class="table-bottom">
+						<table id="m-tab-bottom" class="table text-center" style="text-overflow: ellipsis;white-space: nowrap">
+							<thead>
+								<tr>
+									<td>角色</td>
+									<td>密码剩余有效期</td>
+									<td>状态</td>
+									<td>登录次数</td>
+									<td>最后登录时间</td>
+									<td>用户创建时间</td>
+
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Betsy Feeney</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>正常</td>
+									<td>1</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>2020-03-16 19:13:00</td>
+								</tr>
+								<tr>
+									<td>Betsy Feeney</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>正常</td>
+									<td>1</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>2020-03-16 19:13:00</td>
+								</tr>
+								<tr>
+									<td>Betsy Feeney</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>正常</td>
+									<td>1</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>2020-03-16 19:13:00</td>
+								</tr>
+								<tr>
+									<td>Betsy Feeney</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>正常</td>
+									<td>1</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>2020-03-16 19:13:00</td>
+								</tr>
+								<tr>
+									<td>Betsy Feeney</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>正常</td>
+									<td>1</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>2020-03-16 19:13:00</td>
+								</tr>
+								<tr>
+									<td>Betsy Feeney</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>正常</td>
+									<td>1</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>2020-03-16 19:13:00</td>
+								</tr>
+								<tr>
+									<td>Betsy Feeney</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>正常</td>
+									<td>1</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>2020-03-16 19:13:00</td>
+								</tr>
+								<tr>
+									<td>Betsy Feeney</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>正常</td>
+									<td>1</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>2020-03-16 19:13:00</td>
+								</tr>
+								<tr>
+									<td>Betsy Feeney</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>正常</td>
+									<td>1</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>2020-03-16 19:13:00</td>
+								</tr>
+								<tr>
+									<td>Betsy Feeney</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>正常</td>
+									<td>1</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>2020-03-16 19:13:00</td>
+								</tr>
+								<tr>
+									<td>Betsy Feeney</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>正常</td>
+									<td>1</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>2020-03-16 19:13:00</td>
+								</tr>
+								<tr>
+									<td>Betsy Feeney</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>正常</td>
+									<td>1</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>2020-03-16 19:13:00</td>
+								</tr>
+								<tr>
+									<td>Betsy Feeney</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>正常</td>
+									<td>1</td>
+									<td>2020-03-16 19:13:00</td>
+									<td>2020-03-16 19:13:00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="table-top">
+						<table id="m-tab-top" class="table text-center">
+							<thead>
+								<tr>
+
+									<td>用户编号</td>
+									<td>登录名</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+
+									<td>任务名称...</td>
+									<td>立即摆渡</td>
+								</tr>
+								<tr>
+
+									<td>任务名称...</td>
+									<td>立即摆渡</td>
+								</tr>
+								<tr>
+
+									<td>任务名称...</td>
+									<td>立即摆渡</td>
+								</tr>
+								<tr>
+
+									<td>任务名称...</td>
+									<td>立即摆渡</td>
+								</tr>
+								<tr>
+
+									<td>任务名称...</td>
+									<td>立即摆渡</td>
+								</tr>
+								<tr>
+
+									<td>任务名称...</td>
+									<td>立即摆渡</td>
+								</tr>
+								<tr>
+
+									<td>任务名称...</td>
+									<td>立即摆渡</td>
+								</tr>
+								<tr>
+
+									<td>任务名称...</td>
+									<td>立即摆渡</td>
+								</tr>
+								<tr>
+
+									<td>任务名称...</td>
+									<td>立即摆渡</td>
+								</tr>
+								<tr>
+
+									<td>任务名称...</td>
+									<td>立即摆渡</td>
+								</tr>
+								<tr>
+
+									<td>任务名称...</td>
+									<td>立即摆渡</td>
+								</tr>
+								<tr>
+
+									<td>任务名称...</td>
+									<td>立即摆渡</td>
+								</tr>
+								<tr>
+
+									<td>任务名称...</td>
+									<td>立即摆渡</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="paging">
+					<span>共29条</span>
+					<div class="dropdown ">
+						<button class="btn m-btn btn-xs btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							20条/页
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a href="#">5条/页</a></li>
+							<li><a href="#">10条/页</a></li>
+						</ul>
+					</div>
+					<p><button class="btn m-btn btn-default btn-xs">首页</button></p>
+					<nav aria-label="Page navigation ">
+						<ul class="pagination">
+							<li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<p>
+						<button class="btn m-btn btn-default btn-xs">尾页</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModalDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-sm deleteModal" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+								aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">提示</h4>
+					</div>
+					<div class="modal-body">
+						<p><span class="glyphicon glyphicon-exclamation-sign" style="margin-right: 10px;" aria-hidden="true"></span> 确定要删除该机构及所有子机构项吗？</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">确认</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+								aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">管理员添加</h4>
+					</div>
+					<div class="modal-body">
+						<form class="modal-form">
+							<ul class="ul_ul">
+								<li class="left_li">归属机构：</li>
+								<button id="chooseInstitutions" type="button" class="btn btn-primary"
+									style="margin-left:10px">选择机构</button>
+								<span id="chooseInstitutionsItem" style="margin-left: 10px;display: none;">已选择：北京办公室</span>
+							</ul>
+							<ul id="institutions" class="ul_ul clearfloat" style="height: 345px;display: none;">
+								<li class="left_li"></li>
+								<div class="right_li margin-l chooseBox">
+									<div class="treebox">
+										<div class="tree">
+											<ul>
+												<li>
+													<div class="close_menu"><span></span><a title="一级菜单">办公厅</a></div>
+													<ul>
+														<li>
+															<div class="close_menu"><span></span><a title="二级菜单">业务一处</a></div>
+															<ul id="institutionsItem">
+																<li><a>办公室</a></li>
+															</ul>
+														</li>
+														<li>
+															<div class="close_menu"><span></span><a title="二级菜单">业务二处</a></div>
+															<ul id="institutionsItem">
+																<li><a>办公室</a></li>
+																<li><a>财务处</a></li>
+																<li><a>出纳员</a></li>
+															</ul>
+														</li>
+														<li>
+															<div class="close_menu"><span></span><a title="二级菜单">业务三处</a></div>
+															<ul id="institutionsItem">
+																<li><a>办公室</a></li>
+																<li><a>财务处</a></li>
+																<li><a>出纳员</a></li>
+															</ul>
+														</li>
+														<li>
+															<div class="close_menu"><span></span><a title="二级菜单">业务四处</a></div>
+															<ul id="institutionsItem">
+																<li><a>办公室</a></li>
+																<li><a>财务处</a></li>
+																<li><a>出纳员</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</ul>
+							<ul class="ul_ul">
+								<li class="left_li">归属部门：</li>
+								<button id="chooseDepartment" type="button" class="btn btn-primary"
+									style="margin-left:10px">选择部门</button>
+								<span id="chooseDepartmentItem" style="margin-left: 10px;display: none;">已选择：北京办公室</span>
+							</ul>
+							<ul id="department" class="ul_ul clearfloat" style="height: 345px; display: none;">
+								<li class="left_li"></li>
+								<div class="right_li margin-l chooseBox">
+									<div class="treebox">
+										<div class="tree">
+											<ul>
+												<li>
+													<div class="close_menu"><span></span><a title="一级菜单">办公厅</a></div>
+													<ul>
+														<li>
+															<div class="close_menu"><span></span><a title="二级菜单">业务一处</a></div>
+															<ul id="departmentItem">
+																<li><a>办公室</a></li>
+															</ul>
+														</li>
+														<li>
+															<div class="close_menu"><span></span><a title="二级菜单">业务二处</a></div>
+															<ul id="departmentItem">
+																<li><a>办公室</a></li>
+																<li><a>财务处</a></li>
+																<li><a>出纳员</a></li>
+															</ul>
+														</li>
+														<li>
+															<div class="close_menu"><span></span><a title="二级菜单">业务三处</a></div>
+															<ul id="departmentItem">
+																<li><a>办公室</a></li>
+																<li><a>财务处</a></li>
+																<li><a>出纳员</a></li>
+															</ul>
+														</li>
+														<li>
+															<div class="close_menu"><span></span><a title="二级菜单">业务四处</a></div>
+															<ul id="departmentItem">
+																<li><a>办公室</a></li>
+																<li><a>财务处</a></li>
+																<li><a>出纳员</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</ul>
+							<ul class="ul_ul">
+								<li class="left_li"> <span style="color: red;">*</span> 登录名：</li>
+								<li class="right_li margin-l "><input class="input-padding" type="text" placeholder="asf5636"></li>
+							</ul>
+							<ul class="ul_ul">
+								<li class="left_li">密码：</li>
+								<li class="right_li margin-l"><input class="input-padding" type="password"></li>
+							</ul>
+							<ul class="ul_ul">
+								<li class="left_li"> <span style="color: red;">*</span> 确认密码：</li>
+								<li class="right_li margin-l"><input class="input-padding" type="password"></li>
+							</ul>
+							<ul class="ul_ul">
+								<li class="left_li"> <span style="color: red;">*</span> 密码有效期：</li>
+								<li class="right_li margin-l">
+									<div class="form-group right_li" style="width: 401px;">
+										<select class="form-control">
+											<option>请选择...</option>
+											<option>7天有效期</option>
+											<option>30天有效期</option>
+											<option>60天有效期</option>
+											<option>365天有效期</option>
+										</select>
+									</div>
+								</li>
+							</ul>
+							<ul class="ul_ul">
+								<li class="left_li">邮箱：</li>
+								<li class="right_li margin-l">
+									<input type="text" class="input-padding" disabled placeholder="请输入">
+								</li>
+							</ul>
+							<ul class="ul_ul">
+								<li class="left_li">是否允许登录：</li>
+								<li class="right_li margin-l">
+									<div class="form-group right_li" style="width: 401px;">
+										<select class="form-control">
+											<option>是</option>
+											<option>否</option>
+										</select>
+									</div>
+								</li>
+							</ul>
+							<ul class="ul_ul">
+								<li class="left_li"></li>
+								<li class="right_li margin-l">“是”代表机构可以正常使用，“否”则表示机构已被停用</li>
+							</ul>
+							<ul class="ul_bei">
+								<li class="left_li">备注：</li>
+								<li class="right_bei margin-l"><textarea class="input-padding" type="text" placeholder="请输入"></textarea>
+								</li>
+							</ul>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn_b">保存</button>
+						<button type="button" class="btn_q" data-dismiss="modal">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function () {
+			// 列表点击选中的效果
+			$('#m-tab-top>tbody>tr,#m-tab-bottom>tbody>tr').click(function () {
+				var i = $(this).index();
+				$($('#m-tab-top>tbody>tr')[i]).toggleClass('tr-active').siblings().removeClass('tr-active');
+				$($('#m-tab-bottom>tbody>tr')[i]).toggleClass('tr-active').siblings().removeClass('tr-active');
+			});
+			$('#datetimepicker1,#datetimepicker2').datetimepicker({
+				format: 'YYYY-MM-DD',
+				locale: moment.locale('zh-cn'),
+				defaultDate: "",
+			});
+			$('.a3 #adminBtn').click(function () {
+				$('#adminBtn').removeClass().addClass('glyphicon glyphicon-menu-up')
+				$('#admin').show()
+			})
+			$('#chooseInstitutions').click(function () {
+				$('#institutions').show()
+			})
+			$('#chooseDepartment').click(function () {
+				$('#department').show()
+			})
+			$('#institutionsItem li').click(function () {
+				$('#institutions').hide()
+				$('#chooseInstitutionsItem').show()
+			})
+			$('#departmentItem li').click(function () {
+				$('#department').hide()
+				$('#chooseDepartmentItem').show()
+			})
+		})
+	</script>
+</body>
+
+</html>
