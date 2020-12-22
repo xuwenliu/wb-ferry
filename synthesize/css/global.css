@@ -26,8 +26,6 @@ button:focus{
 }
 .container{
     min-width: 1366px;
-    height: 100%;
-    overflow: hidden;
     position: relative;
 }
 .col-lg-12{
@@ -117,7 +115,7 @@ button:focus{
 }
 /* 左侧边栏导航 */
 .sidebar{
-    width: 9.27%;
+    width: 10%;
     height: 100%;
     box-sizing: border-box;
     padding: 4px 0 0 8.54px;
@@ -236,8 +234,7 @@ button:focus{
     background-size: 21px 21px;
 }
 .content{
-    width: 90.73%;
-    height: 1080px;
+    width: 90%;
     box-sizing: border-box;
     padding: 14px;
 }

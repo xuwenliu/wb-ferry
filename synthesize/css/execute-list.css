@@ -1,0 +1,23 @@
+.card-2 .title > ul > .m-btn:first-child {
+  background: #fff;
+  color: #333;
+  border-color: #ccc;
+}
+.card-2 .title > ul > .m-btn:nth-child(2) {
+  background: #fff;
+  color: #333;
+  border-color: #ccc;
+}
+.container{
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.sidebar > ul > .active > a {
+  background: url("../img/icon-list.png") 5.69px 10.67px no-repeat !important;
+  background-size: 21px 21px !important;
+}
+.sidebar-flod > ul > .active > a {
+  background: url("../img/icon-list.png") 0px 0px no-repeat !important;
+  background-size: 21px 21px !important;
+}
