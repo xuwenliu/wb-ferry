@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>安全管理审计</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container col-lg-12">
+      <div class="navigation">
+        <img class="nav-logo float-left" src="./img/logo.png" alt="logo" />
+        <div class="nav-text float-left">标准版</div>
+        <div class="nav-drop dropdown float-right">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >ADMIN <span class="caret"></span
+          ></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="#">个人信息</a></li>
+            <li><a href="#">修改密码</a></li>
+          </ul>
+        </div>
+        <img class="nav-avatar float-right" src="./img/avatar.png" alt="头像" />
+      </div>
+      <script src="./js/global.js"></script>
+      <div id="sidebar" class="sidebar float-left">
+        <ul>
+          <li><a href="home.html">系统管理审计</a></li>
+          <li class="active"><a href="safety.html">安全管理审计</a></li>
+          <li>
+            <div class="link log">日志管理</div>
+            <ul class="submenu">
+              <li><a href="log-backups.html">日志备份</a></li>
+              <li><a href="log-recover.html">日志恢复</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="link manager">管理员管理</div>
+            <ul class="submenu">
+              <li><a href="#">管理员列表</a></li>
+              <li><a href="#">管理员角色列表</a></li>
+            </ul>
+          </li>
+          <li><a href="user.html"> 个人中心</a></li>
+        </ul>
+        <ul class="m-hide icon-sidebar">
+          <li>
+            <a
+              href="home.html"
+              data-toggle="tooltipp"
+              data-placement="right"
+              title="系统管理审计"
+            >
+            </a>
+          </li>
+          <li class="active">
+            <a
+              href="safety.html"
+              data-toggle="tooltipp"
+              data-placement="right"
+              title="安全管理审计"
+            >
+            </a>
+          </li>
+          <li>
+            <a
+              href="log-backups.html"
+              data-toggle="tooltipp"
+              data-placement="right"
+              title="日志管理"
+            >
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              data-toggle="tooltipp"
+              data-placement="right"
+              title="管理员管理"
+            >
+            </a>
+          </li>
+          <li>
+            <a
+              href="user.html"
+              data-toggle="tooltipp"
+              data-placement="right"
+              title="个人中心"
+            >
+            </a>
+          </li>
+        </ul>
+        <img id="flod-btn" src="./img/fold.png" />
+      </div>
+      <div id="m-content" class="content float-right clearfloat">
+        <p>安全管理审计</p>
+        <div class="card-1 float-left panel">
+          <ul>
+            <p>管理员</p>
+            <li>管理员1</li>
+            <li>管理员2</li>
+            <li>管理员3</li>
+            <li class="active">管理员4</li>
+          </ul>
+        </div>
+        <div class="card-2 float-right panel">
+          <div class="title">
+            <ul>
+              <li
+                class="btn btn-xs float-left m-btn"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
+                高级查询
+              </li>
+            </ul>
+            <i class="float-right glyphicon glyphicon-refresh"></i>
+            <div class="input-group float-right">
+              <div class="input-group-btn">
+                <button
+                  type="button"
+                  class="btn btn-xs btn-default dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  登录名 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">任务1</a></li>
+                  <li><a href="#">任务2</a></li>
+                </ul>
+              </div>
+              <input
+                type="text"
+                class="form-control input-sm"
+                aria-label="..."
+                placeholder="请输入"
+              />
+            </div>
+          </div>
+          <div class="table-cont">
+            <div class="table-bottom">
+              <table
+                id="m-tab-bottom"
+                class="table text-center"
+                style="text-overflow: ellipsis; white-space: nowrap"
+              >
+                <thead>
+                  <tr>
+                    <td>日志类型</td>
+                    <td>事件过程</td>
+                    <td>事件描述</td>
+                    <td>事件结果</td>
+                    <td>用户IP</td>
+                    <td>创建时间</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>用户</td>
+                    <td>查看用户</td>
+                    <td>系统管理员查看普通用户</td>
+                    <td>成功</td>
+                    <td>120.2.0.0.2</td>
+                    <td>2020-03-16 19:13:00</td>
+                  </tr>
+                  <tr>
+                    <td>用户</td>
+                    <td>查看用户</td>
+                    <td>系统管理员查看普通用户</td>
+                    <td>成功</td>
+                    <td>120.2.0.0.2</td>
+                    <td>2020-03-16 19:13:00</td>
+                  </tr>
+                  <tr>
+                    <td>用户</td>
+                    <td>查看用户</td>
+                    <td>系统管理员查看普通用户</td>
+                    <td>成功</td>
+                    <td>120.2.0.0.2</td>
+                    <td>2020-03-16 19:13:00</td>
+                  </tr>
+                  <tr>
+                    <td>用户</td>
+                    <td>查看用户</td>
+                    <td>系统管理员查看普通用户</td>
+                    <td>成功</td>
+                    <td>120.2.0.0.2</td>
+                    <td>2020-03-16 19:13:00</td>
+                  </tr>
+                  <tr>
+                    <td>用户</td>
+                    <td>查看用户</td>
+                    <td>系统管理员查看普通用户</td>
+                    <td>成功</td>
+                    <td>120.2.0.0.2</td>
+                    <td>2020-03-16 19:13:00</td>
+                  </tr>
+                  <tr>
+                    <td>用户</td>
+                    <td>查看用户</td>
+                    <td>系统管理员查看普通用户</td>
+                    <td>成功</td>
+                    <td>120.2.0.0.2</td>
+                    <td>2020-03-16 19:13:00</td>
+                  </tr>
+                  <tr>
+                    <td>用户</td>
+                    <td>查看用户</td>
+                    <td>系统管理员查看普通用户</td>
+                    <td>成功</td>
+                    <td>120.2.0.0.2</td>
+                    <td>2020-03-16 19:13:00</td>
+                  </tr>
+                  <tr>
+                    <td>用户</td>
+                    <td>查看用户</td>
+                    <td>系统管理员查看普通用户</td>
+                    <td>成功</td>
+                    <td>120.2.0.0.2</td>
+                    <td>2020-03-16 19:13:00</td>
+                  </tr>
+                  <tr>
+                    <td>用户</td>
+                    <td>查看用户</td>
+                    <td>系统管理员查看普通用户</td>
+                    <td>成功</td>
+                    <td>120.2.0.0.2</td>
+                    <td>2020-03-16 19:13:00</td>
+                  </tr>
+                  <tr>
+                    <td>用户</td>
+                    <td>查看用户</td>
+                    <td>系统管理员查看普通用户</td>
+                    <td>成功</td>
+                    <td>120.2.0.0.2</td>
+                    <td>2020-03-16 19:13:00</td>
+                  </tr>
+                  <tr>
+                    <td>用户</td>
+                    <td>查看用户</td>
+                    <td>系统管理员查看普通用户</td>
+                    <td>成功</td>
+                    <td>120.2.0.0.2</td>
+                    <td>2020-03-16 19:13:00</td>
+                  </tr>
+                  <tr>
+                    <td>用户</td>
+                    <td>查看用户</td>
+                    <td>系统管理员查看普通用户</td>
+                    <td>成功</td>
+                    <td>120.2.0.0.2</td>
+                    <td>2020-03-16 19:13:00</td>
+                  </tr>
+                  <tr>
+                    <td>用户</td>
+                    <td>查看用户</td>
+                    <td>系统管理员查看普通用户</td>
+                    <td>成功</td>
+                    <td>120.2.0.0.2</td>
+                    <td>2020-03-16 19:13:00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="table-top">
+              <table id="m-tab-top" class="table text-center">
+                <thead>
+                  <tr>
+                    <td>用户分类</td>
+                    <td>登录名</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>系统管理员</td>
+                    <td>Adrianna Roberts</td>
+                  </tr>
+                  <tr>
+                    <td>系统管理员</td>
+                    <td>Adrianna Roberts</td>
+                  </tr>
+                  <tr>
+                    <td>系统管理员</td>
+                    <td>Adrianna Roberts</td>
+                  </tr>
+                  <tr>
+                    <td>系统管理员</td>
+                    <td>Adrianna Roberts</td>
+                  </tr>
+                  <tr>
+                    <td>系统管理员</td>
+                    <td>Adrianna Roberts</td>
+                  </tr>
+                  <tr>
+                    <td>系统管理员</td>
+                    <td>Adrianna Roberts</td>
+                  </tr>
+                  <tr>
+                    <td>系统管理员</td>
+                    <td>Adrianna Roberts</td>
+                  </tr>
+                  <tr>
+                    <td>系统管理员</td>
+                    <td>Adrianna Roberts</td>
+                  </tr>
+                  <tr>
+                    <td>系统管理员</td>
+                    <td>Adrianna Roberts</td>
+                  </tr>
+                  <tr>
+                    <td>系统管理员</td>
+                    <td>Adrianna Roberts</td>
+                  </tr>
+                  <tr>
+                    <td>系统管理员</td>
+                    <td>Adrianna Roberts</td>
+                  </tr>
+                  <tr>
+                    <td>系统管理员</td>
+                    <td>Adrianna Roberts</td>
+                  </tr>
+                  <tr>
+                    <td>系统管理员</td>
+                    <td>Adrianna Roberts</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="paging">
+            <span>共29条</span>
+            <div class="dropdown">
+              <button
+                class="btn m-btn btn-xs btn-default dropdown-toggle"
+                type="button"
+                id="dropdownMenu1"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="true"
+              >
+                20条/页
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">5条/页</a></li>
+                <li><a href="#">10条/页</a></li>
+              </ul>
+            </div>
+            <p><button class="btn m-btn btn-default btn-xs">首页</button></p>
+            <nav aria-label="Page navigation ">
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <p>
+              <button class="btn m-btn btn-default btn-xs">尾页</button>
+            </p>
+          </div>
+        </div>
+
+        <!-- 高级查询 -->
+        <div
+          class="modal fade"
+          id="myModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="myModalLabel"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">查询</h4>
+              </div>
+              <div class="modal-body">
+                <form class="modal-form">
+                  <ul class="ul_ul">
+                    <li class="left_li">登陆名：</li>
+                    <li class="right_li margin-l">
+                      <input
+                        class="input-padding"
+                        type="text"
+                        placeholder="请输入配置名称"
+                      />
+                    </li>
+                  </ul>
+                  <ul class="ul_ul">
+                    <li class="left_li">用户IP：</li>
+                    <li class="right_li margin-l">
+                      <input class="input-padding" type="text" />
+                    </li>
+                  </ul>
+                  <ul class="ul_ul">
+                    <li class="left_li">日志类型：</li>
+                    <li class="right_li margin-l">
+                      <div class="form-group right_li" style="width: 401px">
+                        <select class="form-control">
+                          <option>请选择...</option>
+                          <option>SFTP</option>
+                          <option>FTP</option>
+                        </select>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="ul_ul">
+                    <li class="left_li">事件过程：</li>
+                    <li class="right_li margin-l">
+                      <input
+                        placeholder="请输入"
+                        class="input-padding"
+                        type="text"
+                      />
+                    </li>
+                  </ul>
+                  <ul class="ul_ul">
+                    <li class="left_li">事件描述：</li>
+                    <li class="right_li margin-l">
+                      <input
+                        placeholder="请输入"
+                        class="input-padding"
+                        type="text"
+                      />
+                    </li>
+                  </ul>
+                  <ul class="ul_ul">
+                    <li class="left_li">开始时间：</li>
+                    <li class="right_li margin-l">
+                      <input
+                        placeholder="请输入"
+                        class="input-padding"
+                        type="text"
+                      />
+                    </li>
+                  </ul>
+                  <ul class="ul_ul">
+                    <li class="left_li">结束时间：</li>
+                    <li class="right_li margin-l">
+                      <input
+                        placeholder="请输入"
+                        class="input-padding"
+                        type="text"
+                      />
+                    </li>
+                  </ul>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn_b" data-dismiss="modal">
+                  查询
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
