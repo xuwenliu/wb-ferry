@@ -7,8 +7,8 @@
 	<title>用户管理</title>
 	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 	<link href="./bootstrap/css/datetimepicker.css" rel="stylesheet">
-	<link rel="stylesheet" href="./css/global.css" />
 	<link rel="stylesheet" href="./css/user-management.css" />
+	<link rel="stylesheet" href="./css/global.css" />
 	<link rel="stylesheet" href="./css/tree.css" />
 	<script src="./js/jquery-1.11.3.min.js"></script>
 	<script src="./bootstrap/js/bootstrap.min.js"></script>
@@ -40,19 +40,18 @@
 				<li class="a2 active"><a href="user-management.html"> 用户管理</a></li>
 				<li>
 					<div class="link"><i class="icon"></i>管理员管理</div>
-            <ul class="submenu">
-              <li><a href="admin-list.html" style="background: none;padding-left: 44px;">管理员列表</a></li>
-              <li><a href="role-list.html" style="background: none;padding-left: 44px;">管理员角色列表</a></li>
-            </ul>
+					<ul class="submenu">
+						<li><a href="admin-list.html" style="background: none;padding-left: 44px;">管理员列表</a></li>
+						<li><a href="role-list.html" style="background: none;padding-left: 44px;">管理员角色列表</a></li>
+					</ul>
 				</li>
 				<li class="a4"><a href="user.html"> 个人中心</a></li>
 
 			</ul>
 			<ul class="m-hide icon-sidebar">
-				<li><a href="#" data-toggle="tooltipp" data-placement="right" title="组织机构管理"> </a></li>
-				<li class="active"><a href="user-management.html" data-toggle="tooltipp" data-placement="right" title="用户管理">
-					</a></li>
-				<li><a href="#" data-toggle="tooltipp" data-placement="right" title="管理员管理"> </a></li>
+				<li><a href="organization.html" data-toggle="tooltipp" data-placement="right" title="组织机构管理"> </a></li>
+				<li><a href="user-management.html" data-toggle="tooltipp" data-placement="right" title="用户管理"></a></li>
+				<li><a href="admin-list.html" data-toggle="tooltipp" data-placement="right" title="管理员管理"> </a></li>
 				<li><a href="user.html" data-toggle="tooltipp" data-placement="right" title="个人中心"> </a></li>
 			</ul>
 			<img id="flod-btn" src="./img/fold.png" />
@@ -381,20 +380,27 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" id="myModalDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog modal-sm deleteModal" role="document">
+		<!-- 删除提示 -->
+		<div class="modal fade" tabindex="-1" id="myModalDelete" role="dialog">
+			<div class="modal-dialog modal-center" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-								aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="myModalLabel">提示</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">提示</h4>
 					</div>
 					<div class="modal-body">
-						<p><span class="glyphicon glyphicon-exclamation-sign" style="margin-right: 10px;" aria-hidden="true"></span> 确定要删除该机构及所有子机构项吗？</p>
+						<div class="tip-content">
+							<img src="img/tip.png" alt="" />
+							<span>确定要删除该用户吗？</span>
+						</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-primary">确认</button>
-						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+						<button type="button" class="btn_b">确定</button>
+						<button type="button" class="btn_q" data-dismiss="modal">
+							取消
+						</button>
 					</div>
 				</div>
 			</div>
@@ -420,7 +426,8 @@
 							</ul>
 							<ul class="ul_ul">
 								<li class="left_li">归属机构：</li>
-								<button id="chooseInstitutions" type="button" class="btn btn-primary" style="margin-left:10px">选择机构</button>
+								<button id="chooseInstitutions" type="button" class="btn btn-primary"
+									style="margin-left:10px">选择机构</button>
 								<span id="chooseInstitutionsItem" style="margin-left: 10px;display: none;">已选择：北京办公室</span>
 							</ul>
 							<ul id="institutions" class="ul_ul clearfloat" style="height: 345px;display: none;">
@@ -471,7 +478,8 @@
 							</ul>
 							<ul class="ul_ul">
 								<li class="left_li">归属部门：</li>
-								<button id="chooseDepartment" type="button" class="btn btn-primary" style="margin-left:10px">选择部门</button>
+								<button id="chooseDepartment" type="button" class="btn btn-primary"
+									style="margin-left:10px">选择部门</button>
 								<span id="chooseDepartmentItem" style="margin-left: 10px;display: none;">已选择：北京办公室</span>
 							</ul>
 							<ul id="department" class="ul_ul clearfloat" style="height: 345px; display: none;">
@@ -588,17 +596,17 @@
 				locale: moment.locale('zh-cn'),
 				defaultDate: "",
 			});
-			$('#chooseInstitutions').click(function(){
+			$('#chooseInstitutions').click(function () {
 				$('#institutions').show()
 			})
-			$('#chooseDepartment').click(function(){
+			$('#chooseDepartment').click(function () {
 				$('#department').show()
 			})
-			$('#institutionsItem li').click(function(){
+			$('#institutionsItem li').click(function () {
 				$('#institutions').hide()
 				$('#chooseInstitutionsItem').show()
 			})
-			$('#departmentItem li').click(function(){
+			$('#departmentItem li').click(function () {
 				$('#department').hide()
 				$('#chooseDepartmentItem').show()
 			})

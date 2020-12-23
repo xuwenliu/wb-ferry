@@ -160,52 +160,7 @@ button:focus{
     width: 3.65%;
     padding:14px;
 }
-.sidebar-flod ul li a{
-    width: 100%;
-    height: 21px;
-    padding: 0;
-    background: url('../img/a11.png') 0px 0px no-repeat;
-    background-size: 21px 21px;
-    margin-bottom: 22px;
-    white-space: nowrap;
-}
-.sidebar ul li:nth-child(2)>a{
-    background: url('../img/icon-task2.png') 8px 15px no-repeat;
-    background-size: 21px 21px;
-}
-.sidebar ul li:nth-child(3)>a{
-    background: url('../img/icon-list2.png') 8px 15px no-repeat;
-    background-size: 21px 21px;
-}
-.sidebar ul li:nth-child(4)>a{
-    background: url('../img/icon-set2.png') 8px 15px no-repeat;
-    background-size: 21px 21px;
-}
-.sidebar ul li:nth-child(5)>a{
-    background: url('../img/icon-cd2.png') 8px 15px no-repeat;
-    background-size: 21px 21px;
-}
-.sidebar ul li:nth-child(6)>a{
-    background: url('../img/icon-log2.png') 8px 15px no-repeat;
-    background-size: 21px 21px;
-}
-.sidebar ul li:last-child>a{
-    background: url('../img/icon-user2.png') 8px 15px no-repeat;
-    background-size: 21px 21px;
-}
 
-.sidebar-flod ul li:nth-child(2)>a{
-    background: url('../img/a2-1.png.png') 0px 0px no-repeat;
-    background-size: 21px 21px;
-}
-.sidebar-flod ul li:nth-child(3)>a{
-    background: url('../img/a33.png') 0px 0px no-repeat;
-    background-size: 21px 21px;
-}
-.sidebar-flod ul li:last-child>a{
-    background: url('../img/icon-user2.png') 0px 0px no-repeat;
-    background-size: 21px 21px;
-}
 .sidebar ul .active{
     background: #E7F2FF;
 }
@@ -218,7 +173,9 @@ button:focus{
 .sidebar-flod ul li:hover{
     background: #F0FAFF;
 }
-
+.submenu {
+    display: none;
+}
 .sidebar>ul>.active>a{
     background: url('../img/icon-home.png') 5.69px 10.67px no-repeat;
     background-size: 21px 21px;
@@ -254,6 +211,25 @@ button:focus{
     background: #fff;
     color: #00499D;
     border: 1px solid #BDDDF4;
+}
+.modal-center {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+    left: 50%;
+    width: 550px;
+}
+.modal-center .modal-footer {
+    border: none;
+}
+.modal-center .modal-body {
+    height: auto;
+}
+.modal-center .modal-content .tip-content img {
+    width: 21px;
+    height: 21px;
+    vertical-align: middle;
+    margin-right: 14px;
 }
 /* 1920状态下头部导航 左侧边栏的css */
 @media screen and (min-width:1920px){

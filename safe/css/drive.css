@@ -229,6 +229,10 @@ div::-webkit-scrollbar{
 .modal-dialog {
     width: 925px;
     margin: 0 auto !important;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+    left: 50%;
 }
 
 .modal-content {
@@ -445,11 +449,11 @@ div::-webkit-scrollbar{
     background-size: 30px 30px;
 }
 .sidebar-flod ul li:first-child>a{
-    background: url('../img/icon1.png') 0px 0px no-repeat;
+    background: url('../img/icon1-no.png') 0px 0px no-repeat;
     background-size: 21px 21px;
 }
 .sidebar-flod ul li:nth-child(2)>a{
-    background: url('../img/icon-drive.png') 0px 0px no-repeat;
+    background: url('../img/icon-drive-select.png') 0px 0px no-repeat;
     background-size: 21px 21px;
 }
 .sidebar-flod ul li:nth-child(3)>a{
@@ -479,14 +483,6 @@ div::-webkit-scrollbar{
 .sidebar-flod ul li:nth-child(9)>a{
     background: url('../img/icon-user2.png') 0px 0px no-repeat;
     background-size: 21px 21px;
-}
-.sidebar ul .active a{
-    background: url('../img/a1.png') 8px 15px no-repeat !important;
-    background-size: 30px 30px !important;
-}
-.sidebar-flod>ul>.active>a{
-    background: url('../img/icon1.png') 0px 0px no-repeat !important;
-    background-size: 21px 21px !important;
 }
 
 @media screen and (min-width:1920px){

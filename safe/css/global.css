@@ -126,6 +126,9 @@ button:focus{
     background: #F0FAFF;
     position: relative;
 }
+.submenu {
+    display: none;
+}
 .sidebar>img{
     position: absolute;
     top: 315.18px;
@@ -162,7 +165,7 @@ button:focus{
     width: 3.65%;
     padding:14px;
 }
-.sidebar-flod ul li a{
+/* .sidebar-flod ul li a{
     width: 100%;
     height: 21px;
     padding: 0;
@@ -194,9 +197,9 @@ button:focus{
 .sidebar ul li:last-child>a{
     background: url('../img/icon-user2.png') 8px 15px no-repeat;
     background-size: 21px 21px;
-}
+} */
 
-.sidebar-flod ul li:nth-child(2)>a{
+/* .sidebar-flod ul li:nth-child(2)>a{
     background: url('../img/a2-1.png.png') 0px 0px no-repeat;
     background-size: 21px 21px;
 }
@@ -207,7 +210,7 @@ button:focus{
 .sidebar-flod ul li:last-child>a{
     background: url('../img/icon-user2.png') 0px 0px no-repeat;
     background-size: 21px 21px;
-}
+} */
 .sidebar ul .active{
     background: #E7F2FF;
 }
@@ -256,6 +259,25 @@ button:focus{
     background: #fff;
     color: #00499D;
     border: 1px solid #BDDDF4;
+}
+.modal-center {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+    left: 50%;
+    width: 550px;
+}
+.modal-center .modal-footer {
+    border: none;
+}
+.modal-center .modal-body {
+    height: auto;
+}
+.modal-center .modal-content .tip-content img {
+    width: 21px;
+    height: 21px;
+    vertical-align: middle;
+    margin-right: 14px;
 }
 /* 1920状态下头部导航 左侧边栏的css */
 @media screen and (min-width:1920px){

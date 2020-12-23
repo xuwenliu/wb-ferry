@@ -6,6 +6,22 @@
     display: flex;
     align-items: center;
 }
+.icon-source{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url('../img/icon1-no.png') 0px 0px no-repeat;
+    background-size: 30px 30px;
+    margin:0 5px 0 8px;
+}
+.icon-ferry{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url('../img/icon-cd2.png') 0px 0px no-repeat;
+    background-size: 30px 30px;
+    margin:0 5px 0 8px;
+}
 .icon{
     width: 30px;
     height: 30px;
@@ -142,41 +158,100 @@
 .left_li span{
     color: red;
 }
-.sidebar ul .a1 a {
+.sidebar ul .a1 .link {
     height: 60px;
-    padding: 20px 0 20px 44px;
-    font-size: 10px;
-    background: url(../img/a11.png) 8px 15px no-repeat !important;
-    background-size: 30px 30px;
 }
 .sidebar ul .a2 a {
     height: 60px;
     padding: 20px 0 20px 44px;
     font-size: 10px;
-    background: url(../img/a2-1.png) 8px 15px no-repeat !important;
+    background: url('../img/icon-drive.png') 8px 15px no-repeat !important;
     background-size: 30px 30px;
 }
-.sidebar ul .a3 a {
+.sidebar ul .a3 .link{
     height: 60px;
-    padding: 20px 0 20px 44px;
-    font-size: 10px;
-    background: url(../img/a33.png) 8px 15px no-repeat !important;
-    background-size: 30px 30px;
-}
+}  
 .sidebar ul .a4 a {
     height: 60px;
     padding: 20px 0 20px 44px;
     font-size: 10px;
-    background: url(../img/icon-user2.png) 8px 15px no-repeat !important;
+    background: url('../img/icon-system.png') 8px 15px no-repeat !important;
     background-size: 30px 30px;
 }
-.sidebar>ul>.active>a{
+.sidebar ul .a5 a {
+    height: 60px;
+    padding: 20px 0 20px 44px;
+    font-size: 10px;
+    background: url('../img/icon-user-management.png') 8px 15px no-repeat !important;
+    background-size: 30px 30px;
+}
+.sidebar ul .a6 a {
+    height: 60px;
+    padding: 20px 0 20px 44px;
+    font-size: 10px;
+    background: url('../img/icon-menu.png') 8px 15px no-repeat !important;
+    background-size: 30px 30px;
+}
+.sidebar ul .a7 a {
+    height: 60px;
+    padding: 20px 0 20px 44px;
+    font-size: 10px;
+    background: url('../img/icon-role-management.png') 8px 15px no-repeat !important;
+    background-size: 30px 30px;
+}
+.sidebar ul .a8 .link {
+    height: 60px;
+}
+.sidebar ul .a9 a {
+    height: 60px;
+    padding: 20px 0 20px 44px;
+    font-size: 10px;
     background: url('../img/icon-user.png') 8px 15px no-repeat !important;
+    background-size: 30px 30px;
+}
+.sidebar-flod ul li:first-child>a{
+    background: url('../img/icon1.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(2)>a{
+    background: url('../img/icon-drive.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(3)>a{
+    background: url('../img/icon-cd2.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(4)>a{
+    background: url('../img/icon-system.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(5)>a{
+    background: url('../img/icon-user-management.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(6)>a{
+    background: url('../img/icon-menu.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(7)>a{
+    background: url('../img/icon-role-management.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(8)>a{
+    background: url('../img/a33.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar-flod ul li:nth-child(9)>a{
+    background: url('../img/icon-user.png') 0px 0px no-repeat;
+    background-size: 21px 21px;
+}
+.sidebar ul .active a{
+    background: url('../img/a1.png') 8px 15px no-repeat !important;
     background-size: 30px 30px !important;
 }
 .sidebar-flod>ul>.active>a{
-    background: url('../img/icon-user.png') 0px 0px no-repeat !important;
-    background-size: 30px 30px !important;
+    background: url('../img/icon1.png') 0px 0px no-repeat !important;
+    background-size: 21px 21px !important;
 }
 @media screen and (min-width:1920px){
     .sidebar>ul>.active>a{

@@ -124,7 +124,15 @@
     border-radius: 50%;
     display: inline-block;
 }
-
+.chooseBox {
+    width: 400px;
+    height: 345px;
+    border: 1px solid #ccc;
+}
+.chooseBox .treebox {
+    height: 100%;
+    overflow: scroll;
+}
 
 /* 固定列的table.css */
 .table-cont{
@@ -227,12 +235,8 @@ div::-webkit-scrollbar{
 
 /* modal弹框css */
 .modal-dialog {
-    width: 550px;
+    width: 925px;
     margin: 0 auto !important;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%) !important;
-    left: 50%;
 }
 
 .modal-content {
@@ -247,7 +251,7 @@ div::-webkit-scrollbar{
 
 .modal-body{
     padding: 26px 0 0 38px;
-    height:300px;
+    height:600px;
     overflow: auto;
     display: flex;
 }
@@ -290,7 +294,7 @@ div::-webkit-scrollbar{
 }
 
 .left_li {
-    width: 64px;
+    width: 90px;
     font-size: 10px;
     font-weight: 600;
     color: #000000;
@@ -404,7 +408,7 @@ div::-webkit-scrollbar{
     height: 60px;
     padding: 20px 0 20px 44px;
     font-size: 10px;
-    background: url('../img/icon-system-select.png') 8px 15px no-repeat !important;
+    background: url('../img/icon-system.png') 8px 15px no-repeat !important;
     background-size: 30px 30px;
 }
 .sidebar ul .a5 a {
@@ -425,7 +429,7 @@ div::-webkit-scrollbar{
     height: 60px;
     padding: 20px 0 20px 44px;
     font-size: 10px;
-    background: url('../img/icon-role-management.png') 8px 15px no-repeat !important;
+    background: url('../img/icon-role-management-select.png') 8px 15px no-repeat !important;
     background-size: 30px 30px;
 }
 .sidebar ul .a8 .link {
@@ -451,7 +455,7 @@ div::-webkit-scrollbar{
     background-size: 21px 21px;
 }
 .sidebar-flod ul li:nth-child(4)>a{
-    background: url('../img/icon-system-select.png') 0px 0px no-repeat;
+    background: url('../img/icon-system.png') 0px 0px no-repeat;
     background-size: 21px 21px;
 }
 .sidebar-flod ul li:nth-child(5)>a{
@@ -463,7 +467,7 @@ div::-webkit-scrollbar{
     background-size: 21px 21px;
 }
 .sidebar-flod ul li:nth-child(7)>a{
-    background: url('../img/icon-role-management.png') 0px 0px no-repeat;
+    background: url('../img/icon-role-management-select.png') 0px 0px no-repeat;
     background-size: 21px 21px;
 }
 .sidebar-flod ul li:nth-child(8)>a{
@@ -474,7 +478,6 @@ div::-webkit-scrollbar{
     background: url('../img/icon-user2.png') 0px 0px no-repeat;
     background-size: 21px 21px;
 }
-
 @media screen and (min-width:1920px){
     .sidebar ul>.active>a{
         background: url('../img/icon-task.png') 8px 15px  no-repeat !important;

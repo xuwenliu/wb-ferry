@@ -54,7 +54,7 @@
 				<li class="a4"><a href="system.html">系统设置</a></li>
 				<li class="a5"><a href="user-management.html"> 用户管理</a></li>
 				<li class="a6"><a href="menu.html"> 菜单管理</a></li>
-				<li class="a7"><a href=""> 角色管理</a></li>
+				<li class="a7"><a href="role-management.html"> 角色管理</a></li>
 				<li class="a8">
 					<div class="link"><i class="icon"></i>管理员管理</div>
 					<ul class="submenu">
@@ -77,7 +77,7 @@
 					</a></li>
 				<li><a href="menu.html" data-toggle="tooltipp" data-placement="right" title="菜单管理">
 					</a></li>
-				<li><a href="" data-toggle="tooltipp" data-placement="right" title="角色管理">
+				<li><a href="role-management.html" data-toggle="tooltipp" data-placement="right" title="角色管理">
 					</a></li>
 				<li><a href="admin-list.html" data-toggle="tooltipp" data-placement="right" title="管理员管理"> </a></li>
 				<li><a href="user.html" data-toggle="tooltipp" data-placement="right" title="个人中心"> </a></li>
@@ -149,9 +149,9 @@
 			<div class="card-2 float-right  panel">
 				<div class="title">
 					<ul>
-						<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#myModal">
+						<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">
 							菜单添加</li>
-						<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#ipModal">保存顺序</li>
+						<li class="btn btn-xs float-left m-btn">保存顺序</li>
 					</ul>
 					<i class="float-right glyphicon glyphicon-refresh"></i>
 				</div>
@@ -170,8 +170,9 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td style="color: #2F8BD2;display: flex;align-items: center;justify-content: center;"><span
-											class="icon-an"></span>系统设置</td>
+									<td style="color: #2F8BD2;">
+										<span><i class="icon-an"></i>系统设置</span>
+										</td>
 									<td></td>
 									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
 									<td>显示</td>
@@ -179,7 +180,7 @@
 									<td style="display: flex;justify-content: space-around;height: 37px;">
 										<div class="title">
 											<ul>
-												<li class="btn btn-xs float-left m-btn">修改</li>
+												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
 												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
 												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
 											</ul>
@@ -195,7 +196,7 @@
 									<td style="display: flex;justify-content: space-around;height: 37px;">
 										<div class="title">
 											<ul>
-												<li class="btn btn-xs float-left m-btn">修改</li>
+												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
 												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
 												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
 											</ul>
@@ -203,92 +204,152 @@
 									</td>
 								</tr>
 								<tr>
-									<td>Betsy Feeney</td>
-									<td>正常</td>
-									<td>1</td>
-									<td>2020-03-16 19:13:00</td>
-									<td>2020-03-16 19:13:00</td>
-
+									<td style="color: #2F8BD2;"><span
+											class="icon-an"></span>系统设置</td>
+									<td></td>
+									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td>显示</td>
+									<td>asffgsdfasdaasd</td>
+									<td style="display: flex;justify-content: space-around;height: 37px;">
+										<div class="title">
+											<ul>
+												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+											</ul>
+										</div>
+									</td>
 								</tr>
 								<tr>
-									<td>Betsy Feeney</td>
-									<td>正常</td>
-									<td>1</td>
-									<td>2020-03-16 19:13:00</td>
-									<td>2020-03-16 19:13:00</td>
-
+									<td>源配置</td>
+									<td>/sys/menu/site</td>
+									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td>显示</td>
+									<td>asffgsdfasdaasd</td>
+									<td style="display: flex;justify-content: space-around;height: 37px;">
+										<div class="title">
+											<ul>
+												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+											</ul>
+										</div>
+									</td>
 								</tr>
 								<tr>
-									<td>Betsy Feeney</td>
-									<td>正常</td>
-									<td>1</td>
-									<td>2020-03-16 19:13:00</td>
-									<td>2020-03-16 19:13:00</td>
-
+									<td>目标配置</td>
+									<td>/sys/menu/site</td>
+									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td>显示</td>
+									<td>asffgsdfasdaasd</td>
+									<td style="display: flex;justify-content: space-around;height: 37px;">
+										<div class="title">
+											<ul>
+												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+											</ul>
+										</div>
+									</td>
 								</tr>
 								<tr>
-									<td>Betsy Feeney</td>
-									<td>正常</td>
-									<td>1</td>
-									<td>2020-03-16 19:13:00</td>
-									<td>2020-03-16 19:13:00</td>
-
+									<td style="color: #2F8BD2;"><span
+											class="icon-an"></span>系统设置</td>
+									<td></td>
+									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td>显示</td>
+									<td>asffgsdfasdaasd</td>
+									<td style="display: flex;justify-content: space-around;height: 37px;">
+										<div class="title">
+											<ul>
+												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+											</ul>
+										</div>
+									</td>
 								</tr>
 								<tr>
-									<td>Betsy Feeney</td>
-									<td>正常</td>
-									<td>1</td>
-									<td>2020-03-16 19:13:00</td>
-									<td>2020-03-16 19:13:00</td>
-
+									<td>摆渡机管理</td>
+									<td>/sys/menu/site</td>
+									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td>显示</td>
+									<td>asffgsdfasdaasd</td>
+									<td style="display: flex;justify-content: space-around;height: 37px;">
+										<div class="title">
+											<ul>
+												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+											</ul>
+										</div>
+									</td>
 								</tr>
 								<tr>
-									<td>Betsy Feeney</td>
-									<td>正常</td>
-									<td>1</td>
-									<td>2020-03-16 19:13:00</td>
-									<td>2020-03-16 19:13:00</td>
-
+									<td style="color: #2F8BD2;"><span
+											class="icon-an"></span>系统设置</td>
+									<td></td>
+									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td>显示</td>
+									<td>asffgsdfasdaasd</td>
+									<td style="display: flex;justify-content: space-around;height: 37px;">
+										<div class="title">
+											<ul>
+												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+											</ul>
+										</div>
+									</td>
 								</tr>
 								<tr>
-									<td>Betsy Feeney</td>
-									<td>正常</td>
-									<td>1</td>
-									<td>2020-03-16 19:13:00</td>
-									<td>2020-03-16 19:13:00</td>
-
+									<td>摆渡机管理</td>
+									<td>/sys/menu/site</td>
+									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td>显示</td>
+									<td>asffgsdfasdaasd</td>
+									<td style="display: flex;justify-content: space-around;height: 37px;">
+										<div class="title">
+											<ul>
+												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+											</ul>
+										</div>
+									</td>
 								</tr>
 								<tr>
-									<td>Betsy Feeney</td>
-									<td>正常</td>
-									<td>1</td>
-									<td>2020-03-16 19:13:00</td>
-									<td>2020-03-16 19:13:00</td>
-
+									<td style="color: #2F8BD2;"><span
+											class="icon-an"></span>系统设置</td>
+									<td></td>
+									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td>显示</td>
+									<td>asffgsdfasdaasd</td>
+									<td style="display: flex;justify-content: space-around;height: 37px;">
+										<div class="title">
+											<ul>
+												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+											</ul>
+										</div>
+									</td>
 								</tr>
 								<tr>
-									<td>Betsy Feeney</td>
-									<td>正常</td>
-									<td>1</td>
-									<td>2020-03-16 19:13:00</td>
-									<td>2020-03-16 19:13:00</td>
-
-								</tr>
-								<tr>
-									<td>Betsy Feeney</td>
-									<td>正常</td>
-									<td>1</td>
-									<td>2020-03-16 19:13:00</td>
-									<td>2020-03-16 19:13:00</td>
-
-								</tr>
-								<tr>
-									<td>Betsy Feeney</td>
-									<td>正常</td>
-									<td>1</td>
-									<td>2020-03-16 19:13:00</td>
-									<td>2020-03-16 19:13:00</td>
-
+									<td>摆渡机管理</td>
+									<td>/sys/menu/site</td>
+									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td>显示</td>
+									<td>asffgsdfasdaasd</td>
+									<td style="display: flex;justify-content: space-around;height: 37px;">
+										<div class="title">
+											<ul>
+												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+											</ul>
+										</div>
+									</td>
 								</tr>
 							</tbody>
 						</table>
@@ -333,84 +394,80 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" id="bindIpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
 								aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="myModalLabel">绑定IP</h4>
+						<h4 class="modal-title" id="myModalLabel">菜单添加或修改</h4>
 					</div>
 					<div class="modal-body">
 						<form class="modal-form">
 							<ul class="ul_ul">
-								<li class="left_li">登录名：</li>
-								<li class="right_li margin-l "><input class="input-padding" type="text" disabled placeholder="asf5636">
+								<li class="left_li">上级菜单：</li>
+								<li class="right_li margin-l "><input class="input-padding" type="text" disabled placeholder="功能菜单">
 								</li>
 							</ul>
 							<ul class="ul_ul">
-								<li class="left_li">用户姓名：</li>
-								<li class="right_li margin-l "><input class="input-padding" type="text" disabled placeholder="阿萨德"></li>
-							</ul>
-							<ul class="ul_ul">
-								<li class="left_li">绑定IP：</li>
-								<li class="right_li margin-l"><input class="input-padding" type="text" placeholder="请输入IP">
+								<li class="left_li"><span style="color: red;">*</span>名称：</li>
+								<li class="right_li margin-l "><input class="input-padding" type="text" placeholder="请输入">
 								</li>
 							</ul>
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn_b">保存</button>
-						<button type="button" class="btn_q" data-dismiss="modal">取消</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="modal fade" id="ipModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-								aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="myModalLabel">分配角色</h4>
-					</div>
-					<div class="modal-body">
-						<form class="modal-form">
-							<ul class="ul_ul">
-								<li class="left_li">用户名：</li>
-								<li class="right_li margin-l "><input class="input-padding" type="text" disabled placeholder="asf5636">
+							<ul class="ul_ul" style="margin-bottom: 5px;">
+								<li class="left_li">链接：</li>
+								<li class="right_li margin-l "><input class="input-padding" type="text" placeholder="请输入">
 								</li>
 							</ul>
 							<ul class="ul_ul">
-								<li class="left_li">邮箱：</li>
-								<li class="right_li margin-l "><input class="input-padding" type="text" disabled
-										placeholder="124124123@qq.com"></li>
+								<li class="left_li"></li>
+								<li class="right_li margin-l" style="color: #999;">点击菜单跳转的页面</li>
 							</ul>
-							<ul class="ul_ul">
-								<li class="left_li">归属机构：</li>
-								<li class="right_li margin-l"><input class="input-padding" disabled type="text" disabled
-										placeholder="北京办公厅">
+							<ul class="ul_ul" style="margin-bottom: 5px;">
+								<li class="left_li">目标：</li>
+								<li class="right_li margin-l "><input class="input-padding" type="text" placeholder="请输入">
 								</li>
 							</ul>
 							<ul class="ul_ul">
-								<li class="left_li">归属部门：</li>
-								<li class="right_li margin-l"><input class="input-padding" disabled type="text" disabled
-										placeholder="财务部">
+								<li class="left_li"></li>
+								<li class="right_li margin-l" style="color: #999;">链接地址打开的目标窗口，默认：mainframe</li>
+							</ul>
+							<ul class="ul_ul" style="height: 56px;">
+								<li class="left_li">图标：</li>
+								<li class="right_li margin-l" style="display: flex;align-items: center;">
+									<div style="border: 1px solid #ccc; width: 56px;height: 56px;"></div>
+									<button class="btn_b" style="margin-left: 20px;">选择</button>
+								</li>
+							</ul>
+							<ul class="ul_ul" style="margin-bottom: 5px;">
+								<li class="left_li">排序：</li>
+								<li class="right_li margin-l "><input class="input-padding" type="text" placeholder="请输入">
 								</li>
 							</ul>
 							<ul class="ul_ul">
-								<li class="left_li">用户角色：</li>
+								<li class="left_li"></li>
+								<li class="right_li margin-l" style="color: #999;">排列顺序，升序</li>
+							</ul>
+							<ul class="ul_ul">
+								<li class="left_li">可见：</li>
 								<li class="right_li margin-l" style="display: flex;">
 									<div style="display: flex;align-items: center;margin-right: 20px;">
-										<input type="checkbox" style="width: 20px;margin: 0;">操作员
+										<input type="checkbox" style="width: 20px;margin: 0;">显示
 									</div>
 									<div style="display: flex;align-items: center; margin-right: 20px;">
-										<input type="checkbox" style="width: 20px;margin: 0;">审核员
+										<input type="checkbox" style="width: 20px;margin: 0;">隐藏
 									</div>
-									<div style="display: flex;align-items: center; margin-right: 20px;">
-										<input type="checkbox" style="width: 20px;margin: 0;">审计员
-									</div>
+									<div style="color: #999;font-size: 11px;">该菜单或操作是显示到系统菜单中</div>
 								</li>
+							</ul>
+							<ul class="ul_ul" style="margin-bottom: 5px;">
+								<li class="left_li">权限标识：</li>
+								<li class="right_li margin-l "><input class="input-padding" type="text" placeholder="请输入">
+								</li>
+							</ul>
+							<ul class="ul_ul">
+								<li class="left_li"></li>
+								<li class="right_li margin-l" style="color: #999;">控制器中定义的权限标识，如：@requires permmissions</li>
 							</ul>
 							<ul class="ul_bei">
 								<li class="left_li">备注：</li>
