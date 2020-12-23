@@ -7,8 +7,8 @@
 	<title>用户管理</title>
 	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 	<link href="./bootstrap/css/datetimepicker.css" rel="stylesheet">
-	<link rel="stylesheet" href="./css/global.css" />
 	<link rel="stylesheet" href="./css/admin-list.css" />
+	<link rel="stylesheet" href="./css/global.css" />
 	<link rel="stylesheet" href="./css/tree.css" />
 	<script src="./js/jquery-1.11.3.min.js"></script>
 	<script src="./bootstrap/js/bootstrap.min.js"></script>
@@ -54,7 +54,7 @@
 				<li class="a4"><a href="system.html">系统设置</a></li>
 				<li class="a5"><a href="user-management.html"> 用户管理</a></li>
 				<li class="a6"><a href="menu.html"> 菜单管理</a></li>
-				<li class="a7"><a href=""> 角色管理</a></li>
+				<li class="a7"><a href="role-management.html"> 角色管理</a></li>
 				<li class="a8">
 					<div class="link"><i class="icon"></i>管理员管理</div>
 					<ul class="submenu">
@@ -77,7 +77,7 @@
 					</a></li>
 				<li><a href="menu.html" data-toggle="tooltipp" data-placement="right" title="菜单管理">
 					</a></li>
-				<li><a href="" data-toggle="tooltipp" data-placement="right" title="角色管理">
+				<li><a href="role-management.html" data-toggle="tooltipp" data-placement="right" title="角色管理">
 					</a></li>
 				<li><a href="admin-list.html" data-toggle="tooltipp" data-placement="right" title="管理员管理"> </a></li>
 				<li><a href="user.html" data-toggle="tooltipp" data-placement="right" title="个人中心"> </a></li>
@@ -85,7 +85,10 @@
 			<img id="flod-btn" src="./img/fold.png" />
 		</div>
 		<div id="m-content" class="content float-right clearfloat">
-			<p>管理员管理/<span style="font-size: 16px; color: black;">管理员列表</span></p>
+			<ol class="breadcrumb" style="background: none">
+				<li><a>管理员管理</a ></li>
+				<li class="active">管理员列表</li>
+			</ol>
 			<div class="card-1 float-left  panel">
 				<ul>
 					<p>办公厅</p>
@@ -409,20 +412,27 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" id="myModalDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog modal-sm deleteModal" role="document">
+		<!-- 删除提示 -->
+		<div class="modal fade" tabindex="-1" id="myModalDelete" role="dialog">
+			<div class="modal-dialog modal-center" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-								aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="myModalLabel">提示</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">提示</h4>
 					</div>
 					<div class="modal-body">
-						<p><span class="glyphicon glyphicon-exclamation-sign" style="margin-right: 10px;" aria-hidden="true"></span> 确定要删除该机构及所有子机构项吗？</p>
+						<div class="tip-content">
+							<img src="img/tip.png" alt="" />
+							<span>确定要删除该管理员吗？</span>
+						</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-primary">确认</button>
-						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+						<button type="button" class="btn_b">确定</button>
+						<button type="button" class="btn_q" data-dismiss="modal">
+							取消
+						</button>
 					</div>
 				</div>
 			</div>
@@ -439,8 +449,8 @@
 						<form class="modal-form">
 							<ul class="ul_ul">
 								<li class="left_li">归属机构：</li>
-								<button id="chooseInstitutions" type="button" class="btn btn-primary"
-									style="margin-left:10px">选择机构</button>
+								<button id="chooseInstitutions" type="button" style="margin-left:10px;width: 88px;height: 32px;background: linear-gradient(180deg, #75CEFF 0%, #1976C4 100%);
+									border-radius: 3px;border: 1px solid #FFFFFF;color: #fff;">选择机构</button>
 								<span id="chooseInstitutionsItem" style="margin-left: 10px;display: none;">已选择：北京办公室</span>
 							</ul>
 							<ul id="institutions" class="ul_ul clearfloat" style="height: 345px;display: none;">
@@ -491,8 +501,8 @@
 							</ul>
 							<ul class="ul_ul">
 								<li class="left_li">归属部门：</li>
-								<button id="chooseDepartment" type="button" class="btn btn-primary"
-									style="margin-left:10px">选择部门</button>
+								<button id="chooseDepartment" type="button" style="margin-left:10px;width: 88px;height: 32px;background: linear-gradient(180deg, #75CEFF 0%, #1976C4 100%);
+								border-radius: 3px;border: 1px solid #FFFFFF;color: #fff;">选择部门</button>
 								<span id="chooseDepartmentItem" style="margin-left: 10px;display: none;">已选择：北京办公室</span>
 							</ul>
 							<ul id="department" class="ul_ul clearfloat" style="height: 345px; display: none;">

@@ -7,8 +7,8 @@
 	<title>用户管理</title>
 	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 	<link href="./bootstrap/css/datetimepicker.css" rel="stylesheet">
-	<link rel="stylesheet" href="./css/global.css" />
 	<link rel="stylesheet" href="./css/drive.css" />
+	<link rel="stylesheet" href="./css/global.css" />
 	<link rel="stylesheet" href="./css/tree.css" />
 	<script src="./js/jquery-1.11.3.min.js"></script>
 	<script src="./bootstrap/js/bootstrap.min.js"></script>
@@ -53,8 +53,8 @@
 				</li>
 				<li class="a4"><a href="system.html">系统设置</a></li>
 				<li class="a5"><a href="user-management.html"> 用户管理</a></li>
-				<li class="a6"><a href=""> 菜单管理</a></li>
-				<li class="a7"><a href=""> 角色管理</a></li>
+				<li class="a6"><a href="menu.html"> 菜单管理</a></li>
+				<li class="a7"><a href="role-management.html"> 角色管理</a></li>
 				<li class="a8">
 					<div class="link"><i class="icon"></i>管理员管理</div>
 					<ul class="submenu">
@@ -75,9 +75,9 @@
 					</a></li>
 				<li><a href="user-management.html" data-toggle="tooltipp" data-placement="right" title="用户管理">
 					</a></li>
-				<li><a href="" data-toggle="tooltipp" data-placement="right" title="菜单管理">
+				<li><a href="menu.html" data-toggle="tooltipp" data-placement="right" title="菜单管理">
 					</a></li>
-				<li><a href="" data-toggle="tooltipp" data-placement="right" title="角色管理">
+				<li><a href="role-management.html" data-toggle="tooltipp" data-placement="right" title="角色管理">
 					</a></li>
 				<li><a href="admin-list.html" data-toggle="tooltipp" data-placement="right" title="管理员管理"> </a></li>
 				<li><a href="user.html" data-toggle="tooltipp" data-placement="right" title="个人中心"> </a></li>
@@ -100,8 +100,7 @@
 					<ul>
 						<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#setDrive">
 							设置光驱</li>
-						<li class="btn btn-xs float-left m-btn" data-toggle="modal"
-						data-target="#getDrive">获取光驱</li>
+						<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#getDrive">获取光驱</li>
 						<li class="btn btn-default btn-xs float-left m-btn m-text-danger" data-toggle="modal"
 							data-target="#resetDrive">重置</li>
 					</ul>
@@ -262,40 +261,52 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" id="resetDrive" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog modal-sm deleteModal" role="document">
+		<!-- 删除提示 -->
+		<div class="modal fade" tabindex="-1" id="resetDrive" role="dialog">
+			<div class="modal-dialog modal-center" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-								aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="myModalLabel">提示</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">提示</h4>
 					</div>
 					<div class="modal-body">
-						<p><span class="glyphicon glyphicon-exclamation-sign" style="margin-right: 10px;"
-								style="margin-right: 10px;" aria-hidden="true"></span>确定要重置选中的光驱吗？</p>
+						<div class="tip-content">
+							<img src="img/tip.png" alt="" />
+							<span>确定要重置选中的光驱吗？</span>
+						</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-primary">确认</button>
-						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+						<button type="button" class="btn_b">确定</button>
+						<button type="button" class="btn_q" data-dismiss="modal">
+							取消
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="modal fade" id="getDrive" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog modal-sm deleteModal" role="document">
+		<!-- 删除提示 -->
+		<div class="modal fade" tabindex="-1" id="getDrive" role="dialog">
+			<div class="modal-dialog modal-center" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-								aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="myModalLabel">提示</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">提示</h4>
 					</div>
 					<div class="modal-body">
-						<p><span class="glyphicon glyphicon-question-sign" style="margin-right: 10px;"
-								style="margin-right: 10px;" aria-hidden="true"></span>确定要获取光驱吗？</p>
+						<div class="tip-content">
+							<img src="img/doubt.png" alt="" style="width: 26px;height: 26px;" />
+							<span>确定要获取光驱吗？</span>
+						</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-primary">确认</button>
-						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+						<button type="button" class="btn_b">确定</button>
+						<button type="button" class="btn_q" data-dismiss="modal">
+							取消
+						</button>
 					</div>
 				</div>
 			</div>
@@ -327,8 +338,10 @@
 						</ul>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-primary">设置</button>
-						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+						<button type="button"
+							style="margin-left:10px;width: 80px;height: 36px;background: linear-gradient(180deg, #75CEFF 0%, #1976C4 100%);border-radius: 3px;border: 1px solid #FFFFFF;color: #fff;">设置</button>
+						<button type="button" style="width: 80px;height: 36px;background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);
+						border-radius: 3px;border: 1px solid #DDDDDD;" data-dismiss="modal">取消</button>
 					</div>
 				</div>
 			</div>

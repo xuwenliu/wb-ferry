@@ -443,7 +443,7 @@ div::-webkit-scrollbar{
     background-size: 30px 30px;
 }
 .sidebar-flod ul li:first-child>a{
-    background: url('../img/icon1.png') 0px 0px no-repeat;
+    background: url('../img/icon1-no.png') 0px 0px no-repeat;
     background-size: 21px 21px;
 }
 .sidebar-flod ul li:nth-child(2)>a{
@@ -471,7 +471,7 @@ div::-webkit-scrollbar{
     background-size: 21px 21px;
 }
 .sidebar-flod ul li:nth-child(8)>a{
-    background: url('../img/a33.png') 0px 0px no-repeat;
+    background: url('../img/a3.png') 0px 0px no-repeat;
     background-size: 21px 21px;
 }
 .sidebar-flod ul li:nth-child(9)>a{
