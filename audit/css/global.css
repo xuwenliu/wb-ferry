@@ -125,7 +125,7 @@ button:focus {
 }
 /* 左侧边栏导航 */
 .sidebar {
-  width: 9.27%;
+  width: 10%;
   height: 100%;
   box-sizing: border-box;
   padding: 4px 0 0 8.54px;
@@ -165,8 +165,6 @@ button:focus {
   height: 43px;
   box-sizing: border-box;
   padding: 14.23px 0 14.23px 32.17px;
-  background: url("../img/icon-home.png") 5.69px 10.67px no-repeat;
-  background-size: 21px 21px;
   font-size: 10px;
   text-decoration: none;
   display: block;
@@ -177,58 +175,111 @@ button:focus {
   padding: 0;
 }
 
-.sidebar ul li.active a {
-  background: url("../img/icon-home2.png") 5.69px 10.67px no-repeat;
+.sidebar ul .a1 a{
+  background: url("../img/icon-home.png") 5.69px 10.67px no-repeat;
   background-size: 21px 21px;
 }
-
-.sidebar ul li:nth-child(2) a {
+.sidebar ul .a2 a{
   background: url("../img/icon-safe.png") 5.69px 10.67px no-repeat;
   background-size: 21px 21px;
 }
-.sidebar ul li.active:nth-child(2) a {
+.sidebar ul .a5 a{
+  background: url("../img/icon-user2.png") 5.69px 10.67px no-repeat;
+  background-size: 21px 21px;
+}
+.icon-log {
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  background: url("../img/icon-log.png") center center no-repeat;
+  background-size: 21px 21px;
+  padding: 14.23px 0 14.23px 32.17px;
+}
+.icon-manager {
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  background: url("../img/icon-manager.png") center center no-repeat;
+  background-size: 21px 21px;
+  padding: 14.23px 0 14.23px 32.17px;
+}
+.link {
+  height: 43px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul .a1.active a{
+  background: url("../img/icon-home2.png") 5.69px 10.67px no-repeat;
+  background-size: 21px 21px;
+}
+.sidebar ul .a2.active a{
   background: url("../img/icon-safe2.png") 5.69px 10.67px no-repeat;
   background-size: 21px 21px;
 }
+.sidebar ul .a5.active a{
+  background: url("../img/icon-user.png") 5.69px 10.67px no-repeat;
+  background-size: 21px 21px;
+}
+.sidebar ul li.active .icon-log {
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  background: url("../img/icon-log2.png") center center no-repeat;
+  background-size: 21px 21px;
+  padding: 14.23px 0 14.23px 32.17px;
+}
 
-.sidebar ul li:nth-child(3) a {
+.sidebar ul li.active .icon-manager {
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  background: url("../img/icon-manager2.png") center center no-repeat;
+  background-size: 21px 21px;
+  padding: 14.23px 0 14.23px 32.17px;
+}
+
+.icon-sidebar li a{
+  background: url("../img/icon-home.png") 5.69px 10.67px no-repeat;
+  background-size: 21px 21px;
+}
+.icon-sidebar li:nth-child(2) a{
+  background: url("../img/icon-safe.png") 5.69px 10.67px no-repeat;
+  background-size: 21px 21px;
+}
+.icon-sidebar li:nth-child(3) a{
   background: url("../img/icon-log.png") 5.69px 10.67px no-repeat;
   background-size: 21px 21px;
 }
-.sidebar ul li.active:nth-child(3) a {
+.icon-sidebar li:nth-child(4) a{
+  background: url("../img/icon-manager.png") 5.69px 10.67px no-repeat;
+  background-size: 21px 21px;
+}
+.icon-sidebar li:nth-child(5) a{
+  background: url("../img/icon-user2.png") 5.69px 10.67px no-repeat;
+  background-size: 21px 21px;
+}
+
+.icon-sidebar li.active a{
+  background: url("../img/icon-home2.png") 5.69px 10.67px no-repeat;
+  background-size: 21px 21px;
+}
+.icon-sidebar li.active:nth-child(2) a{
+  background: url("../img/icon-safe2.png") 5.69px 10.67px no-repeat;
+  background-size: 21px 21px;
+}
+.icon-sidebar li.active:nth-child(3) a{
   background: url("../img/icon-log2.png") 5.69px 10.67px no-repeat;
   background-size: 21px 21px;
 }
-.sidebar ul li .link {
-  width: 100%;
-  height: 43px;
-  box-sizing: border-box;
-  padding: 14.23px 0 14.23px 32.17px;
-
-  font-size: 10px;
-  text-decoration: none;
-  display: block;
-  white-space: nowrap;
-}
-.sidebar ul li .link.log {
-  background: url(../img/icon-log.png) 5.69px 10.67px no-repeat;
+.icon-sidebar li.active:nth-child(4) a{
+  background: url("../img/icon-manager2.png") 5.69px 10.67px no-repeat;
   background-size: 21px 21px;
 }
-.sidebar ul li.active .link.log {
-  background: url(../img/icon-log2.png) 5.69px 10.67px no-repeat;
+.icon-sidebar li.active:nth-child(5) a{
+  background: url("../img/icon-user.png") 5.69px 10.67px no-repeat;
   background-size: 21px 21px;
-}
-.sidebar ul li .link.manager {
-    background: url(../img/icon-manager.png) 5.69px 10.67px no-repeat;
-    background-size: 21px 21px;
-  }
-  .sidebar ul li.active .link.manager {
-    background: url(../img/icon-manager2.png) 5.69px 10.67px no-repeat;
-    background-size: 21px 21px;
-  }
-
-.sidebar ul li .submenu li a{
-    background: none;
 }
 
 .m-hide {
@@ -252,7 +303,7 @@ button:focus {
 }
 
 .content {
-  width: 90.73%;
+  width: 90%;
   height: 1080px;
   box-sizing: border-box;
   padding: 14px;

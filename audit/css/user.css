@@ -129,14 +129,6 @@
     color: red;
 }
 @media screen and (min-width:1920px){
-    .sidebar>ul>.active>a{
-        background: url('../img/icon-user.png') 8px 15px  no-repeat !important;
-        background-size: 30px 30px !important;
-    }
-    .sidebar-flod>ul>.active>a{
-        background: url('../img/icon-user.png') 0px 0px  no-repeat !important;
-        background-size: 30px 30px !important;
-    }
     .card .title{
         height: 50px;
     }
