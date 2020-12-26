@@ -37,7 +37,7 @@
     margin-bottom: 0;
 }
 .card-1,.card-2{
-    width: 10%;
+    width: 12%;
     height: 566px;
     margin-top: 14px;
     border-radius: 5px;
@@ -48,7 +48,7 @@
     padding: 13px 14px;
 }
 .card-2{
-    width: 89%;
+    width: 87%;
 }
 .card-1>div{
     width: 100%;

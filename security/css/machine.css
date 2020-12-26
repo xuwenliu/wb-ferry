@@ -47,8 +47,8 @@
 .card-1{
     padding: 13px 14px;
 }
-.card-2{
-    width: 99%;
+#m-content .card-2{
+    width: 99% !important;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
