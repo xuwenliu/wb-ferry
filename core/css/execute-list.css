@@ -8,16 +8,35 @@
   color: #333;
   border-color: #ccc;
 }
-.container{
+.container {
   height: 100%;
   overflow: hidden;
   position: relative;
 }
 .sidebar > ul > .active > a {
-  background: url("../img/icon-list.png") 5.69px 10.67px no-repeat !important;
-  background-size: 21px 21px !important;
+  background: url("../img/icon-list.png") 8px 15px no-repeat !important;
+  background-size: 30px 30px !important;
 }
 .sidebar-flod > ul > .active > a {
-  background: url("../img/icon-list.png") 0px 0px no-repeat !important;
-  background-size: 21px 21px !important;
+  background: url("../img/icon-list.png") center center no-repeat !important;
+  background-size: 30px 30px !important;
+}
+.modal-list .modal-header {
+  background: linear-gradient(360deg, #eff5fc 0%, #ffffff 100%);
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid #bdddf4;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}
+.tab-pane-extra {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+}
+.tab-pane-extra .input-group-btn {
+  margin-left: 12px;
 }

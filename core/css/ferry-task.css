@@ -1,8 +1,8 @@
 .sidebar > ul > .active > a {
-  background: url("../img/icon-cd.png") 5.69px 10.67px no-repeat !important;
-  background-size: 21px 21px !important;
+  background: url("../img/icon-cd.png") 8px 15px no-repeat !important;
+  background-size: 30px 30px !important;
 }
 .sidebar-flod > ul > .active > a {
-  background: url("../img/icon-cd.png") 0px 0px no-repeat !important;
-  background-size: 21px 21px !important;
+  background: url("../img/icon-cd.png") center center no-repeat !important;
+  background-size: 30px 30px !important;
 }

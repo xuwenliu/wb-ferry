@@ -6,12 +6,12 @@
 }
 
 .sidebar > ul > .active > a {
-  background: url("../img/icon-task.png") 5.69px 10.67px no-repeat !important;
-  background-size: 21px 21px !important;
+  background: url("../img/icon-task.png") 8px 15px no-repeat !important;
+  background-size: 30px 30px !important;
 }
 .sidebar-flod > ul > .active > a {
-  background: url("../img/icon-task.png") 0px 0px no-repeat !important;
-  background-size: 21px 21px !important;
+  background: url("../img/icon-task.png") center center no-repeat !important;
+  background-size: 30px 30px !important;
 }
 .content > p {
   font-size: 16px;
@@ -20,17 +20,16 @@
 }
 .card-1,
 .card-2 {
-  width: 10%;
+  width: 146px;
   margin-top: 14px;
   border-radius: 5px;
   border: 1px solid #bdddf4;
-  overflow: hidden;
 }
 .card-1 {
   padding: 13px 14px;
 }
 .card-2 {
-  width: 89%;
+  width: calc(100% - 157px);
 }
 .card-1 > div {
   width: 100%;
@@ -62,6 +61,7 @@
   border-bottom: 1px solid #bdddf4;
   box-sizing: border-box;
   padding: 8px 17px;
+  border-radius: 5px 5px 0 0;
 }
 .card-2 .title ul {
   margin: 0;
@@ -71,6 +71,8 @@
   padding-left: 15px;
   padding-right: 15px;
   font-size: 10px;
+  background: linear-gradient(180deg, #ffffff 0%, #f3f3f3 100%);
+  border: 1px solid #dddddd;
 }
 .card-2 .title > ul > .m-btn:first-child {
   color: #ffffff;
@@ -112,7 +114,7 @@
 .table-cont {
   width: 100%;
   max-height: 490px;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
   background: #f6f8fa;
 }
@@ -138,6 +140,7 @@
 .table-cont .table > tbody > tr > td {
   border-top: 0.5px solid #f1f1f3;
   height: 32px;
+  width: 100px;
 }
 .table-cont .table-bottom > table > thead td,
 .table-cont .table-top > table > thead td {
@@ -210,7 +213,7 @@ div::-webkit-scrollbar-corner {
 
 /* modal弹框css */
 .modal-dialog {
-  width: 925px;
+  width: 1100px;
   margin: 0 auto !important;
 }
 .modal-content {
@@ -224,7 +227,7 @@ div::-webkit-scrollbar-corner {
 }
 
 .modal-body {
-  padding: 26px 0 0 38px;
+  padding: 26px 0 0 20px;
   overflow: auto;
   display: flex;
 }
@@ -232,8 +235,7 @@ div::-webkit-scrollbar-corner {
   width: 500px;
 }
 .modal-table {
-  width: 363px;
-  height: 608px;
+  width: 510px;
   margin: 0 20px;
   font-size: 10px;
   color: #666;
@@ -383,144 +385,6 @@ div::-webkit-scrollbar-corner {
   background: url(../img/a33.png) 8px 15px no-repeat !important;
   background-size: 30px 30px;
 }
-@media screen and (min-width: 1920px) {
-  .sidebar ul > .active > a {
-    background: url("../img/icon-task.png") 8px 15px no-repeat !important;
-    background-size: 30px 30px !important;
-  }
-  .sidebar-flod ul > .active > a {
-    background: url("../img/icon-task.png") 0px 0px no-repeat !important;
-    background-size: 30px 30px !important;
-  }
-  .sidebar ul > .active > a {
-    background: url(../img/a2.png) 8px 15px no-repeat !important;
-    background-size: 30px 30px !important;
-  }
-
-  .card-1,
-  .card-2 {
-    height: 795px;
-  }
-  .card-1 {
-    padding: 18px 20px;
-  }
-  .card-1 > div {
-    width: 100%;
-    height: 1px;
-    border-top: solid #eee 1px;
-    margin: 24px 0 24px 0;
-  }
-  .card-1 ul > p,
-  .card-1 ul > li {
-    font-size: 14px;
-    margin-bottom: 20px;
-    margin-left: 15px;
-  }
-  .card-1 ul > p {
-    margin-left: 0;
-    font-size: 14px;
-  }
-  .card-2 .title {
-    height: 50px;
-    padding: 12px 24px;
-  }
-  .card-2 .title .m-btn {
-    padding: 2px 20px;
-    font-size: 14px;
-  }
-  .card-2 .title > i {
-    font-size: 16px;
-    line-height: 25px;
-  }
-  .btn-group-xs > .btn,
-  .btn-xs {
-    padding: 2px 20px;
-    font-size: 14px;
-  }
-  .card-2 .title .input-group > .input-sm {
-    width: 180px;
-    height: 27px;
-    font-size: 14px;
-    background-image: url(../img/icon-search.png);
-    background-repeat: no-repeat;
-    background-position: 154px 3px;
-    background-size: 20px 20px;
-    margin-right: 18px;
-  }
-  .table-cont {
-    max-height: 795px;
-  }
-  .table-cont .table-bottom > table > thead td,
-  .table-cont .table-top > table > thead td {
-    height: 50px;
-  }
-  .table-cont .table > thead > tr > td {
-    padding: 15px 10px;
-  }
-  .table-bottom > table,
-  .table-top > table {
-    font-size: 14px;
-  }
-  .table-cont .table > tbody > tr > td {
-    height: 45px;
-    padding: 12px 0;
-  }
-  .paging {
-    margin-top: 17px;
-    padding-right: 50px;
-  }
-  .paging > span {
-    font-size: 14px;
-  }
-  .paging > nav,
-  .paging .m-btn {
-    margin-right: 24px;
-  }
-  .modal-dialog {
-    width: 1300px;
-  }
-  .modal-body {
-    height: 700px;
-    padding: 36px 0 0 54px;
-    overflow: auto;
-  }
-  .modal-form {
-    width: 650px;
-  }
-  .modal-table {
-    width: 510px;
-    height: 698px;
-    background: #00499d;
-    margin-left: 40px;
-  }
-
-  .ul_ul {
-    height: 42px;
-  }
-  .left_li {
-    width: 80px;
-    line-height: 42px;
-    font-size: 14px;
-  }
-  .right_li {
-    font-size: 14px;
-  }
-  .right_li input {
-    height: 42px;
-  }
-  .form-control {
-    height: 42px;
-    font-size: 14px;
-  }
-  .right_bei textarea {
-    font-size: 14px;
-  }
-  .icon-time {
-    background: url(../img/icon-time.png) 8px 10px no-repeat;
-    background-size: 20px 20px;
-    padding-left: 30px;
-  }
-}
 
 .period,
 .fixedTime {
@@ -546,6 +410,7 @@ div::-webkit-scrollbar-corner {
 }
 .modal-body.file-body .box {
   width: 100%;
+  display: block;
 }
 .box {
   width: 100%;
@@ -563,7 +428,7 @@ div::-webkit-scrollbar-corner {
   padding-left: 24px;
 }
 .choosed-file {
-  margin: 20px;
+  margin: 0 0 20px 20px;
 }
 
 .modal-center {
@@ -586,6 +451,69 @@ div::-webkit-scrollbar-corner {
   vertical-align: middle;
   margin-right: 14px;
 }
-.modal-center .modal-footer {
+
+.modal-list .modal-header {
+  background: linear-gradient(360deg, #eff5fc 0%, #ffffff 100%);
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid #bdddf4;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.modal-tab-header .nav-tabs {
+  border: none;
+}
+.modal-tab-header .nav-tabs > li > a {
+  color: #666;
+}
+.modal-tab-header .nav-tabs > li > a:hover {
+  background: #ffffff;
+  border-left: none;
   border-top: none;
+  border-right: none;
+  color: #666;
+}
+.modal-tab-header .nav-tabs > li.active > a {
+  color: #00499d;
+  border: none;
+  border-bottom: 2px solid #00499d;
+}
+.modal-tab-header.modal-header {
+  padding: 15px 15px 0 15px;
+}
+.ip-show {
+  padding-left: 80px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #00499d;
+  margin: 10px 0;
+}
+.extra-btn-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.extra-btn {
+  width: 88px;
+  height: 30px;
+  background: linear-gradient(180deg, #ffffff 0%, #f3f3f3 100%);
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin-right: 10px;
+  text-align: center;
+}
+.tab-pane-extra {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+}
+.tab-pane-extra .input-group-btn {
+  margin-left: 12px;
 }

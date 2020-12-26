@@ -27,7 +27,8 @@
             <img class="nav-avatar float-right" src="./img/avatar.png" alt="头像">
         </div>
         <script src="./js/global.js"></script>
-        <div id="sidebar" class="sidebar float-left">
+        <div class="box">
+        <div id="sidebar" class="sidebar">
             <ul>
                 <li class="active"><a href="#"> 首页</a></li>
                 <li><a href="file-task.html"> 文件传输任务</a></li>
@@ -46,9 +47,9 @@
                 <li><a href="log-list.html" data-toggle="tooltipp" data-placement="right" title="日志管理"> </a></li>
                 <li><a href="user.html" data-toggle="tooltipp" data-placement="right" title="个人中心"> </a></li>
             </ul>
-            <img id="flod-btn" src="./img/fold.png"/>
+            <div id="flod-btn" class="flod-btn"></div>
         </div>
-        <div id="m-content" class="content float-right clearfloat">
+        <div id="m-content" class="content">
             <!-- 数据表 -->
             <div class="content-top clearfloat">
                 <div class="task-data float-left">
@@ -118,8 +119,7 @@
                         <li><a href="#tab2" data-toggle="tab"><i class="glyphicon glyphicon-folder-close"></i>光盘摆渡任务</a>
                         </li>
                         <a class="float-right" href="#"
-                            style="">更多 <i
-                                class="glyphicon glyphicon-chevron-right" style=""></i></a>
+                            style="">更多 <img class="more" src="img/more.png"/> </a>
                     </ul>
                 </div>
                 <div class="tab-content">
@@ -222,19 +222,7 @@
                                             <td>待执行</td>
                                        
                                         </tr>
-                                        <tr>
-                                            <td>办公室</td>
-                                            <td>操作员a</td>
-                                            <td>办公室</td>
-                                            <td>操作员a</td>
-                                            <td>审核员a</td>
-                                            <td>200.0.0.10</td>
-                                            <td>200.0.0.10</td>
-                                            <td>2020-03-16</td>
-                                            <td>2020-03-16 19:13:00</td>
-                                            <td>待执行</td>
-                                         
-                                        </tr>
+                                        
                                     </tbody>
                                 </table>
                             </div>
@@ -278,11 +266,6 @@
                                             <td>任务名称...</td>
                                             <td>立即摆渡</td>
                                         </tr>
-                                        <tr>
-                                            <td><span class="dot dot-danger-bg"></span></td>
-                                            <td>任务名称...</td>
-                                            <td>立即摆渡</td>
-                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -309,32 +292,6 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>办公室</td>
-                                            <td>操作员a</td>
-                                            <td>办公室</td>
-                                            <td>操作员a</td>
-                                            <td>审核员a</td>
-                                            <td>200.0.0.10</td>
-                                            <td>200.0.0.10</td>
-                                            <td>2020-03-16</td>
-                                            <td>2020-03-16 19:13:00</td>
-                                            <td>待执行</td>
-                                     
-                                        </tr>
-                                        <tr>
-                                            <td>办公室</td>
-                                            <td>操作员a</td>
-                                            <td>办公室</td>
-                                            <td>操作员a</td>
-                                            <td>审核员a</td>
-                                            <td>200.0.0.10</td>
-                                            <td>200.0.0.10</td>
-                                            <td>2020-03-16</td>
-                                            <td>2020-03-16 19:13:00</td>
-                                            <td>待执行</td>
-                                            
-                                        </tr>
                                         <tr>
                                             <td>办公室</td>
                                             <td>操作员a</td>
@@ -400,6 +357,19 @@
                                             <td>待执行</td>
                                      
                                         </tr>
+                                        <tr>
+                                            <td>办公室</td>
+                                            <td>操作员a</td>
+                                            <td>办公室</td>
+                                            <td>操作员a</td>
+                                            <td>审核员a</td>
+                                            <td>200.0.0.10</td>
+                                            <td>200.0.0.10</td>
+                                            <td>2020-03-16</td>
+                                            <td>2020-03-16 19:13:00</td>
+                                            <td>待执行</td>
+                                     
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -430,11 +400,6 @@
                                         </tr>
                                         <tr>
                                             <td><span class="dot dot-success-bg"></span></td>
-                                            <td>任务名称...</td>
-                                            <td>立即摆渡</td>
-                                        </tr>
-                                        <tr>
-                                            <td><span class="dot dot-danger-bg"></span></td>
                                             <td>任务名称...</td>
                                             <td>立即摆渡</td>
                                         </tr>
@@ -563,8 +528,7 @@
                         </div>
                     </div>
                     <div class="float-right graph-title-right">
-                        <a href="#">全部 <i
-                                class="glyphicon glyphicon-chevron-right" style="width:14px;height:14px;"></i></a>
+                        <a href="#">全部 <img class="more" src="img/more.png"/></a>
                     </div>
                 </div>
                 <div id="main-d" style="width: 100%;height:226px;"></div>
@@ -705,6 +669,8 @@
                 window.onresize = myChart.resize;
             </script>
         </div>
+    </div>
+
 </body>
 
 </html>

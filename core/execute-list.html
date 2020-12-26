@@ -38,7 +38,8 @@
         </div>
         <img class="nav-avatar float-right" src="./img/avatar.png" alt="头像" />
       </div>
-      <div id="sidebar" class="sidebar float-left">
+      <div class="box">
+      <div id="sidebar" class="sidebar">
         <ul>
           <li><a href="home.html"> 首页</a></li>
           <li ><a href="file-task.html"> 文件传输任务</a></li>
@@ -113,9 +114,9 @@
             </a>
           </li>
         </ul>
-        <img id="flod-btn" src="./img/fold.png" />
+        <div id="flod-btn" class="flod-btn"></div>
       </div>
-      <div id="m-content" class="content float-right clearfloat">
+      <div id="m-content" class="content">
         <p>文件传输任务</p>
         <div class="card-1 float-left panel">
           <ul>
@@ -442,22 +443,23 @@
           </div>
         </div>
       </div>
+    </div>
      
 
       
 
       <!-- 光盘摆渡任务列表 modal -->
-      <div class="modal fade" id="myTaskModal" tabindex="-1" role="dialog">
+      <div class="modal fade modal-list" id="myTaskModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header ">
               <button
                 type="button"
                 class="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
-                <span aria-hidden="true">&times;</span>
+                <span class="modal-close" aria-hidden="true">&times;</span>
               </button>
               <h4 class="modal-title">光盘摆渡任务列表</h4>
             </div>
@@ -583,7 +585,7 @@
                 </div>
                 <div class="paging">
                   <span>共29条</span>
-                  <div class="dropdown">
+                  <div class="dropup">
                     <button
                       class="btn m-btn btn-xs btn-default dropdown-toggle"
                       type="button"
@@ -640,17 +642,17 @@
       </div>
 
       <!-- 文件列表 modal -->
-      <div class="modal fade" id="myFileListModal" tabindex="-1" role="dialog">
+      <div class="modal fade modal-list" id="myFileListModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header ">
               <button
                 type="button"
                 class="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
-                <span aria-hidden="true">&times;</span>
+                <span class="modal-close" aria-hidden="true">&times;</span>
               </button>
               <h4 class="modal-title">文件列表</h4>
             </div>
@@ -765,7 +767,7 @@
                 </div>
                 <div class="paging">
                   <span>共29条</span>
-                  <div class="dropdown">
+                  <div class="dropup">
                     <button
                       class="btn m-btn btn-xs btn-default dropdown-toggle"
                       type="button"
@@ -823,27 +825,28 @@
 
       <!-- 状态详情 modal -->
       <div
-        class="modal fade"
+        class="modal fade modal-list"
         id="myStatusDetailModal"
         tabindex="-1"
         role="dialog"
       >
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header ">
               <button
                 type="button"
                 class="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
-                <span aria-hidden="true">&times;</span>
+                <span class="modal-close" aria-hidden="true">&times;</span>
               </button>
               <h4 class="modal-title">状态详情</h4>
             </div>
             <div class="modal-body file-body">
               <div class="box">
-                <div class="input-group float-right">
+                <div class="input-group tab-pane-extra">
+                  周期性触发时间
                   <div class="input-group-btn" style="padding: 12px 0">
                     <button
                       type="button"
@@ -852,7 +855,7 @@
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      周期性触发时间 <span class="caret"></span>
+                      请选择时间<span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
                       <li><a href="#">1</a></li>
@@ -935,7 +938,7 @@
                 </div>
                 <div class="paging">
                   <span>共29条</span>
-                  <div class="dropdown">
+                  <div class="dropup">
                     <button
                       class="btn m-btn btn-xs btn-default dropdown-toggle"
                       type="button"
@@ -994,17 +997,17 @@
       </div>
 
       <!-- 操作日志 modal -->
-      <div class="modal fade" id="myActionLogModal" tabindex="-1" role="dialog">
+      <div class="modal fade modal-list" id="myActionLogModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header ">
               <button
                 type="button"
                 class="close"
                 data-dismiss="modal"
                 aria-label="Close"
               >
-                <span aria-hidden="true">&times;</span>
+                <span class="modal-close" aria-hidden="true">&times;</span>
               </button>
               <h4 class="modal-title">操作日志</h4>
             </div>
@@ -1118,7 +1121,7 @@
                 </div>
                 <div class="paging">
                   <span>共29条</span>
-                  <div class="dropdown">
+                  <div class="dropup">
                     <button
                       class="btn m-btn btn-xs btn-default dropdown-toggle"
                       type="button"

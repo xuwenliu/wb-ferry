@@ -22,7 +22,7 @@
   height: 68px;
   background: #ffffff;
   box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.06);
-  border-radius: 0px 0px 5px 5px;
+  border-radius: center center 5px 5px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -39,10 +39,10 @@
 }
 
 .sidebar > ul > .active > a {
-  background: url("../img/icon-set.png") 5.69px 10.67px no-repeat !important;
-  background-size: 21px 21px !important;
+  background: url("../img/icon-set.png") 8px 15px no-repeat !important;
+  background-size: 30px 30px !important;
 }
 .sidebar-flod > ul > .active > a {
-  background: url("../img/icon-set.png") 0px 0px no-repeat !important;
-  background-size: 21px 21px !important;
+  background: url("../img/icon-set.png") center center no-repeat !important;
+  background-size: 30px 30px !important;
 }

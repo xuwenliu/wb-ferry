@@ -38,483 +38,489 @@
         </div>
         <img class="nav-avatar float-right" src="./img/avatar.png" alt="头像" />
       </div>
-      <div id="sidebar" class="sidebar float-left">
-        <ul>
-          <li><a href="home.html"> 首页</a></li>
-          <li ><a href="file-task.html"> 文件传输任务</a></li>
-          <li><a href="execute-list.html"> 执行列表</a></li>
-          <li class="active"><a href="task-config.html"> 文件传输任务配置</a></li>
-          <li><a href="ferry-task.html"> 光盘摆渡任务</a></li>
-          <li><a href="log-list.html"> 日志管理</a></li>
-          <li><a href="user.html"> 个人中心</a></li>
-        </ul>
-        <ul class="m-hide icon-sidebar">
-          <li>
-            <a
-              href="home.html"
-              data-toggle="tooltipp"
-              data-placement="right"
-              title="首页"
-            >
-            </a>
-          </li>
-          <li >
-            <a
-              href="file-task.html"
-              data-toggle="tooltipp"
-              data-placement="right"
-              title="文件传输任务"
-            >
-            </a>
-          </li>
-          <li>
-            <a
-              href="execute-list.html"
-              data-toggle="tooltipp"
-              data-placement="right"
-              title="执行列表"
-            >
-            </a>
-          </li>
-          <li class="active">
-            <a
-              href="task-config.html"
-              data-toggle="tooltipp"
-              data-placement="right"
-              title="文件传输任务配置"
-            >
-            </a>
-          </li>
-          <li>
-            <a
-              href="ferry-task.html"
-              data-toggle="tooltipp"
-              data-placement="right"
-              title="光盘摆渡任务"
-            >
-            </a>
-          </li>
-          <li>
-            <a
-              href="log-list.html"
-              data-toggle="tooltipp"
-              data-placement="right"
-              title="日志管理"
-            >
-            </a>
-          </li>
-          <li>
-            <a
-              href="user.html"
-              data-toggle="tooltipp"
-              data-placement="right"
-              title="个人中心"
-            >
-            </a>
-          </li>
-        </ul>
-        <img id="flod-btn" src="./img/fold.png" />
-      </div>
-      <div id="m-content" class="content float-right clearfloat">
-        <p>文件传输任务配置</p>
-
-        <div class="card-2 float-right panel">
-          <div class="title">
-            <ul>
-              <li
-                class="btn btn-xs float-left m-btn"
-                data-toggle="modal"
-                data-target="#auditModal"
+      <div class="box">
+        <div id="sidebar" class="sidebar">
+          <ul>
+            <li><a href="home.html"> 首页</a></li>
+            <li><a href="file-task.html"> 文件传输任务</a></li>
+            <li><a href="execute-list.html"> 执行列表</a></li>
+            <li class="active">
+              <a href="task-config.html"> 文件传输任务配置</a>
+            </li>
+            <li><a href="ferry-task.html"> 光盘摆渡任务</a></li>
+            <li><a href="log-list.html"> 日志管理</a></li>
+            <li><a href="user.html"> 个人中心</a></li>
+          </ul>
+          <ul class="m-hide icon-sidebar">
+            <li>
+              <a
+                href="home.html"
+                data-toggle="tooltipp"
+                data-placement="right"
+                title="首页"
               >
-                提交审核
-              </li>
-              <li class="btn btn-xs float-left m-btn"  data-toggle="modal"
-              data-target="#updateModal">修改</li>
-              <li
-                class="btn btn-default btn-xs float-left m-btn m-text-success"
-                data-toggle="modal"
-                data-target="#startModal"
+              </a>
+            </li>
+            <li>
+              <a
+                href="file-task.html"
+                data-toggle="tooltipp"
+                data-placement="right"
+                title="文件传输任务"
               >
-                启动
-              </li>
-              <li
-                class="btn btn-default btn-xs float-left m-btn"
-                data-toggle="modal"
-                data-target="#stopModal"
+              </a>
+            </li>
+            <li>
+              <a
+                href="execute-list.html"
+                data-toggle="tooltipp"
+                data-placement="right"
+                title="执行列表"
               >
-                停止
-              </li>
-              <li
-                class="btn btn-default btn-xs float-left m-btn"
-                data-toggle="modal"
-                data-target="#auditModalSure"
+              </a>
+            </li>
+            <li class="active">
+              <a
+                href="task-config.html"
+                data-toggle="tooltipp"
+                data-placement="right"
+                title="文件传输任务配置"
               >
-                审核
-              </li>
-            </ul>
-          </div>
-          <div class="modal-body">
-            <form class="modal-form">
-              <ul class="ul_ul">
-                <li class="left_li">任务名称：</li>
-                <li class="right_li margin-l">
-                  <input
-                  disabled
-                    class="input-padding"
-                    type="text"
-                    placeholder="asf5636"
-                  />
-                </li>
-              </ul>
-              <ul class="ul_ul">
-                <li class="left_li">任务编号：</li>
-                <li class="right_li margin-l">
-                  <input
-                    class="input-padding"
-                    disabled
-                    type="text"
-                    placeholder="sdjg25ds1g5sfdgsv15d"
-                  />
-                </li>
-              </ul>
-              <ul class="ul_ul">
-                <li class="left_li">文件传输：</li>
-                <li class="right_li margin-l">
-                  <div class="form-group right_li" style="width: 401px">
-                    <select disabled class="form-control">
-                      <option>请选择...</option>
-                      <option>SFTP</option>
-                      <option>FTP</option>
-                    </select>
-                  </div>
-                </li>
-              </ul>
+              </a>
+            </li>
+            <li>
+              <a
+                href="ferry-task.html"
+                data-toggle="tooltipp"
+                data-placement="right"
+                title="光盘摆渡任务"
+              >
+              </a>
+            </li>
+            <li>
+              <a
+                href="log-list.html"
+                data-toggle="tooltipp"
+                data-placement="right"
+                title="日志管理"
+              >
+              </a>
+            </li>
+            <li>
+              <a
+                href="user.html"
+                data-toggle="tooltipp"
+                data-placement="right"
+                title="个人中心"
+              >
+              </a>
+            </li>
+          </ul>
+          <div id="flod-btn" class="flod-btn"></div>
+        </div>
+        <div id="m-content" class="content">
+          <p>文件传输任务配置</p>
 
-              <ul class="ul_ul">
-                <li class="left_li">源配置：</li>
-                <li class="right_li margin-l">
-                  <div class="form-group right_li" style="width: 401px">
-                    <select disabled class="form-control">
-                      <option>请选择...</option>
-                      <option>1</option>
-                      <option>2</option>
-                    </select>
-                  </div>
-                </li>
-              </ul>
-              <ul class="ul_ul">
-                <li class="left_li">文件操作：</li>
-                <li class="right_li margin-l">
-                  <div class="form-group right_li">
-                    <div
-                    disabled
-                      class="choose-file"
-                      data-toggle="modal"
-                    >
-                      选择文件
-                      <!-- data-target="#myFileModal" -->
-                    </div>
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="ul_ul">
-                <li class="left_li">目标配置：</li>
-                <li class="right_li margin-l">
-                  <div class="form-group right_li" style="width: 401px">
-                    <select disabled class="form-control">
-                      <option>请选择...</option>
-                      <option>1</option>
-                      <option>2</option>
-                    </select>
-                  </div>
-                </li>
-              </ul>
-              <ul class="ul_ul">
-                <li class="left_li">发件人：</li>
-                <li class="right_li margin-l">
-                  <input
-                  disabled
-                    type="text"
-                    class="input-padding"
-                    disabled
-                    placeholder="操作员a"
-                  />
-                </li>
-              </ul>
-              <ul class="ul_ul">
-                <li class="left_li">收件人：</li>
-                <li class="right_li margin-l">
-                  <input
-                  disabled
-                    type="text"
-                    class="input-padding"
-                    disabled
-                    placeholder="操作员a"
-                  />
-                </li>
-              </ul>
-              <ul class="ul_ul">
-                <li class="left_li">审核人：</li>
-                <li class="right_li margin-l">
-                  <div class="form-group right_li" style="width: 401px">
-                    <select class="form-control">
-                      <option>杨发财</option>
-                      <option>杨挣钱</option>
-                    </select>
-                  </div>
-                </li>
-              </ul>
-              <ul class="ul_ul">
-                <li class="left_li">摆渡策略：</li>
-                <li class="right_li margin-l">
-                  <div class="form-group right_li" style="width: 401px">
-                    <select id="strategy" class="form-control">
-                      <option value="1">立即摆渡</option>
-                      <option value="2">定时摆渡</option>
-                      <option value="3">周期摆渡</option>
-                    </select>
-                  </div>
-                </li>
-              </ul>
-              <ul class="ul_ul">
-                <li class="left_li">摆渡模式：</li>
-                <li class="right_li margin-l">
-                  <span
-                    ><input
-                      class="cl_checked input-padding"
-                      type="checkbox"
-                      checked="checked"
-                      value="a"
-                    />
-                    独享模式</span
-                  >
-                  <span
-                    ><input
-                      class="cl_checked input-padding"
-                      type="checkbox"
-                      value="b"
-                    />
-                    共享模式</span
-                  >
-                </li>
-              </ul>
-
-              <ul class="ul_ul fixedTime">
-                <li class="left_li">执行时间：</li>
-                <li class="right_li margin-l">
-                  <input
-                  disabled
-                    id="datetimepicker1"
-                    class="form_datetime form-control input-padding icon-time"
-                    type="text"
-                    value=""
-                    id="startConsignedTm"
-                    name="startConsignedTm"
-                    placeholder="选择日期"
-                  />
-                </li>
-              </ul>
-              <ul class="ul_ul period">
-                <li class="left_li">开始日期：</li>
-                <li class="right_li margin-l">
-                  <input
-                  disabled
-                    id="datetimepicker1"
-                    class="form_datetime form-control input-padding icon-time"
-                    type="text"
-                    value=""
-                    id="startConsignedTm"
-                    name="startConsignedTm"
-                    placeholder="选择日期"
-                  />
-                </li>
-              </ul>
-              <ul class="ul_ul period">
-                <li class="left_li">结束日期：</li>
-                <li class="right_li margin-l">
-                  <input
-                  disabled
-                    id="datetimepicker2"
-                    class="form_datetime form-control input-padding icon-time"
-                    type="text"
-                    value=""
-                    id="endConsignedTm"
-                    name="endConsignedTm"
-                    placeholder="选择日期"
-                  />
-                </li>
-              </ul>
-              <ul class="ul_ul period">
-                <li class="left_li">时间区间：</li>
-                <li class="right_li margin-l">
-                  <div class="select-group">
-                    <select disabled class="form-control">
-                      <option>0:00</option>
-                      <option>0:30</option>
-                    </select>
-                    <span style="margin: 0 12px"> —— </span>
-                    <select disabled class="form-control">
-                      <option>0:00</option>
-                      <option>0:30</option>
-                    </select>
-                  </div>
-                </li>
-              </ul>
-              <ul class="ul_ul period">
-                <li class="left_li">时间间隔：</li>
-                <li class="right_li margin-l">
-                  <div class="select-group">
-                    <select disabled class="form-control">
-                      <option>30</option>
-                      <option>60</option>
-                    </select>
-                    <span style="margin: 0 12px"> —— </span>
-                    <select disabled class="form-control">
-                      <option>分钟</option>
-                      <option>小时</option>
-                    </select>
-                  </div>
-                </li>
-              </ul>
-              <ul class="ul_bei">
-                <li class="left_li">备注：</li>
-                <li class="right_bei margin-l">
-                  <textarea
-                  disabled
-                    class="input-padding"
-                    type="text"
-                    placeholder="请输入"
-                  ></textarea>
-                </li>
-              </ul>
-            </form>
-            <div>
-              <div class="choosed-file">已选文件：</div>
-              <div class="modal-table">
-                <table
-                  class="table text-center"
-                  style="text-overflow: ellipsis; white-space: nowrap"
+          <div class="card-2 float-right panel">
+            <div class="title">
+              <ul>
+                <li
+                  class="btn btn-xs float-left m-btn"
+                  data-toggle="modal"
+                  data-target="#auditModal"
                 >
-                  <thead>
-                    <tr>
-                      <td>名称</td>
-                      <td>路径</td>
-                      <td>大小</td>
-                      <td>黑名单</td>
-                      <td>修改日期</td>
-                      <td></td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>名称1</td>
-                      <td>asf5636</td>
-                      <td>3MB</td>
-                      <td>是</td>
-                      <td>2020.01.01</td>
-                      <td>
-                        <img
-                          class="table-close"
-                          src="img/view-close.png"
-                          alt=""
-                        />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>名称1</td>
-                      <td>asf5636</td>
-                      <td>3MB</td>
-                      <td>是</td>
-                      <td>2020.01.01</td>
-                      <td>
-                        <img
-                          class="table-close"
-                          src="img/view-close.png"
-                          alt=""
-                        />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>名称1</td>
-                      <td>asf5636</td>
-                      <td>3MB</td>
-                      <td>是</td>
-                      <td>2020.01.01</td>
-                      <td>
-                        <img
-                          class="table-close"
-                          src="img/view-close.png"
-                          alt=""
-                        />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>名称1</td>
-                      <td>asf5636</td>
-                      <td>3MB</td>
-                      <td>是</td>
-                      <td>2020.01.01</td>
-                      <td>
-                        <img
-                          class="table-close"
-                          src="img/view-close.png"
-                          alt=""
-                        />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>名称1</td>
-                      <td>asf5636</td>
-                      <td>3MB</td>
-                      <td>否</td>
-                      <td>2020.01.01</td>
-                      <td>
-                        <img
-                          class="table-close"
-                          src="img/view-close.png"
-                          alt=""
-                        />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>名称1</td>
-                      <td>asf5636</td>
-                      <td>3MB</td>
-                      <td>否</td>
-                      <td>2020.01.01</td>
-                      <td>
-                        <img
-                          class="table-close"
-                          src="img/view-close.png"
-                          alt=""
-                        />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>名称1</td>
-                      <td>asf5636</td>
-                      <td>3MB</td>
-                      <td>否</td>
-                      <td>2020.01.01</td>
-                      <td>
-                        <img
-                          class="table-close"
-                          src="img/view-close.png"
-                          alt=""
-                        />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                  提交审核
+                </li>
+                <li
+                  class="btn btn-xs float-left m-btn"
+                  data-toggle="modal"
+                  data-target="#updateModal"
+                >
+                  修改
+                </li>
+                <li
+                  class="btn btn-default btn-xs float-left m-btn m-text-success"
+                  data-toggle="modal"
+                  data-target="#startModal"
+                >
+                  启动
+                </li>
+                <li
+                  class="btn btn-default btn-xs float-left m-btn"
+                  data-toggle="modal"
+                  data-target="#stopModal"
+                >
+                  停止
+                </li>
+                <li
+                  class="btn btn-default btn-xs float-left m-btn"
+                  data-toggle="modal"
+                  data-target="#auditModalSure"
+                >
+                  审核
+                </li>
+              </ul>
+            </div>
+            <div class="modal-body">
+              <form class="modal-form">
+                <ul class="ul_ul">
+                  <li class="left_li">任务名称：</li>
+                  <li class="right_li margin-l">
+                    <input
+                      disabled
+                      class="input-padding"
+                      type="text"
+                      placeholder="asf5636"
+                    />
+                  </li>
+                </ul>
+                <ul class="ul_ul">
+                  <li class="left_li">任务编号：</li>
+                  <li class="right_li margin-l">
+                    <input
+                      class="input-padding"
+                      disabled
+                      type="text"
+                      placeholder="sdjg25ds1g5sfdgsv15d"
+                    />
+                  </li>
+                </ul>
+                <ul class="ul_ul">
+                  <li class="left_li">文件传输：</li>
+                  <li class="right_li margin-l">
+                    <div class="form-group right_li" style="width: 401px">
+                      <select disabled class="form-control">
+                        <option>请选择...</option>
+                        <option>SFTP</option>
+                        <option>FTP</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="ul_ul">
+                  <li class="left_li">源配置：</li>
+                  <li class="right_li margin-l">
+                    <div class="form-group right_li" style="width: 401px">
+                      <select disabled class="form-control">
+                        <option>请选择...</option>
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="ul_ul">
+                  <li class="left_li">文件操作：</li>
+                  <li class="right_li margin-l">
+                    <div class="form-group right_li">
+                      <div disabled class="choose-file" data-toggle="modal">
+                        选择文件
+                        <!-- data-target="#myFileModal" -->
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="ul_ul">
+                  <li class="left_li">目标配置：</li>
+                  <li class="right_li margin-l">
+                    <div class="form-group right_li" style="width: 401px">
+                      <select disabled class="form-control">
+                        <option>请选择...</option>
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="ul_ul">
+                  <li class="left_li">发件人：</li>
+                  <li class="right_li margin-l">
+                    <input
+                      disabled
+                      type="text"
+                      class="input-padding"
+                      disabled
+                      placeholder="操作员a"
+                    />
+                  </li>
+                </ul>
+                <ul class="ul_ul">
+                  <li class="left_li">收件人：</li>
+                  <li class="right_li margin-l">
+                    <input
+                      disabled
+                      type="text"
+                      class="input-padding"
+                      disabled
+                      placeholder="操作员a"
+                    />
+                  </li>
+                </ul>
+                <ul class="ul_ul">
+                  <li class="left_li">审核人：</li>
+                  <li class="right_li margin-l">
+                    <div class="form-group right_li" style="width: 401px">
+                      <select disabled class="form-control">
+                        <option>杨发财</option>
+                        <option>杨挣钱</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="ul_ul">
+                  <li class="left_li">摆渡策略：</li>
+                  <li class="right_li margin-l">
+                    <div class="form-group right_li" style="width: 401px">
+                      <select disabled id="strategy" class="form-control">
+                        <option value="1">立即摆渡</option>
+                        <option value="2">定时摆渡</option>
+                        <option value="3">周期摆渡</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="ul_ul">
+                  <li class="left_li">摆渡模式：</li>
+                  <li class="right_li margin-l">
+                    <span
+                      ><input
+                        class="cl_checked input-padding"
+                        type="checkbox"
+                        checked="checked"
+                        value="a"
+                      />
+                      独享模式</span
+                    >
+                    <span
+                      ><input
+                        class="cl_checked input-padding"
+                        type="checkbox"
+                        value="b"
+                      />
+                      共享模式</span
+                    >
+                  </li>
+                </ul>
+
+                <ul class="ul_ul fixedTime">
+                  <li class="left_li">执行时间：</li>
+                  <li class="right_li margin-l">
+                    <input
+                      disabled
+                      id="datetimepicker1"
+                      class="form_datetime form-control input-padding icon-time"
+                      type="text"
+                      value=""
+                      id="startConsignedTm"
+                      name="startConsignedTm"
+                      placeholder="选择日期"
+                    />
+                  </li>
+                </ul>
+                <ul class="ul_ul period">
+                  <li class="left_li">开始日期：</li>
+                  <li class="right_li margin-l">
+                    <input
+                      disabled
+                      id="datetimepicker1"
+                      class="form_datetime form-control input-padding icon-time"
+                      type="text"
+                      value=""
+                      id="startConsignedTm"
+                      name="startConsignedTm"
+                      placeholder="选择日期"
+                    />
+                  </li>
+                </ul>
+                <ul class="ul_ul period">
+                  <li class="left_li">结束日期：</li>
+                  <li class="right_li margin-l">
+                    <input
+                      disabled
+                      id="datetimepicker2"
+                      class="form_datetime form-control input-padding icon-time"
+                      type="text"
+                      value=""
+                      id="endConsignedTm"
+                      name="endConsignedTm"
+                      placeholder="选择日期"
+                    />
+                  </li>
+                </ul>
+                <ul class="ul_ul period">
+                  <li class="left_li">时间区间：</li>
+                  <li class="right_li margin-l">
+                    <div class="select-group">
+                      <select disabled class="form-control">
+                        <option>0:00</option>
+                        <option>0:30</option>
+                      </select>
+                      <span style="margin: 0 12px"> —— </span>
+                      <select disabled class="form-control">
+                        <option>0:00</option>
+                        <option>0:30</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="ul_ul period">
+                  <li class="left_li">时间间隔：</li>
+                  <li class="right_li margin-l">
+                    <div class="select-group">
+                      <select disabled class="form-control">
+                        <option>30</option>
+                        <option>60</option>
+                      </select>
+                      <span style="margin: 0 12px"> —— </span>
+                      <select disabled class="form-control">
+                        <option>分钟</option>
+                        <option>小时</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="ul_bei">
+                  <li class="left_li">备注：</li>
+                  <li class="right_bei margin-l">
+                    <textarea
+                      disabled
+                      class="input-padding"
+                      type="text"
+                      placeholder="请输入"
+                    ></textarea>
+                  </li>
+                </ul>
+              </form>
+              <div>
+                <div class="choosed-file">已选文件：</div>
+                <div class="modal-table">
+                  <table
+                    class="table text-center"
+                    style="text-overflow: ellipsis; white-space: nowrap"
+                  >
+                    <thead>
+                      <tr>
+                        <td>名称</td>
+                        <td>路径</td>
+                        <td>大小</td>
+                        <td>黑名单</td>
+                        <td>修改日期</td>
+                        <td></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>名称1</td>
+                        <td>asf5636</td>
+                        <td>3MB</td>
+                        <td>是</td>
+                        <td>2020.01.01</td>
+                        <td>
+                          <img
+                            class="table-close"
+                            src="img/view-close.png"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>名称1</td>
+                        <td>asf5636</td>
+                        <td>3MB</td>
+                        <td>是</td>
+                        <td>2020.01.01</td>
+                        <td>
+                          <img
+                            class="table-close"
+                            src="img/view-close.png"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>名称1</td>
+                        <td>asf5636</td>
+                        <td>3MB</td>
+                        <td>是</td>
+                        <td>2020.01.01</td>
+                        <td>
+                          <img
+                            class="table-close"
+                            src="img/view-close.png"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>名称1</td>
+                        <td>asf5636</td>
+                        <td>3MB</td>
+                        <td>是</td>
+                        <td>2020.01.01</td>
+                        <td>
+                          <img
+                            class="table-close"
+                            src="img/view-close.png"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>名称1</td>
+                        <td>asf5636</td>
+                        <td>3MB</td>
+                        <td>否</td>
+                        <td>2020.01.01</td>
+                        <td>
+                          <img
+                            class="table-close"
+                            src="img/view-close.png"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>名称1</td>
+                        <td>asf5636</td>
+                        <td>3MB</td>
+                        <td>否</td>
+                        <td>2020.01.01</td>
+                        <td>
+                          <img
+                            class="table-close"
+                            src="img/view-close.png"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>名称1</td>
+                        <td>asf5636</td>
+                        <td>3MB</td>
+                        <td>否</td>
+                        <td>2020.01.01</td>
+                        <td>
+                          <img
+                            class="table-close"
+                            src="img/view-close.png"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="form-footer">
-            <div class="save">保存</div>
+            <div class="form-footer">
+              <div class="save">保存</div>
+            </div>
           </div>
         </div>
       </div>
+
       <div
         class="modal fade"
         id="myModal"
@@ -636,7 +642,7 @@
                   <li class="left_li">审核人：</li>
                   <li class="right_li margin-l">
                     <div class="form-group right_li" style="width: 401px">
-                      <select class="form-control">
+                      <select disabled class="form-control">
                         <option>杨发财</option>
                         <option>杨挣钱</option>
                       </select>
@@ -647,7 +653,7 @@
                   <li class="left_li">摆渡策略：</li>
                   <li class="right_li margin-l">
                     <div class="form-group right_li" style="width: 401px">
-                      <select id="strategy" class="form-control">
+                      <select disabled id="strategy" class="form-control">
                         <option value="1">立即摆渡</option>
                         <option value="2">定时摆渡</option>
                         <option value="3">周期摆渡</option>
@@ -946,11 +952,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button
-                type="button"
-                class="btn_b"
-                data-dismiss="modal"
-              >
+              <button type="button" class="btn_b" data-dismiss="modal">
                 确定
               </button>
               <button type="button" class="btn_q" data-dismiss="modal">
@@ -982,11 +984,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button
-                type="button"
-                class="btn_b"
-                data-dismiss="modal"
-              >
+              <button type="button" class="btn_b" data-dismiss="modal">
                 确定
               </button>
             </div>
@@ -1011,16 +1009,12 @@
             </div>
             <div class="modal-body">
               <div class="tip-content">
-                <img src="img/start_success.png" alt="">
+                <img src="img/start_success.png" alt="" />
                 <span>任务启动成功</span>
               </div>
             </div>
             <div class="modal-footer">
-              <button
-                type="button"
-                class="btn_b"
-                data-dismiss="modal"
-              >
+              <button type="button" class="btn_b" data-dismiss="modal">
                 确定
               </button>
             </div>
@@ -1049,18 +1043,13 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button
-                type="button"
-                class="btn_b"
-                data-dismiss="modal"
-              >
+              <button type="button" class="btn_b" data-dismiss="modal">
                 确定
               </button>
             </div>
           </div>
         </div>
       </div>
-      
 
       <!-- 审核 -->
       <div class="modal fade" tabindex="-1" id="auditModalSure" role="dialog">
@@ -1158,8 +1147,6 @@
             $(".period").addClass("showTime");
           }
         });
-
-        
       });
     </script>
   </body>
