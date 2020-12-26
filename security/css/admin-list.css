@@ -37,7 +37,7 @@
     margin-bottom: 0;
 }
 .card-1,.card-2{
-    width: 15%;
+    width: 13%;
     height: 566px;
     margin-top: 14px;
     border-radius: 5px;
@@ -48,7 +48,7 @@
     padding: 13px 14px;
 }
 .card-2{
-    width: 84%;
+    width: 86%;
 }
 .card-1>div{
     width: 100%;
@@ -61,7 +61,6 @@
     font-size: 10px;
     color: #666666;
     margin-bottom: 13px;
-    margin-left: 11px;
 }
 .card-1 ul .active{
     color: #2F8BD2;
@@ -477,14 +476,6 @@ div::-webkit-scrollbar{
 .sidebar-flod ul li:nth-child(9)>a{
     background: url('../img/icon-user2.png') 0px 0px no-repeat;
     background-size: 21px 21px;
-}
-.sidebar ul .active a{
-    background: url('../img/a1.png') 8px 15px no-repeat !important;
-    background-size: 30px 30px !important;
-}
-.sidebar-flod>ul>.active>a{
-    background: url('../img/icon1.png') 0px 0px no-repeat !important;
-    background-size: 21px 21px !important;
 }
 @media screen and (min-width:1920px){
     .sidebar ul>.active>a{

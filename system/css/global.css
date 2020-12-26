@@ -17,6 +17,84 @@ button:focus{
     box-shadow:none!important;   
     outline:none !important;
 }
+.close>span{
+    font-size: 24px;
+}
+.modal-body {
+    padding: 26px 0 0 15px;
+}
+.card-1,.card-2 {
+    width: 12% !important;
+}
+.card-2{
+    width: 87% !important;
+}
+#m-content .card-1 ul>p {
+    font-size: 14px;
+}
+.card-1 ul>li {
+    margin-left: 0;
+    font-size: 14px;
+}
+.content>p {
+    height: 36px;
+    line-height: 36px;
+}
+ol, .breadcrumb {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.breadcrumb a {
+    color: #00499D;
+}
+.breadcrumb>.active {
+    color: #333;
+}
+.breadcrumb a,  .breadcrumb>.active{
+    font-size: 16px;
+}
+.dropdown-menu {
+    width: 186px;
+    height: 106px;
+    background: linear-gradient(360deg, #EFF5FC 0%, #FFFFFF 100%);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.09);
+    border: 1px solid #BDDDF4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 6px;
+    display: none;
+    right: -20px !important;
+}
+.dropdown-menu .dropdown-menu-top{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: -10px;
+    right: 18px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+}
+.dropdown-menu li{
+    height: 38px;
+    width: 100%;
+    line-height: 38px;
+}
+.dropdown-menu>li>a{
+    height: 38px;
+    width: 100%;
+    color: #333333;
+    line-height: 38px;
+}
+.dropdown-menu li:hover {
+    background: #E7F2FF;
+}
+.dropdown-menu>li>a:hover{
+    background-color: #E7F2FF;
+}
 .tooltip-inner{
     background: #8EA4BC !important; /*修改背景色*/
     color:#fff !important;/*字体颜色*/
@@ -124,8 +202,19 @@ button:focus{
     background: #F0FAFF;
     position: relative;
 }
-.sidebar>img{
+.sidebar #flod-btn{
     position: absolute;
+    background: url('../img/fold.png') no-repeat no-repeat;
+    background-size: 12.81px 25.61px;
+    top: 315.18px;
+    right: 0;
+    width: 12.81px;
+    height: 25.61px;
+}
+.sidebar-flod #flod-btn {
+    position: absolute;
+    background: url('../img/fold2.png') no-repeat no-repeat;
+    background-size: 12.81px 25.61px;
     top: 315.18px;
     right: 0;
     width: 12.81px;
@@ -229,7 +318,7 @@ button:focus{
     width: 21px;
     height: 21px;
     vertical-align: middle;
-    margin-right: 14px;
+    margin-right: 14px 20px;
 }
 /* 1920状态下头部导航 左侧边栏的css */
 @media screen and (min-width:1920px){
