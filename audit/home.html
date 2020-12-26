@@ -27,6 +27,7 @@
             >ADMIN <span class="caret"></span
           ></a>
           <ul class="dropdown-menu dropdown-menu-right">
+            <span class="dropdown-menu-top"></span>
             <li><a href="#">个人信息</a></li>
             <li><a href="#">修改密码</a></li>
           </ul>
@@ -126,7 +127,7 @@
             </a>
           </li>
         </ul>
-        <img id="flod-btn" src="./img/fold.png" />
+        <div id="flod-btn" class="flod-btn"></div>
       </div>
       <div id="m-content" class="content float-right clearfloat">
         <p>系统管理审计</p>
@@ -427,7 +428,7 @@
                   data-dismiss="modal"
                   aria-label="Close"
                 >
-                  <span aria-hidden="true">&times;</span>
+                  <span class="modal-close" aria-hidden="true">&times;</span>
                 </button>
                 <h4 class="modal-title" id="myModalLabel">查询</h4>
               </div>

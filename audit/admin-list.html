@@ -33,6 +33,7 @@
             >ADMIN <span class="caret"></span
           ></a>
           <ul class="dropdown-menu dropdown-menu-right">
+            <span class="dropdown-menu-top"></span>
             <li><a href="#">个人信息</a></li>
             <li><a href="#">修改密码</a></li>
           </ul>
@@ -131,7 +132,7 @@
             </a>
           </li>
         </ul>
-        <img id="flod-btn" src="./img/fold.png" />
+        <div id="flod-btn" class="flod-btn"></div>
       </div>
       <div id="m-content" class="content float-right clearfloat">
         <ol class="breadcrumb" style="background: none">
@@ -511,11 +512,11 @@
                 data-dismiss="modal"
                 aria-label="Close"
               >
-                <span aria-hidden="true">&times;</span>
+                <span class="modal-close" aria-hidden="true">&times;</span>
               </button>
               <h4 class="modal-title">提示</h4>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" style="padding:26px 0 0 20px">
               <div class="tip-content">
                 <img src="img/tip.png" alt="" />
                 <span>确定要删除该机构及所有子机构项吗？</span>
@@ -547,7 +548,7 @@
                 data-dismiss="modal"
                 aria-label="Close"
               >
-                <span aria-hidden="true">&times;</span>
+                <span class="modal-close" aria-hidden="true">&times;</span>
               </button>
               <h4 class="modal-title" id="myModalLabel">管理员添加</h4>
             </div>
