@@ -10,6 +10,9 @@ ul,li{list-style: none;padding: 0;margin: 0;}
 	padding: 5px 3px;
 	color: white !important;
 }
+.tree {
+	width: 100% !important;
+}
 .tree a{
 	color: #646464;
 	height: 24px;
@@ -27,6 +30,7 @@ ul,li{list-style: none;padding: 0;margin: 0;}
 }
 .tree ul li ul li{
 	margin-left: 24px;
+	font-size: 14px;
 }
 .close_menu,.open_menu{
 	overflow: hidden;

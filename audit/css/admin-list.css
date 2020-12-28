@@ -19,7 +19,7 @@
   padding: 13px 14px;
 }
 .card-2 {
-  width: 84%;
+  width: calc(100% - 157px)
 }
 .card-1 > div {
   width: 100%;
@@ -111,7 +111,6 @@
 .table-cont {
   width: 100%;
   max-height: 490px;
-  overflow: hidden;
   position: relative;
   background: #f6f8fa;
 }
@@ -402,4 +401,15 @@ div::-webkit-scrollbar-corner {
 }
 .breadcrumb>.active{
   font-size: 16px;
+}
+
+.card-tree {
+  height: 566px;
+  width: 146px !important;
+  overflow: hidden !important;
+  overflow-y: auto !important;
+}
+.card-tree ul>li{
+  margin-left: 0;
+  font-size: 14px;
 }
