@@ -96,18 +96,21 @@ button:focus {
   height: 36px;
   margin: 7px 6px 7px 14px;
 }
+
 .nav-text {
-  width: 36px;
-  height: 16px;
+  width: 50px;
+  text-align: center;
+  height: 22px;
   background: #82b3d8;
-  border-radius: 2px;
+  border-radius: 3px;
   opacity: 0.69;
   font-size: 10px;
   font-weight: 400;
   color: #ffffff;
-  line-height: 16px;
-  margin-top: 18px;
+  line-height: 22px;
+  margin-top: 14px;
 }
+
 .nav-avatar {
   width: 27px;
   height: 27px;
@@ -481,7 +484,6 @@ button:focus {
 
 .dropdown-menu {
   width: 186px;
-  height: 106px;
   background: linear-gradient(360deg, #eff5fc 0%, #ffffff 100%);
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.09);
   border: 1px solid #bdddf4;

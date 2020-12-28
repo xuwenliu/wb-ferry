@@ -111,16 +111,17 @@ button:focus {
   margin: 7px 6px 7px 14px;
 }
 .nav-text {
-  width: 36px;
-  height: 16px;
+  width: 50px;
+  text-align: center;
+  height: 22px;
   background: #82b3d8;
-  border-radius: 2px;
+  border-radius: 3px;
   opacity: 0.69;
   font-size: 10px;
   font-weight: 400;
   color: #ffffff;
-  line-height: 16px;
-  margin-top: 18px;
+  line-height: 22px;
+  margin-top: 14px;
 }
 .nav-avatar {
   width: 27px;
@@ -323,10 +324,9 @@ html input[disabled] {
 
 .dropdown-menu {
   width: 186px;
-  height: 106px;
-  background: linear-gradient(360deg, #EFF5FC 0%, #FFFFFF 100%);
+  background: linear-gradient(360deg, #eff5fc 0%, #ffffff 100%);
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.09);
-  border: 1px solid #BDDDF4;
+  border: 1px solid #bdddf4;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -335,7 +335,7 @@ html input[disabled] {
   display: none;
   right: -20px !important;
 }
-.dropdown-menu .dropdown-menu-top{
+.dropdown-menu .dropdown-menu-top {
   display: inline-block;
   height: 10px;
   width: 10px;
@@ -346,133 +346,20 @@ html input[disabled] {
   border-right: 5px solid transparent;
   border-bottom: 5px solid #fff;
 }
-.dropdown-menu li{
+.dropdown-menu li {
   height: 38px;
   width: 100%;
   line-height: 38px;
 }
-.dropdown-menu>li>a{
+.dropdown-menu > li > a {
   height: 38px;
   width: 100%;
   color: #333333;
   line-height: 38px;
 }
 .dropdown-menu li:hover {
-  background: #E7F2FF;
+  background: #e7f2ff;
 }
-.dropdown-menu>li>a:hover{
-  background-color: #E7F2FF;
+.dropdown-menu > li > a:hover {
+  background-color: #e7f2ff;
 }
-
-
-/* 1920状态下头部导航 左侧边栏的css */
-/* @media screen and (min-width: 1920px) {
-  .navigation {
-    height: 70px;
-  }
-  .nav-logo {
-    width: 340px;
-    height: 43px;
-    margin: 15px 8px auto 19px;
-  }
-  .nav-text {
-    width: 50px;
-    height: 22px;
-    line-height: 22px;
-    margin-top: 26px;
-    font-size: 14px;
-    text-align: center;
-  }
-  .nav-drop {
-    margin: 26px 39px 26px 14px;
-  }
-  .nav-drop > a {
-    font-size: 16px;
-  }
-  .nav-avatar {
-    width: 37px;
-    height: 37px;
-    margin: 18px 0;
-  }
-  .sidebar-flod {
-    padding: 20px;
-  }
-  .sidebar > img {
-    position: absolute;
-    top: 443px;
-    right: 0;
-    width: 18px;
-    height: 36px;
-  }
-  .sidebar ul li a {
-    height: 60px;
-    padding: 20px 0 20px 44px;
-    font-size: 14px;
-    background: url("../img/icon-home2.png") 8px 15px no-repeat;
-    background-size: 30px 30px;
-  }
-  .sidebar-flod ul li a {
-    width: 100%;
-    height: 30px;
-    padding: 0;
-    background: url("../img/icon-home2.png") center center no-repeat;
-    background-size: 30px 30px;
-    margin-bottom: 30px;
-  }
-  .sidebar ul li:nth-child(2) > a {
-    background: url("../img/icon-task2.png") 8px 15px no-repeat;
-    background-size: 30px 30px;
-  }
-  .sidebar ul li:nth-child(3) > a {
-    background: url("../img/icon-list2.png") 8px 15px no-repeat;
-    background-size: 30px 30px;
-  }
-  .sidebar ul li:nth-child(4) > a {
-    background: url("../img/icon-set2.png") 8px 15px no-repeat;
-    background-size: 30px 30px;
-  }
-  .sidebar ul li:nth-child(5) > a {
-    background: url("../img/icon-cd2.png") 8px 15px no-repeat;
-    background-size: 30px 30px;
-  }
-  .sidebar ul li:nth-child(6) > a {
-    background: url("../img/icon-log2.png") 8px 15px no-repeat;
-    background-size: 30px 30px;
-  }
-  .sidebar ul li:last-child > a {
-    background: url("../img/icon-user2.png") 8px 15px no-repeat;
-    background-size: 30px 30px;
-  }
-  .sidebar > ul > .active > a {
-    background: url("../img/icon-home.png") 8px 15px no-repeat;
-    background-size: 30px 30px;
-  }
-  .sidebar-flod ul li:nth-child(2) > a {
-    background: url("../img/icon-task2.png") center center no-repeat;
-    background-size: 30px 30px;
-  }
-  .sidebar-flod ul li:nth-child(3) > a {
-    background: url("../img/icon-list2.png") center center no-repeat;
-    background-size: 30px 30px;
-  }
-  .sidebar-flod ul li:nth-child(4) > a {
-    background: url("../img/icon-set2.png") center center no-repeat;
-    background-size: 30px 30px;
-  }
-  .sidebar-flod ul li:nth-child(5) > a {
-    background: url("../img/icon-cd2.png") center center no-repeat;
-    background-size: 30px 30px;
-  }
-  .sidebar-flod ul li:nth-child(6) > a {
-    background: url("../img/icon-log2.png") center center no-repeat;
-    background-size: 30px 30px;
-  }
-  .sidebar-flod ul li:last-child > a {
-    background: url("../img/icon-user2.png") center center no-repeat;
-    background-size: 30px 30px;
-  }
-  .sidebar-flod > ul > .active > a {
-    background: url("../img/icon-home.png") center center no-repeat;
-    background-size: 30px 30px;
-  }
-} */
