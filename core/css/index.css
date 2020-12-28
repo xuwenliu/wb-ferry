@@ -5,14 +5,15 @@
   background: linear-gradient(360deg, #49b8ff 0%, #c0e7ff 100%);
 }
 .content {
-  width: 70%;
-  height: 554px;
-  margin: 10% auto 0 auto;
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   overflow-y: unset;
 }
-
+.content-l{
+  margin: 0 164px 0 234px;
+}
 .content-l p {
   font-size: 49px;
   line-height: 59px;

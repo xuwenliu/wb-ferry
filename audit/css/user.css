@@ -128,33 +128,24 @@
 .left_li span{
     color: red;
 }
-@media screen and (min-width:1920px){
-    .card .title{
-        height: 50px;
-    }
-    .card .title .nav-tabs>li>a{
-        height: 50px;
-    }
-    .ul_ul{
-        height: 42px;
-    }
-    .ul_ul li:last-child{
-        line-height: 42px;
-    }
-    .left_li{
-        width: 95px;
-        line-height: 42px;
-        font-size: 14px;
-    }
-    .right_li input{
-        height: 42px;
-        font-size: 14px;
-        padding-left: 16px;
-    }
-    .btn_b, .btn_q{
-        width: 100px;
-        height: 36px;
-        font-size: 14px;
-        line-height: 35px;
-    }
+
+.link .stretch{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    background: url('../img/icon_under.png') 0px 0px no-repeat;
+    background-size: 20px 20px;
 }
+.open .link .stretch {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    background: url('../img/icon_on.png') 0px 0px no-repeat;
+    background-size: 20px 20px;
+}
+
+/*.icon-sidebar li.active:nth-child(5) a{
+    background: url(../img/icon-user.png) center center no-repeat;
+    background-size: 30px 30px;
+}*/
