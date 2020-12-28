@@ -25,7 +25,7 @@
     width: 30px;
     height: 30px;
     display: inline-block;
-    background: url('../img/icon1.png') 0px 0px no-repeat;
+    background: url('../img/icon1-no.png') 0px 0px no-repeat;
     background-size: 30px 30px;
     margin:0 5px 0 8px;
 }
@@ -33,7 +33,7 @@
     width: 30px;
     height: 30px;
     display: inline-block;
-    background: url('../img/icon-cd2.png') 0px 0px no-repeat;
+    background: url('../img/icon-cd.png') 0px 0px no-repeat;
     background-size: 30px 30px;
     margin:0 5px 0 8px;
 }
@@ -52,7 +52,7 @@
 }
 .card-1,.card-2{
     width: 10%;
-    height: 566px;
+    height: 580px;
     margin-top: 14px;
     border-radius: 5px;
     border: 1px solid #BDDDF4;
@@ -60,8 +60,15 @@
 .card-1{
     padding: 13px 14px;
 }
-.card-2{
-    width: 89%;
+#m-content .card-2{
+    width: 100% !important;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-2 ul{
+    padding-left: 20px;
 }
 .card-1>div{
     width: 100%;
@@ -87,38 +94,34 @@
     color: #999999;
 }
 .card-2 .title{
-    height: 38px;
-    background: linear-gradient(360deg, #EFF5FC 0%, #FFFFFF 100%);
-    border-bottom: 1px solid #BDDDF4;
+    height: 68px;
+    width: 100%;
     box-sizing: border-box;
     padding: 8px 17px;
+    align-self: flex-end;
+    box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .card-2 .title ul{
     margin: 0;
+    align-self: flex-end;
 }
 .card-2 .title .m-btn{
     margin-right: 7px;
     padding-left: 15px;
     padding-right: 15px;
-    font-size: 10px;
-    width: 78px;
+    font-size: 14px;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
 }
-.card-2 .title>ul>.m-btn:first-child{
+.card-2 .title>ul>.m-btn:last-child{
     color: #FFFFFF;
     background: linear-gradient(180deg, #75CEFF 0%, #1976C4 100%);
     border-color: #75CEFF;
-}
-.card-2 .title>ul>.m-btn:nth-child(2){
-    color: #FFFFFF;
-    background: linear-gradient(180deg, #73CB24 0%, #439308 100%);
-    border-color: #73CB24;
-}
-.card-2 .title>ul>.m-btn:nth-child(3){
-    width: 78px;
-    color: #FF4D4D;
-    background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);
-    border-color: #73CB24;
-    border: 1px solid #DDDDDD;
+    
 }
 .card-2 .title>i{
     color: #ccc;
@@ -263,10 +266,10 @@ div::-webkit-scrollbar{
 }
 
 .modal-body{
-    padding: 26px 0 0 38px;
-    height:600px;
-    overflow: auto;
+    padding: 26px 38px 0;
+    height:700px;
     display: flex;
+    flex-direction: column;
 }
 .modal-form{
     width: 500px;
@@ -286,6 +289,12 @@ div::-webkit-scrollbar{
 .deleteModal .modal-body {
     height: 100px;
 }
+.register {
+    width: 600px;
+}
+.register .modal-body {
+    height: 250px;
+}
 .glyphicon-exclamation-sign {
     color: #FFAD00;
 }
@@ -299,6 +308,7 @@ div::-webkit-scrollbar{
     display: flex;
     height: 30px;
     line-height: 30px;
+    margin-bottom: 20px;
 }
 
 .ul_ul li {
@@ -307,7 +317,7 @@ div::-webkit-scrollbar{
 }
 
 .left_li {
-    width: 64px;
+    width: 90px;
     font-size: 10px;
     font-weight: 600;
     color: #000000;
@@ -331,11 +341,18 @@ div::-webkit-scrollbar{
 }
 
 .right_li input {
-    width: 401px;
+    width: 563px;
     height: 30px;
     border-radius: 4px;
     border: 1px solid #DDDDDD;
-
+}
+.input-ip{
+    width: 132px;
+    text-align: center;
+    padding-left: 0; 
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+    margin-left: 12px;
 }
 
 .ul_bei {
@@ -356,7 +373,7 @@ div::-webkit-scrollbar{
     width: 170px;
 }
 .right_bei textarea{
-    width: 401px;
+    width: 563px;
     height: 80px;
     background: #FFFFFF;
     border-radius: 4px;
@@ -456,7 +473,7 @@ div::-webkit-scrollbar{
     background-size: 30px 30px;
 }
 .sidebar-flod ul li:first-child>a{
-    background: url('../img/icon1.png') 0px 0px no-repeat;
+    background: url('../img/icon1-no.png') 0px 0px no-repeat;
     background-size: 30px 30px;
 }
 .sidebar-flod ul li:nth-child(2)>a{
@@ -464,7 +481,7 @@ div::-webkit-scrollbar{
     background-size: 30px 30px;
 }
 .sidebar-flod ul li:nth-child(3)>a{
-    background: url('../img/icon-cd2.png') 0px 0px no-repeat;
+    background: url('../img/icon-cd.png') 0px 0px no-repeat;
     background-size: 30px 30px;
 }
 .sidebar-flod ul li:nth-child(4)>a{

@@ -22,17 +22,22 @@ button:focus{
 .close>span{
     font-size: 24px;
 }
+.link {
+    font-size: 14px !important;
+}
 .modal-body {
     padding: 26px 0 0 15px;
 }
 #m-content .card-1 ul>p {
     font-size: 14px;
 }
-.card-1,.card-2 {
-    width: 12% !important;
+.card-1 {
+    width: 146px !important;
+    overflow: hidden !important;
+    overflow-y: auto !important;
 }
 .card-2{
-    width: 87% !important;
+    width: calc(100% - 157px) !important;
 }
 .card-1 ul>li {
     margin-left: 0;
@@ -57,7 +62,6 @@ ol, .breadcrumb {
 }
 .dropdown-menu {
     width: 186px;
-    height: 106px;
     background: linear-gradient(360deg, #EFF5FC 0%, #FFFFFF 100%);
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.09);
     border: 1px solid #BDDDF4;
@@ -197,7 +201,7 @@ ol, .breadcrumb {
 }
 /* 左侧边栏导航 */
 .sidebar{
-    width: 10%;
+    width: 178px;
     height: 100%;
     box-sizing: border-box;
     padding: 4px 0 0 8.54px;
@@ -210,20 +214,20 @@ ol, .breadcrumb {
 .sidebar #flod-btn{
     position: absolute;
     background: url('../img/fold.png') no-repeat no-repeat;
-    background-size: 12.81px 25.61px;
+    background-size: 17.6px 35.2px;
     top: 315.18px;
     right: 0;
-    width: 12.81px;
-    height: 25.61px;
+    width: 17.6px;
+    height: 35.2px;
 }
 .sidebar-flod #flod-btn {
     position: absolute;
     background: url('../img/fold2.png') no-repeat no-repeat;
-    background-size: 12.81px 25.61px;
+    background-size: 17.6px 35.2px;
     top: 315.18px;
     right: 0;
-    width: 12.81px;
-    height: 25.61px;
+    width: 17.6px;
+    height: 35.2px;
 }
 .sidebar ul{
     width: 100%;
@@ -234,6 +238,9 @@ ol, .breadcrumb {
     border-radius: 4px 0px 0px 5px;
     list-style:none;
 }
+.sidebar>ul>li>a{
+    font-size: 14px !important;
+}
 .sidebar ul li a{
     width: 100%;
     height: 43px;
@@ -242,7 +249,7 @@ ol, .breadcrumb {
     padding:14.23px 0 14.23px 32.17px;
     background: url('../img/icon-home2.png') 5.69px 10.67px no-repeat;
     background-size: 21px 21px;
-    font-size:10px;
+    font-size:14px;
     text-decoration:none;
     display:block;
     white-space: nowrap;
@@ -251,55 +258,14 @@ ol, .breadcrumb {
     display: none;
 }
 .sidebar-flod{
-    width: 3.65%;
-    padding:14px;
+    width: 70px;
+    padding:14px 0;
 }
-/* .sidebar-flod ul li a{
-    width: 100%;
-    height: 21px;
-    padding: 0;
-    background: url('../img/a11.png') 0px 0px no-repeat;
-    background-size: 21px 21px;
-    margin-bottom: 22px;
-    white-space: nowrap;
+.sidebar-flod .icon-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.sidebar ul li:nth-child(2)>a{
-    background: url('../img/icon-task2.png') 8px 15px no-repeat;
-    background-size: 21px 21px;
-}
-.sidebar ul li:nth-child(3)>a{
-    background: url('../img/icon-list2.png') 8px 15px no-repeat;
-    background-size: 21px 21px;
-}
-.sidebar ul li:nth-child(4)>a{
-    background: url('../img/icon-set2.png') 8px 15px no-repeat;
-    background-size: 21px 21px;
-}
-.sidebar ul li:nth-child(5)>a{
-    background: url('../img/icon-cd2.png') 8px 15px no-repeat;
-    background-size: 21px 21px;
-}
-.sidebar ul li:nth-child(6)>a{
-    background: url('../img/icon-log2.png') 8px 15px no-repeat;
-    background-size: 21px 21px;
-}
-.sidebar ul li:last-child>a{
-    background: url('../img/icon-user2.png') 8px 15px no-repeat;
-    background-size: 21px 21px;
-} */
-
-/* .sidebar-flod ul li:nth-child(2)>a{
-    background: url('../img/a2-1.png.png') 0px 0px no-repeat;
-    background-size: 21px 21px;
-}
-.sidebar-flod ul li:nth-child(3)>a{
-    background: url('../img/a33.png') 0px 0px no-repeat;
-    background-size: 21px 21px;
-}
-.sidebar-flod ul li:last-child>a{
-    background: url('../img/icon-user2.png') 0px 0px no-repeat;
-    background-size: 21px 21px;
-} */
 .sidebar ul .active{
     background: #E7F2FF;
 }
@@ -313,12 +279,12 @@ ol, .breadcrumb {
     background: #F0FAFF;
 }
 
-.sidebar>ul>.active>a{
+/* .sidebar>ul>.active>a{
     background: url('../img/icon-home.png') 5.69px 10.67px no-repeat;
     background-size: 21px 21px;
-}
+} */
 .content{
-    width: 90%;
+    width: calc(100% - 178px);
     height: 1080px;
     box-sizing: border-box;
     padding: 14px 20px;
@@ -367,115 +333,4 @@ ol, .breadcrumb {
     height: 21px;
     vertical-align: middle;
     margin-right: 14px;
-}
-/* 1920状态下头部导航 左侧边栏的css */
-@media screen and (min-width:1920px){
-    .navigation{
-        height: 70px;
-    }
-    .nav-logo{
-        width: 340px;
-        height: 43px;
-        margin: 15px 8px auto 19px;
-    }
-    .nav-text{
-        width: 50px;
-        height: 22px;
-        line-height: 22px;
-        margin-top: 26px;
-        font-size: 14px;
-        text-align: center;
-    }
-    .nav-drop{
-        margin: 26px 39px 26px 14px;
-    }
-    .nav-drop>a{
-        font-size: 16px;
-    }
-    .nav-avatar{
-        width: 37px;
-        height: 37px;
-        margin: 18px 0;
-    }
-    .sidebar-flod{
-        padding: 20px;
-    }
-    .sidebar>img{
-        position: absolute;
-        top: 443px;
-        right: 0;
-        width: 18px;
-        height: 36px;
-    }
-    .sidebar ul li a{
-        height: 60px;
-        padding:20px 0 20px 44px;
-        font-size: 14px;
-        background: url('../img/icon-home2.png') 8px 15px no-repeat;
-        background-size: 30px 30px;
-    }
-    .sidebar-flod ul li a{
-        width: 100%;
-        height: 30px;
-        padding: 0;
-        background: url('../img/icon-home2.png') 0px 0px no-repeat;
-        background-size: 30px 30px;
-        margin-bottom:30px;
-    }
-    .sidebar ul li:nth-child(2)>a{
-        background: url('../img/icon-task2.png') 8px 15px no-repeat;
-        background-size: 30px 30px;
-    }
-    .sidebar ul li:nth-child(3)>a{
-        background: url('../img/icon-list2.png') 8px 15px no-repeat;
-        background-size: 30px 30px;
-    }
-    .sidebar ul li:nth-child(4)>a{
-        background: url('../img/icon-set2.png') 8px 15px no-repeat;
-        background-size: 30px 30px;
-    }
-    .sidebar ul li:nth-child(5)>a{
-        background: url('../img/icon-cd2.png') 8px 15px no-repeat;
-        background-size: 30px 30px;
-    }
-    .sidebar ul li:nth-child(6)>a{
-        background: url('../img/icon-log2.png') 8px 15px no-repeat;
-        background-size: 30px 30px;
-    }
-    .sidebar ul li:last-child>a{
-        background: url('../img/icon-user2.png') 8px 15px no-repeat;
-        background-size: 30px 30px;
-    }
-    .sidebar>ul>.active>a{
-        background: url('../img/icon-home.png') 8px 15px no-repeat;
-        background-size: 30px 30px;
-    }
-    .sidebar-flod ul li:nth-child(2)>a{
-        background: url('../img/icon-task2.png') 0px 0px no-repeat;
-        background-size: 30px 30px;
-    }
-    .sidebar-flod ul li:nth-child(3)>a{
-        background: url('../img/icon-list2.png') 0px 0px no-repeat;
-        background-size: 30px 30px;
-    }
-    .sidebar-flod ul li:nth-child(4)>a{
-        background: url('../img/icon-set2.png') 0px 0px no-repeat;
-        background-size: 30px 30px;
-    }
-    .sidebar-flod ul li:nth-child(5)>a{
-        background: url('../img/icon-cd2.png') 0px 0px no-repeat;
-        background-size: 30px 30px;
-    }
-    .sidebar-flod ul li:nth-child(6)>a{
-        background: url('../img/icon-log2.png') 0px 0px no-repeat;
-        background-size: 30px 30px;
-    }
-    .sidebar-flod ul li:last-child>a{
-        background: url('../img/icon-user2.png') 0px 0px no-repeat;
-        background-size: 30px 30px;
-    }
-    .sidebar-flod>ul>.active>a{
-        background: url('../img/icon-home.png') 0px 0px no-repeat;
-        background-size: 30px 30px;
-    }
 }

@@ -38,7 +38,7 @@
 		<div id="sidebar" class="sidebar float-left">
 			<ul id="accordion" class="accordion">
 				<li class="a1">
-					<div class="link"><i class="icon-source"></i>源和目标</div>
+					<div class="link"><i class="icon-source"></i>源和目标<i class="stretch" style="margin-left: 34px;"></i></div>
 					<ul class="submenu">
 						<li><a href="source.html" style="background: none;padding-left: 44px;">源配置</a></li>
 						<li><a href="target.html" style="background: none;padding-left: 44px;">目标配置</a></li>
@@ -46,7 +46,7 @@
 				</li>
 				<li class="a2"><a href="drive.html">光驱管理</a></li>
 				<li class="a3">
-					<div class="link"><i class="icon-ferry"></i>摆渡机管理</div>
+					<div class="link"><i class="icon-ferry"></i>摆渡机管理<i class="stretch"></i></div>
 					<ul class="submenu">
 						<li><a href="ferry-list.html" style="background: none;padding-left: 44px;">摆渡机列表</a></li>
 						<li><a href="machine.html" style="background: none;padding-left: 44px;">本机列表</a></li>
@@ -57,7 +57,7 @@
 				<li class="a6 active"><a href="menu.html"> 菜单管理</a></li>
 				<li class="a7"><a href="role-management.html"> 角色管理</a></li>
 				<li class="a8">
-					<div class="link"><i class="icon"></i>管理员管理</div>
+					<div class="link"><i class="icon"></i>管理员管理<i class="stretch"></i></div>
 					<ul class="submenu">
 						<li><a href="admin-list.html" style="background: none;padding-left: 44px;">管理员列表</a></li>
 						<li><a href="role-list.html" style="background: none;padding-left: 44px;">管理员角色列表</a></li>
@@ -86,9 +86,9 @@
 			<i id="flod-btn"></i>
 		</div>
 		<div id="m-content" class="content float-right clearfloat">
-			<p>用户管理</p>
+			<p>菜单管理</p>
 			<div class="card-1 float-left  panel">
-				<ul>
+				<ul style="border-bottom: 1px solid #EEEEEE;margin-bottom: 18px; height: 360px;">
 					<p>办公厅</p>
 					<li>
 						<div class="treebox">
@@ -98,14 +98,14 @@
 										<div class="close_menu"><span></span><a title="一级菜单">业务一处</a></div>
 										<ul>
 											<li>办公室</li>
-											<li>办公室1</li>
+											<li>办公室2</li>
+											<li>办公室3</li>
 										</ul>
 									</li>
 									<li>
 										<div class="close_menu"><span></span><a title="一级菜单">业务二处</a></div>
 										<ul>
 											<li>办公室</li>
-											<li>办公室1</li>
 											<li>办公室2</li>
 											<li>
 												<div class="close_menu"><span></span><a title="二级菜单">财务处</a></div>
@@ -131,7 +131,8 @@
 										<div class="close_menu"><span></span><a title="一级菜单">业务一处</a></div>
 										<ul>
 											<li>办公室</li>
-											<li>办公室1</li>
+											<li>办公室2</li>
+											<li>办公室3</li>
 										</ul>
 									</li>
 									<li>
@@ -171,183 +172,212 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td style="color: #2F8BD2;">
+									<td style="color: #2F8BD2;" class="menu-on" id="01">
 										<span><i class="icon-an"></i>系统设置</span>
-										</td>
+									</td>
 									<td></td>
-									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td><input style="border: 1px solid #ccc;padding: 0 10px;width: 66px;text-align: center;" type="text">
+									</td>
 									<td>显示</td>
 									<td>asffgsdfasdaasd</td>
 									<td style="display: flex;justify-content: space-around;height: 37px;">
 										<div class="title">
 											<ul>
 												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
-												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
-												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">添加下级菜单</li>
 											</ul>
 										</div>
 									</td>
 								</tr>
-								<tr>
-									<td>摆渡机管理</td>
+								<tr class="menu_on_01">
+									<td style="text-align: end;">摆渡机管理</td>
 									<td>/sys/menu/site</td>
-									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td><input style="border: 1px solid #ccc;padding: 0 10px;width: 66px;text-align: center;" type="text">
+									</td>
 									<td>显示</td>
 									<td>asffgsdfasdaasd</td>
 									<td style="display: flex;justify-content: space-around;height: 37px;">
 										<div class="title">
 											<ul>
 												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
-												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
-												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border-radius: 3px;border: 1px solid #DDDDDD;
+													background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border-radius: 3px;border: 1px solid #DDDDDD;
+													background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">添加下级菜单</li>
 											</ul>
 										</div>
 									</td>
 								</tr>
 								<tr>
-									<td style="color: #2F8BD2;"><span
-											class="icon-an"></span>系统设置</td>
+									<td style="color: #2F8BD2;" id="menu-on-two"><span class="icon-an"></span>系统设置</td>
 									<td></td>
-									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td><input style="border: 1px solid #ccc;padding: 0 10px;width: 66px;text-align: center;" type="text">
+									</td>
 									<td>显示</td>
 									<td>asffgsdfasdaasd</td>
 									<td style="display: flex;justify-content: space-around;height: 37px;">
 										<div class="title">
 											<ul>
 												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
-												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
-												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">添加下级菜单</li>
 											</ul>
 										</div>
 									</td>
 								</tr>
-								<tr>
+								<tr class="menu-on-two">
 									<td>源配置</td>
 									<td>/sys/menu/site</td>
-									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td><input style="border: 1px solid #ccc;padding: 0 10px;width: 66px;text-align: center;" type="text">
+									</td>
 									<td>显示</td>
 									<td>asffgsdfasdaasd</td>
 									<td style="display: flex;justify-content: space-around;height: 37px;">
 										<div class="title">
 											<ul>
 												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
-												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
-												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">添加下级菜单</li>
 											</ul>
 										</div>
 									</td>
 								</tr>
-								<tr>
-									<td>目标配置</td>
+								<tr class="menu-on-two">
+									<td style="padding-left: 20px;">目标配置</td>
 									<td>/sys/menu/site</td>
-									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td><input style="border: 1px solid #ccc;padding: 0 10px;width: 66px;text-align: center;" type="text">
+									</td>
 									<td>显示</td>
 									<td>asffgsdfasdaasd</td>
 									<td style="display: flex;justify-content: space-around;height: 37px;">
 										<div class="title">
 											<ul>
 												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
-												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
-												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">添加下级菜单</li>
 											</ul>
 										</div>
 									</td>
 								</tr>
 								<tr>
-									<td style="color: #2F8BD2;"><span
-											class="icon-an"></span>系统设置</td>
+									<td style="color: #2F8BD2;"class="menu-on" id="02"><span class="icon-an"></span>系统设置</td>
 									<td></td>
-									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td><input style="border: 1px solid #ccc;padding: 0 10px;width: 66px;text-align: center;" type="text">
+									</td>
 									<td>显示</td>
 									<td>asffgsdfasdaasd</td>
 									<td style="display: flex;justify-content: space-around;height: 37px;">
 										<div class="title">
 											<ul>
 												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
-												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
-												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">添加下级菜单</li>
 											</ul>
 										</div>
 									</td>
 								</tr>
-								<tr>
-									<td>摆渡机管理</td>
+								<tr class="menu_on_02">
+									<td style="text-align: end;">摆渡机管理</td>
 									<td>/sys/menu/site</td>
-									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td><input style="border: 1px solid #ccc;padding: 0 10px;width: 66px;text-align: center;" type="text">
+									</td>
 									<td>显示</td>
 									<td>asffgsdfasdaasd</td>
 									<td style="display: flex;justify-content: space-around;height: 37px;">
 										<div class="title">
 											<ul>
 												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
-												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
-												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">添加下级菜单</li>
 											</ul>
 										</div>
 									</td>
 								</tr>
 								<tr>
-									<td style="color: #2F8BD2;"><span
-											class="icon-an"></span>系统设置</td>
+									<td style="color: #2F8BD2;"class="menu-on" id="03"><span class="icon-an"></span>系统设置</td>
 									<td></td>
-									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td><input style="border: 1px solid #ccc;padding: 0 10px;width: 66px;text-align: center;" type="text">
+									</td>
 									<td>显示</td>
 									<td>asffgsdfasdaasd</td>
 									<td style="display: flex;justify-content: space-around;height: 37px;">
 										<div class="title">
 											<ul>
 												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
-												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
-												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">添加下级菜单</li>
 											</ul>
 										</div>
 									</td>
 								</tr>
-								<tr>
-									<td>摆渡机管理</td>
+								<tr class="menu_on_03">
+									<td style="text-align: end;">摆渡机管理</td>
 									<td>/sys/menu/site</td>
-									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td><input style="border: 1px solid #ccc;padding: 0 10px;width: 66px;text-align: center;" type="text">
+									</td>
 									<td>显示</td>
 									<td>asffgsdfasdaasd</td>
 									<td style="display: flex;justify-content: space-around;height: 37px;">
 										<div class="title">
 											<ul>
 												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
-												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
-												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">添加下级菜单</li>
 											</ul>
 										</div>
 									</td>
 								</tr>
 								<tr>
-									<td style="color: #2F8BD2;"><span
-											class="icon-an"></span>系统设置</td>
+									<td style="color: #2F8BD2;" class="menu-on" id="04"><span class="icon-an"></span>系统设置</td>
 									<td></td>
-									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td><input style="border: 1px solid #ccc;padding: 0 10px;width: 66px;text-align: center;" type="text">
+									</td>
 									<td>显示</td>
 									<td>asffgsdfasdaasd</td>
 									<td style="display: flex;justify-content: space-around;height: 37px;">
 										<div class="title">
 											<ul>
 												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
-												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
-												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">添加下级菜单</li>
 											</ul>
 										</div>
 									</td>
 								</tr>
-								<tr>
-									<td>摆渡机管理</td>
+								<tr class="menu_on_04">
+									<td style="text-align: end;">摆渡机管理</td>
 									<td>/sys/menu/site</td>
-									<td><span style="border: 1px solid #ccc;padding: 0 10px;">1000</span></td>
+									<td><input style="border: 1px solid #ccc;padding: 0 10px;width: 66px;text-align: center;" type="text">
+									</td>
 									<td>显示</td>
 									<td>asffgsdfasdaasd</td>
 									<td style="display: flex;justify-content: space-around;height: 37px;">
 										<div class="title">
 											<ul>
 												<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#addModal">修改</li>
-												<li class="btn btn-xs float-left m-btn m-text-danger" style="border: 1px solid #ccc;">删除</li>
-												<li class="btn btn-xs float-left m-btn" style="border: 1px solid #ccc;">添加下级菜单</li>
+												<li class="btn btn-xs float-left m-btn m-text-danger" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">删除</li>
+												<li class="btn btn-xs float-left m-btn" style="border-radius: 3px;border: 1px solid #DDDDDD;
+												background: linear-gradient(180deg, #FFFFFF 0%, #F3F3F3 100%);">添加下级菜单</li>
 											</ul>
 										</div>
 									</td>
@@ -453,10 +483,10 @@
 								<li class="left_li">可见：</li>
 								<li class="right_li margin-l" style="display: flex;">
 									<div style="display: flex;align-items: center;margin-right: 20px;">
-										<input type="checkbox" style="width: 20px;margin: 0;">显示
+										<input type="checkbox" style="width: 20px;margin: 0 5px 0 0;">显示
 									</div>
 									<div style="display: flex;align-items: center; margin-right: 20px;">
-										<input type="checkbox" style="width: 20px;margin: 0;">隐藏
+										<input type="checkbox" style="width: 20px;margin: 0 5px 0 0;">隐藏
 									</div>
 									<div style="color: #999;font-size: 11px;">该菜单或操作是显示到系统菜单中</div>
 								</li>
@@ -519,11 +549,14 @@
 	</div>
 	<script>
 		$(function () {
-			// 列表点击选中的效果
-			$('#m-tab-top>tbody>tr,#m-tab-bottom>tbody>tr').click(function () {
+			$('#m-tab-bottom>tbody>tr>.menu-on').click(function () {
+				console.log(this)
 				var i = $(this).index();
-				$($('#m-tab-top>tbody>tr')[i]).toggleClass('tr-active').siblings().removeClass('tr-active');
-				$($('#m-tab-bottom>tbody>tr')[i]).toggleClass('tr-active').siblings().removeClass('tr-active');
+				$($('#m-tab-bottom>tbody>.menu_on_'+this.id)).toggleClass('tr-active');
+			});
+			$('#m-tab-bottom>tbody>tr>#menu-on-two').click(function () {
+				$($('#m-tab-bottom>tbody>.menu-on-two')).toggleClass('tr-active');
+				// $($('#m-tab-bottom>tbody>tr')[i+2]).toggleClass('tr-active').siblings().removeClass('tr-active');
 			});
 			$('#datetimepicker1,#datetimepicker2').datetimepicker({
 				format: 'YYYY-MM-DD',

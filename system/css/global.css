@@ -20,14 +20,22 @@ button:focus{
 .close>span{
     font-size: 24px;
 }
+.link {
+    font-size: 14px;
+}
+.sidebar>ul>li>a{
+    font-size: 14px !important;
+}
 .modal-body {
     padding: 26px 0 0 15px;
 }
-.card-1,.card-2 {
-    width: 12% !important;
+.card-1 {
+    width: 146px !important;
+    overflow: hidden !important;
+    overflow-y: auto !important;
 }
 .card-2{
-    width: 87% !important;
+    width: calc(100% - 157px) !important;
 }
 #m-content .card-1 ul>p {
     font-size: 14px;
@@ -55,7 +63,6 @@ ol, .breadcrumb {
 }
 .dropdown-menu {
     width: 186px;
-    height: 106px;
     background: linear-gradient(360deg, #EFF5FC 0%, #FFFFFF 100%);
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.09);
     border: 1px solid #BDDDF4;
@@ -195,7 +202,7 @@ ol, .breadcrumb {
 }
 /* 左侧边栏导航 */
 .sidebar{
-    width: 10%;
+    width: 178px;
     height: 100%;
     box-sizing: border-box;
     padding: 4px 0 0 8.54px;
@@ -205,20 +212,20 @@ ol, .breadcrumb {
 .sidebar #flod-btn{
     position: absolute;
     background: url('../img/fold.png') no-repeat no-repeat;
-    background-size: 12.81px 25.61px;
+    background-size: 17.6px 35.2px;
     top: 315.18px;
     right: 0;
-    width: 12.81px;
-    height: 25.61px;
+    width: 17.6px;
+    height: 35.2px;
 }
 .sidebar-flod #flod-btn {
     position: absolute;
     background: url('../img/fold2.png') no-repeat no-repeat;
-    background-size: 12.81px 25.61px;
+    background-size: 17.6px 35.2px;
     top: 315.18px;
     right: 0;
-    width: 12.81px;
-    height: 25.61px;
+    width: 17.6px;
+    height: 35.2px;
 }
 .sidebar ul{
     width: 100%;
@@ -237,17 +244,22 @@ ol, .breadcrumb {
     padding:14.23px 0 14.23px 32.17px;
     background: url('../img/icon-home2.png') 5.69px 10.67px no-repeat;
     background-size: 21px 21px;
-    font-size:10px;
+    font-size:14px;
     text-decoration:none;
     display:block;
     white-space: nowrap;
 }
+.sidebar-flod{
+    width: 70px;
+    padding:14px 0;
+}
+.sidebar-flod .icon-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .m-hide{
     display: none;
-}
-.sidebar-flod{
-    width: 3.65%;
-    padding:14px;
 }
 
 .sidebar ul .active{
@@ -270,7 +282,7 @@ ol, .breadcrumb {
     background-size: 21px 21px;
 }
 .content{
-    width: 90%;
+    width: calc(100% - 178px);
     height: 1080px;
     box-sizing: border-box;
     padding: 14px;

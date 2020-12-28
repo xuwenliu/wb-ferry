@@ -6,6 +6,20 @@
     display: flex;
     align-items: center;
 }
+.link .stretch{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    background: url('../img/icon_under.png') 0px 0px no-repeat;
+    background-size: 20px 20px;
+}
+.open .link .stretch {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    background: url('../img/icon_on.png') 0px 0px no-repeat;
+    background-size: 20px 20px;
+}
 .icon{
     width: 30px;
     height: 30px;
@@ -175,55 +189,17 @@
 }
 .sidebar-flod ul li:first-child>a{
     background: url('../img/a11.png') 0px 0px no-repeat;
-    background-size: 21px 21px;
+    background-size: 30px 30px;
 }
 .sidebar-flod ul li:nth-child(2)>a{
     background: url('../img/a2-1.png') 0px 0px no-repeat;
-    background-size: 21px 21px;
+    background-size: 30px 30px;
 }
 .sidebar-flod ul li:nth-child(3)>a{
     background: url('../img/a33.png') 0px 0px no-repeat;
-    background-size: 21px 21px;
+    background-size: 30px 30px;
 }
 .sidebar-flod ul li:nth-child(4)>a{
     background: url('../img/icon-user.png') 0px 0px no-repeat;
-    background-size: 21px 21px;
-}
-@media screen and (min-width:1920px){
-    .sidebar>ul>.active>a{
-        background: url('../img/icon-user.png') 8px 15px  no-repeat !important;
-        background-size: 30px 30px !important;
-    }
-    .sidebar-flod>ul>.active>a{
-        background: url('../img/icon-user.png') 0px 0px  no-repeat !important;
-        background-size: 30px 30px !important;
-    }
-    .card .title{
-        height: 50px;
-    }
-    .card .title .nav-tabs>li>a{
-        height: 50px;
-    }
-    .ul_ul{
-        height: 42px;
-    }
-    .ul_ul li:last-child{
-        line-height: 42px;
-    }
-    .left_li{
-        width: 95px;
-        line-height: 42px;
-        font-size: 14px;
-    }
-    .right_li input{
-        height: 42px;
-        font-size: 14px;
-        padding-left: 16px;
-    }
-    .btn_b, .btn_q{
-        width: 100px;
-        height: 36px;
-        font-size: 14px;
-        line-height: 35px;
-    }
+    background-size: 30px 30px;
 }

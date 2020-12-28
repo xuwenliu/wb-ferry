@@ -38,7 +38,7 @@
 		<div id="sidebar" class="sidebar float-left">
 			<ul id="accordion" class="accordion">
 				<li class="a1">
-					<div class="link"><i class="icon-source"></i>源和目标</div>
+					<div class="link"><i class="icon-source"></i>源和目标<i class="stretch" style="margin-left: 34px;"></i></div>
 					<ul class="submenu">
 						<li><a href="source.html" style="background: none;padding-left: 44px;">源配置</a></li>
 						<li><a href="target.html" style="background: none;padding-left: 44px;">目标配置</a></li>
@@ -46,7 +46,7 @@
 				</li>
 				<li class="a2"><a href="drive.html">光驱管理</a></li>
 				<li class="a3 active">
-					<div class="link"><i class="icon-ferry"></i>摆渡机管理</div>
+					<div class="link"><i class="icon-ferry"></i>摆渡机管理<i class="stretch"></i></div>
 					<ul class="submenu">
 						<li><a href="ferry-list.html" style="background: none;padding-left: 44px;">摆渡机列表</a></li>
 						<li><a href="machine.html" style="background: none;padding-left: 44px;">本机列表</a></li>
@@ -57,7 +57,7 @@
 				<li class="a6"><a href="menu.html"> 菜单管理</a></li>
 				<li class="a7"><a href="role-management.html"> 角色管理</a></li>
 				<li class="a8">
-					<div class="link"><i class="icon"></i>管理员管理</div>
+					<div class="link"><i class="icon"></i>管理员管理<i class="stretch"></i></div>
 					<ul class="submenu">
 						<li><a href="admin-list.html" style="background: none;padding-left: 44px;">管理员列表</a></li>
 						<li><a href="role-list.html" style="background: none;padding-left: 44px;">管理员角色列表</a></li>
@@ -104,7 +104,7 @@
 						<li class="btn btn-xs float-left m-btn" data-toggle="modal" data-target="#registerModal">
 							注册</li>
 						<li class="btn btn-xs float-left m-btn">启用</li>
-						<li class="btn btn-default btn-xs float-left m-btn">刷新</li>
+						<li class="btn btn-default btn-xs float-left m-btn">刷新状态</li>
 							<li class="btn btn-default btn-xs float-left m-btn">停用</li>
 						<li class="btn btn-default btn-xs float-left m-btn m-text-danger" data-toggle="modal"
 							data-target="#myModalDelete">删除</li>
@@ -126,14 +126,6 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td>22.00.0.00</td>
-									<td>500520</td>
-									<td>dvr22ql1.00</td>
-									<td>空闲</td>
-									<td>启用</td>
-									<td>2020-03-16 19:13:00</td>
-								</tr>
 								<tr>
 									<td>22.00.0.00</td>
 									<td>500520</td>
@@ -277,9 +269,6 @@
 								<tr>
 									<td>pioneer DVD rw dvr22ql1.00</td>
 								</tr>
-								<tr>
-									<td>pioneer DVD rw dvr22ql1.00</td>
-								</tr>
 							</tbody>
 						</table>
 					</div>
@@ -334,22 +323,22 @@
 					<div class="modal-body">
 						<ul class="ul_ul">
 							<li class="left_li">摆渡机名称：</li>
-							<li class="right_li margin-l "><input class="input-padding" type="text"
+							<li class="right_li margin-l "><input class="input-padding" disabled type="text"
 									placeholder="pioneer DVD rw dvr22ql1.00"></li>
 						</ul>
 						<ul class="ul_ul">
 							<li class="left_li">IP地址：</li>
-							<li class="right_li margin-l "><input class="input-padding" type="text"
+							<li class="right_li margin-l "><input class="input-padding" disabled type="text"
 									placeholder="120.0.0.1"></li>
 						</ul>
 						<ul class="ul_ul">
 							<li class="left_li">端口：</li>
-							<li class="right_li margin-l "><input class="input-padding" type="text"
+							<li class="right_li margin-l "><input class="input-padding" disabled type="text"
 									placeholder="8881"></li>
 						</ul>
 						<ul class="ul_ul">
 							<li class="left_li">MAC地址：</li>
-							<li class="right_li margin-l "><input class="input-padding" type="text"
+							<li class="right_li margin-l "><input class="input-padding" disabled type="text"
 									placeholder="pioneer DVD rw dvr22ql1.00"></li>
 						</ul>
 					</div>

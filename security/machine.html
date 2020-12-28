@@ -38,7 +38,7 @@
 		<div id="sidebar" class="sidebar float-left">
 			<ul id="accordion" class="accordion">
 				<li class="a1">
-					<div class="link"><i class="icon-source"></i>源和目标</div>
+					<div class="link"><i class="icon-source"></i>源和目标<i class="stretch" style="margin-left: 34px;"></i></div>
 					<ul class="submenu">
 						<li><a href="source.html" style="background: none;padding-left: 44px;">源配置</a></li>
 						<li><a href="target.html" style="background: none;padding-left: 44px;">目标配置</a></li>
@@ -46,7 +46,7 @@
 				</li>
 				<li class="a2"><a href="drive.html">光驱管理</a></li>
 				<li class="a3 active">
-					<div class="link"><i class="icon-ferry"></i>摆渡机管理</div>
+					<div class="link"><i class="icon-ferry"></i>摆渡机管理<i class="stretch"></i></div>
 					<ul class="submenu">
 						<li><a href="ferry-list.html" style="background: none;padding-left: 44px;">摆渡机列表</a></li>
 						<li><a href="machine.html" style="background: none;padding-left: 44px;">本机列表</a></li>
@@ -55,9 +55,9 @@
 				<li class="a4"><a href="system.html">系统设置</a></li>
 				<li class="a5"><a href="user-management.html"> 用户管理</a></li>
 				<li class="a6"><a href="menu.html"> 菜单管理</a></li>
-				<li class="a7"><a href=""> 角色管理</a></li>
+				<li class="a7"><a href="role-management.html"> 角色管理</a></li>
 				<li class="a8">
-					<div class="link"><i class="icon"></i>管理员管理</div>
+					<div class="link"><i class="icon"></i>管理员管理<i class="stretch"></i></div>
 					<ul class="submenu">
 						<li><a href="admin-list.html" style="background: none;padding-left: 44px;">管理员列表</a></li>
 						<li><a href="role-list.html" style="background: none;padding-left: 44px;">管理员角色列表</a></li>
@@ -78,7 +78,7 @@
 					</a></li>
 				<li><a href="menu.html" data-toggle="tooltipp" data-placement="right" title="菜单管理">
 					</a></li>
-				<li><a href="" data-toggle="tooltipp" data-placement="right" title="角色管理">
+				<li><a href="role-management.html" data-toggle="tooltipp" data-placement="right" title="角色管理">
 					</a></li>
 				<li><a href="admin-list.html" data-toggle="tooltipp" data-placement="right" title="管理员管理"> </a></li>
 				<li><a href="user.html" data-toggle="tooltipp" data-placement="right" title="个人中心"> </a></li>
@@ -95,11 +95,12 @@
 					<ul class="ul_ul">
 						<li class="left_li">本机IP：</li>
 						<li class="right_li margin-l "><input class="input-padding" type="text" placeholder="120.0.0.1"></li>
-						<li class="btn btn_b float-left m-btn" style="width: 114px;height: 32px;line-height: 18px;margin-left: 25px;">检查本机状态</li>
+						<li class=" btn_b float-left" style="width: 114px;height: 32px;line-height: 18px;margin-left: 25px;display: flex;
+						justify-content: center;align-items: center;">检查本机状态</li>
 					</ul>
 					<ul class="ul_ul">
 						<li class="left_li">本机MAC地址：</li>
-						<li class="right_li margin-l "><input class="input-padding" type="text" placeholder="qwdasfasdwdasdas"></li>
+						<li class="right_li margin-l "><input class="input-padding" disabled type="text" placeholder="qwdasfasdwdasdas"></li>
 					</ul>
 					<ul class="ul_ul">
 						<li class="left_li">本机端口：</li>
