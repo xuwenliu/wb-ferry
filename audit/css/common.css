@@ -118,7 +118,7 @@
   color: #666;
 }
 .table-bottom {
-  /* overflow: auto; */
+  overflow: auto;
 }
 .table-top table {
   background: #ffffff;
