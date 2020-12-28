@@ -1,10 +1,10 @@
 .card-2 .title > ul > .m-btn:first-child {
-  background: #fff;
+  background: linear-gradient(180deg, #ffffff 0%, #f3f3f3 100%);
   color: #333;
   border-color: #ccc;
 }
 .card-2 .title > ul > .m-btn:nth-child(2) {
-  background: #fff;
+  background: linear-gradient(180deg, #ffffff 0%, #f3f3f3 100%);
   color: #333;
   border-color: #ccc;
 }

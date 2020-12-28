@@ -62,7 +62,7 @@ button:focus {
 .m-text-waring {
   color: #ffb776;
 }
-.m-text-success {
+.m-text-success,.m-text-success:hover {
   color: #a4da4e;
 }
 .m-text-danger {
@@ -332,6 +332,7 @@ html input[disabled] {
   align-items: flex-start;
   display: none;
   right: -20px !important;
+  padding: 0;
 }
 .dropdown-menu .dropdown-menu-top {
   display: inline-block;

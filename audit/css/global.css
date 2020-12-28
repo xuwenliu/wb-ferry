@@ -493,6 +493,7 @@ button:focus {
   align-items: flex-start;
   display: none;
   right: -20px !important;
+  padding: 0;
 }
 .dropdown-menu .dropdown-menu-top {
   display: inline-block;

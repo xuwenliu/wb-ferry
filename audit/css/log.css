@@ -39,3 +39,19 @@
 .modal-center2 .modal-content {
   max-height: 863px;
 }
+.breadcrumb{
+  margin-bottom: 0;
+  padding: 0;
+}
+.breadcrumb>li a{
+  font-size: 16px;
+}
+.breadcrumb>.active{
+  font-size: 16px;
+}
+.file-body{
+  padding: 0;
+}
+input[type=checkbox]{
+  margin-left: 20px;
+}
