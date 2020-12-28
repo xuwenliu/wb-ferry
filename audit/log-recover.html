@@ -153,7 +153,7 @@
             </ul>
 
             <div class="input-group float-right">
-              <ul class="ul_ul" style="margin: -4px 20px 0 0">
+              <ul class="ul_ul" style="margin: -4px 0 0 0">
                 <li class="left_li">日期范围：</li>
                 <li class="right_li margin-l">
                   <input
@@ -167,6 +167,7 @@
                     style="width: 120px"
                   />
                 </li>
+                <span style="margin-left: 12px;">-</span>
                 <li class="right_li margin-l">
                   <input
                     id="datetimepicker2"
@@ -179,7 +180,7 @@
                     style="width: 120px"
                   />
                 </li>
-                <li class="btn btn-xs float-left m-btn search-btn">搜索</li>
+                <li class="btn btn-xs float-left m-btn search-btn" style="margin-right: 0;">搜索</li>
               </ul>
             </div>
           </div>
@@ -204,16 +205,6 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>人员资料.zip</td>
-                    <td>pc-380</td>
-                    <td>2020-03-16 19:13:00</td>
-                    <td>杨发财</td>
-                    <td>pc-380</td>
-                    <td>2020-03-16 19:13:00</td>
-                    <td>2020-03-16至2020-12-01</td>
-                    <td>正在恢复</td>
-                  </tr>
                   <tr>
                     <td>人员资料.zip</td>
                     <td>pc-380</td>
@@ -606,7 +597,7 @@
                   </div>
                   <div class="paging">
                     <span>共29条</span>
-                    <div class="dropdown">
+                    <div class="dropup">
                       <button
                         class="btn m-btn btn-xs btn-default dropdown-toggle"
                         type="button"
@@ -659,7 +650,7 @@
                   data-toggle="modal"
                   data-target="#auditModalSure"
                 >
-                  确定
+                  确定恢复
                 </button>
                 <button type="button" class="btn_q" data-dismiss="modal">
                   取消

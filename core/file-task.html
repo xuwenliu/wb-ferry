@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>文件传输任务</title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.css">
     <link href="./bootstrap/css/datetimepicker.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/file-task.css" />
     <script src="./js/jquery-1.11.3.min.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.js"></script>
     <script src="./bootstrap/js/moment.js"></script>
     <script src="./bootstrap/js/datetimepicker.js"></script>
     <script src="./js/global.js"></script>
+    
   </head>
 
   <body>
@@ -201,6 +204,13 @@
                 data-target="#myActionLogModal"
               >
                 操作日志
+              </li>
+              <li
+                class="btn btn-default btn-xs float-left m-btn"
+                data-toggle="modal"
+                data-target="#auditModalSure"
+              >
+                审核
               </li>
             </ul>
             <i class="float-right glyphicon glyphicon-refresh"></i>
@@ -394,18 +404,7 @@
                     <td>2020-03-16 19:13:00</td>
                     <td>待执行</td>
                   </tr>
-                  <tr>
-                    <td>办公室</td>
-                    <td>操作员a</td>
-                    <td>办公室</td>
-                    <td>操作员a</td>
-                    <td>审核员a</td>
-                    <td>200.0.0.10</td>
-                    <td>200.0.0.10</td>
-                    <td>2020-03-16</td>
-                    <td>2020-03-16 19:13:00</td>
-                    <td>待执行</td>
-                  </tr>
+                  
                 </tbody>
               </table>
             </div>
@@ -446,11 +445,6 @@
                   </tr>
                   <tr>
                     <td><span class="dot dot-danger-bg"></span></td>
-                    <td>任务名称...</td>
-                    <td>立即摆渡</td>
-                  </tr>
-                  <tr>
-                    <td><span class="dot dot-success-bg"></span></td>
                     <td>任务名称...</td>
                     <td>立即摆渡</td>
                   </tr>
@@ -541,7 +535,7 @@
         role="dialog"
         aria-labelledby="myModalLabel"
       >
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-c" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <button
@@ -784,7 +778,7 @@
               </form>
               <div id="choosed_file">
                 <div class="choosed-file">已选文件：</div>
-                <div class="modal-table">
+                <div class="modal-table" style="overflow: auto;height:400px;">
                   <table
                     class="table text-center"
                     style="text-overflow: ellipsis; white-space: nowrap"
@@ -800,6 +794,90 @@
                       </tr>
                     </thead>
                     <tbody>
+                      <tr>
+                        <td>名称1</td>
+                        <td>
+                          <span
+                            data-toggle="tooltip"
+                            data-placement="right"
+                            title="asf563f5636asf5636"
+                            >asf5636</span
+                          >
+                        </td>
+                        <td>3MB</td>
+                        <td>是</td>
+                        <td>2020.01.01</td>
+                        <td>
+                          <img
+                            class="table-close"
+                            src="img/view-close.png"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>名称1</td>
+                        <td>
+                          <span
+                            data-toggle="tooltip"
+                            data-placement="right"
+                            title="asf563f5636asf5636"
+                            >asf5636</span
+                          >
+                        </td>
+                        <td>3MB</td>
+                        <td>是</td>
+                        <td>2020.01.01</td>
+                        <td>
+                          <img
+                            class="table-close"
+                            src="img/view-close.png"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>名称1</td>
+                        <td>
+                          <span
+                            data-toggle="tooltip"
+                            data-placement="right"
+                            title="asf563f5636asf5636"
+                            >asf5636</span
+                          >
+                        </td>
+                        <td>3MB</td>
+                        <td>是</td>
+                        <td>2020.01.01</td>
+                        <td>
+                          <img
+                            class="table-close"
+                            src="img/view-close.png"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>名称1</td>
+                        <td>
+                          <span
+                            data-toggle="tooltip"
+                            data-placement="right"
+                            title="asf563f5636asf5636"
+                            >asf5636</span
+                          >
+                        </td>
+                        <td>3MB</td>
+                        <td>是</td>
+                        <td>2020.01.01</td>
+                        <td>
+                          <img
+                            class="table-close"
+                            src="img/view-close.png"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
                       <tr>
                         <td>名称1</td>
                         <td>
@@ -964,7 +1042,7 @@
 
       <!-- 删除提示 -->
       <div class="modal fade" tabindex="-1" id="removeModal" role="dialog">
-        <div class="modal-dialog modal-center" role="document">
+        <div class="modal-dialog modal-c modal-center" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <button
@@ -995,7 +1073,7 @@
 
       <!-- 提交审核提示 -->
       <div class="modal fade" tabindex="-1" id="auditModal" role="dialog">
-        <div class="modal-dialog modal-center" role="document">
+        <div class="modal-dialog modal-c modal-center" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <button
@@ -1018,8 +1096,7 @@
                 type="button"
                 class="btn_b"
                 data-dismiss="modal"
-                data-toggle="modal"
-                data-target="#auditModalSure"
+                
               >
                 确定
               </button>
@@ -1032,7 +1109,7 @@
       </div>
 
       <!-- 审核 -->
-      <div class="modal fade" tabindex="-1" id="auditModalSure" role="dialog">
+       <div class="modal fade" tabindex="-1" id="auditModalSure" role="dialog">
         <div class="modal-dialog modal-center" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -1060,9 +1137,10 @@
                 </ul>
                 <ul class="ul_ul">
                   <li class="left_li">审核结果：</li>
-                  <li class="right_li margin-l">
-                    <span
+                  <li class="right_li margin-l" style="display: flex;">
+                    <span style="display: flex; align-items: center"
                       ><input
+                        style="width: 20px !important; height: 20px !important"
                         class="cl_checked input-padding"
                         type="checkbox"
                         checked="checked"
@@ -1070,14 +1148,15 @@
                       />
                       通过</span
                     >
-                    <span
-                      ><input
-                        class="cl_checked input-padding"
-                        type="checkbox"
-                        value="b"
-                      />
-                      不通过</span
-                    >
+                    <span style="display: flex; align-items: center"
+                    ><input
+                      style="width: 20px !important; height: 20px !important"
+                      class="cl_checked input-padding"
+                      type="checkbox"
+                      value="b"
+                    />
+                    不通过</span
+                  >
                   </li>
                 </ul>
               </form>
@@ -1099,7 +1178,7 @@
         tabindex="-1"
         role="dialog"
       >
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-c" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <button
@@ -1125,7 +1204,7 @@
                     >
                       光盘编号 <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="margin-top: -10px;">
                       <li><a href="#">编号1</a></li>
                       <li><a href="#">编号2</a></li>
                     </ul>
@@ -1297,7 +1376,7 @@
         tabindex="-1"
         role="dialog"
       >
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-c" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <button
@@ -1323,7 +1402,7 @@
                     >
                       文件名称 <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="margin-top: -10px;">
                       <li><a href="#">文件1</a></li>
                       <li><a href="#">文件2</a></li>
                     </ul>
@@ -1484,7 +1563,7 @@
         tabindex="-1"
         role="dialog"
       >
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-c" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <button
@@ -1510,7 +1589,7 @@
                     >
                       文件名称 <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="margin-top:-10px;">
                       <li><a href="#">文件1</a></li>
                       <li><a href="#">文件2</a></li>
                     </ul>
@@ -1522,7 +1601,7 @@
                     placeholder="请输入"
                   />
                 </div>
-                <div class="table-cont">
+                <div class="table-cont file">
                   <div class="table-bottom">
                     <table
                       id="m-tab-bottom"
@@ -1709,12 +1788,12 @@
           </div>
           <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
+        <!-- /.modal-dialog modal-c -->
       </div>
 
       <!-- 浏览 modal -->
       <div class="modal fade" id="myBaseInfoModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-c" role="document">
           <div class="modal-content">
             <div class="modal-header modal-tab-header">
               <button
@@ -1932,7 +2011,7 @@
               </div>
 
               <div id="tab2" class="box tab-pane">
-                <ul class="ul_ul" style="margin: 12px">
+                <ul class="ul_ul" style="margin: 0 12px 12px">
                   <li class="left_li">日期范围：</li>
                   <li class="right_li margin-l">
                     <input
@@ -2130,12 +2209,12 @@
                 </div>
               </div>
               <div id="tab3" class="box tab-pane">
-                <div class="input-group tab-pane-extra">
+                <div class="input-group tab-pane-extra" style="margin:0 12px 12px ">
                   周期性触发时间
-                  <div class="input-group-btn" style="padding: 12px 0">
+                  <div class="input-group-btn">
                     <button
                       type="button"
-                      class="btn btn-xs btn-default dropdown-toggle"
+                      class="btn btn-xs btn-default dropdown-toggle select-time"
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
@@ -2280,12 +2359,12 @@
               </div>
 
               <div id="tab4" class="box tab-pane">
-                <div class="input-group tab-pane-extra">
+                <div class="input-group tab-pane-extra" style="margin:0 12px 12px ">
                   周期性触发时间
-                  <div class="input-group-btn" style="padding: 12px 0">
+                  <div class="input-group-btn">
                     <button
                       type="button"
-                      class="btn btn-xs btn-default dropdown-toggle"
+                      class="btn btn-xs btn-default dropdown-toggle select-time"
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
@@ -2320,52 +2399,52 @@
                         <tr>
                           <td>2020-03-16 19:13:00</td>
                           <td>新建任务</td>
-                          <td>操作员查看任务</td>
+                          <td>操作员查看任务操作员查看任务</td>
                         </tr>
                         <tr>
                           <td>2020-03-16 19:13:00</td>
                           <td>新建任务</td>
-                          <td>操作员查看任务</td>
+                          <td>操作员查看任务操作员查看任务</td>
                         </tr>
                         <tr>
                           <td>2020-03-16 19:13:00</td>
                           <td>新建任务</td>
-                          <td>操作员查看任务</td>
+                          <td>操作员查看任务操作员查看任务</td>
                         </tr>
                         <tr>
                           <td>2020-03-16 19:13:00</td>
                           <td>新建任务</td>
-                          <td>操作员查看任务</td>
+                          <td>操作员查看任务操作员查看任务</td>
                         </tr>
                         <tr>
                           <td>2020-03-16 19:13:00</td>
                           <td>新建任务</td>
-                          <td>操作员查看任务</td>
+                          <td>操作员查看任务操作员查看任务</td>
                         </tr>
                         <tr>
                           <td>2020-03-16 19:13:00</td>
                           <td>新建任务</td>
-                          <td>操作员查看任务</td>
+                          <td>操作员查看任务操作员查看任务</td>
                         </tr>
                         <tr>
                           <td>2020-03-16 19:13:00</td>
                           <td>新建任务</td>
-                          <td>操作员查看任务</td>
+                          <td>操作员查看任务操作员查看任务</td>
                         </tr>
                         <tr>
                           <td>2020-03-16 19:13:00</td>
                           <td>新建任务</td>
-                          <td>操作员查看任务</td>
+                          <td>操作员查看任务操作员查看任务</td>
                         </tr>
                         <tr>
                           <td>2020-03-16 19:13:00</td>
                           <td>新建任务</td>
-                          <td>操作员查看任务</td>
+                          <td>操作员查看任务操作员查看任务</td>
                         </tr>
                         <tr>
                           <td>2020-03-16 19:13:00</td>
                           <td>新建任务</td>
-                          <td>操作员查看任务</td>
+                          <td>操作员查看任务操作员查看任务</td>
                         </tr>
                       </tbody>
                     </table>
@@ -2726,7 +2805,7 @@
         tabindex="-1"
         role="dialog"
       >
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-c" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <button
@@ -2746,14 +2825,14 @@
                   <div class="input-group-btn" style="padding: 12px 0">
                     <button
                       type="button"
-                      class="btn btn-xs btn-default dropdown-toggle"
+                      class="btn btn-xs btn-default dropdown-toggle select-time"
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
                       请选择时间<span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="margin-top: -10px;">
                       <li><a href="#">1</a></li>
                       <li><a href="#">2</a></li>
                     </ul>
@@ -2881,15 +2960,10 @@
             </div>
 
             <div class="modal-footer">
-              <button type="button" class="btn_b">确定</button>
-              <button type="button" class="btn_q" data-dismiss="modal">
-                取消
-              </button>
+              <button type="button" class="btn_b" data-dismiss="modal">确定</button>
             </div>
           </div>
-          <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
       </div>
 
       <!-- 操作日志 modal -->
@@ -2899,7 +2973,7 @@
         tabindex="-1"
         role="dialog"
       >
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-c" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <button
@@ -3069,15 +3143,10 @@
             </div>
 
             <div class="modal-footer">
-              <button type="button" class="btn_b">确定</button>
-              <button type="button" class="btn_q" data-dismiss="modal">
-                取消
-              </button>
+              <button type="button" class="btn_b" data-dismiss="modal">确定</button>
             </div>
           </div>
-          <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
       </div>
     </div>
     <script>

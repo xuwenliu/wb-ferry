@@ -7,7 +7,6 @@
   font-family: "PingFangSC-Regular", "PingFang SC";
   font-size: 14px;
 }
-
 a:hover {
   text-decoration: none;
 }
@@ -63,7 +62,7 @@ button:focus {
 .m-text-waring {
   color: #ffb776;
 }
-.m-text-success {
+.m-text-success,.m-text-success:hover {
   color: #a4da4e;
 }
 .m-text-danger {
@@ -331,9 +330,9 @@ html input[disabled] {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 6px;
   display: none;
   right: -20px !important;
+  padding: 0;
 }
 .dropdown-menu .dropdown-menu-top {
   display: inline-block;
@@ -345,6 +344,9 @@ html input[disabled] {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid #fff;
+}
+.nav-tabs .dropdown-menu {
+  margin-top: 6px;
 }
 .dropdown-menu li {
   height: 38px;
@@ -362,4 +364,14 @@ html input[disabled] {
 }
 .dropdown-menu > li > a:hover {
   background-color: #e7f2ff;
+}
+.modal-c {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) !important;
+  left: 50%;
+}
+.select-time {
+  border-radius: 6px !important;
+  border: 1px solid #cccccc;
 }
