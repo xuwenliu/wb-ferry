@@ -9,7 +9,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  overflow-y: unset;
+  overflow-y: auto;
 }
 .content-l{
   margin: 0 164px 0 234px;
