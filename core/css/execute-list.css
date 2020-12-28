@@ -24,7 +24,7 @@
 .modal-list .modal-header {
   background: linear-gradient(360deg, #eff5fc 0%, #ffffff 100%);
   border-radius: 5px 5px 0px 0px;
-  border: 1px solid #bdddf4;
+  border-bottom: 1px solid #bdddf4;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
@@ -39,4 +39,9 @@
 }
 .tab-pane-extra .input-group-btn {
   margin-left: 12px;
+}
+
+.select-time {
+  border-radius: 6px !important;
+  border: 1px solid #cccccc;
 }
