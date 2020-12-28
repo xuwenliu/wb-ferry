@@ -72,6 +72,7 @@ ol, .breadcrumb {
     margin-top: 6px;
     display: none;
     right: -20px !important;
+    padding: 0;
 }
 .dropdown-menu .dropdown-menu-top{
     display: inline-block;
