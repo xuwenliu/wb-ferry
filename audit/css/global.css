@@ -315,7 +315,7 @@ button:focus {
 }
 .sidebar-flod {
   width: 70px;
-  padding: 14px;
+  padding: 0 14px;
 }
 .sidebar ul .active {
   background: #e7f2ff;

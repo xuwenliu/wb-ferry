@@ -1,107 +1,103 @@
 .container {
-  height: 100%;
-  overflow-y: auto;
-  position: relative;
   background: linear-gradient(360deg, #49b8ff 0%, #c0e7ff 100%);
 }
 .content {
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  overflow-y: auto;
-}
-.content-l{
-  margin: 0 164px 0 234px;
 }
 .content-l p {
-  font-size: 49px;
-  line-height: 59px;
-  letter-spacing: 2px;
+  font-size: 35px;
+  font-family: "Helvetica";
+  line-height: 42px;
+  letter-spacing: 1px;
   color: #fff;
-  text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.32);
+  text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.32);
 }
 .content-l p:first-child {
   margin-left: 70px;
 }
 .content-l img {
-  width: 726px;
-  height: 346px;
+  width: 517px;
+  height: 246px;
 }
 .content-r {
+  width: 345px;
   background: #fff;
-  width: 486px;
-  height: 554px;
-  padding: 41px 76px 53px 74px;
+  margin-left: 117px;
+  padding: 30px 55px 37px 53px;
 }
 .content-r .con-r-logo {
   display: flex;
 }
 .content-r .con-r-logo img {
-  width: 78px;
-  height: 56px;
-  margin-right: 18px;
+  width: 55px;
+  height: 40px;
+  margin-right: 16px;
 }
 .content-r .con-r-logo div p {
-  font-size: 19px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 28px;
   color: #004cb2;
+  line-height: 20px;
   margin: 0;
 }
 .content-r .con-r-logo div div {
-  width: 63px;
-  height: 27px;
-  line-height: 27px;
-  font-size: 17px;
+  width: 35px;
+  height: 17px;
   background: #82b3d8;
   border-radius: 3px;
+  line-height: 17px;
+  font-size: 12px;
   text-align: center;
   color: #fff;
 }
 .con-r-form {
-  margin-top: 48px;
+  margin-top: 34px;
 }
 .con-r-form p {
-  font-size: 28px;
-  margin-bottom: 29px;
+  font-size: 20px;
   font-weight: 600;
   color: #004cb2;
+  margin-bottom: 20px;
 }
 .username,
 .password {
+  width: 239px;
+  height: 40px;
   background: #ffffff;
   border-radius: 4px;
-  border: 1px solid #dedede;
-  width: 336px;
-  height: 56px;
-  font-size: 16px;
-  background: url("../img/icon-ID.png") 17px 16px no-repeat;
-  background-size: 24px 24px;
-  padding-left: 52px;
-  margin-bottom: 20px;
+  font-size: 11px;
+  border: 1px solid #999999;
+  background: url("../img/icon-ID.png") 12px 11px no-repeat;
+  background-size: 17px 17px;
+  padding-left: 32px;
+  margin-bottom: 15px;
 }
 .password {
-  background: url("../img/icon-password.png") 17px 16px no-repeat;
-  background-size: 24px 24px;
+  background: url("../img/icon-password.png") 12px 11px no-repeat;
+  background-size: 17px 17px;
 }
 /* 滑块 */
 #drag {
   position: relative;
   background-color: #e8e8e8;
-  width: 336px;
-  height: 46px;
-  line-height: 46px;
+  width: 240px;
+  height: 32px;
+  line-height: 34px;
   text-align: center;
 }
 #drag .handler {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 46px;
-  height: 46px;
+  width: 32px;
+  height: 32px;
   border: 1px solid #ccc;
   cursor: move;
+  /* border-radius: 4px; */
 }
 .handler_bg,
 .handler_ok_bg {
@@ -113,13 +109,13 @@
 }
 #drag .drag_bg {
   background-color: #7ac23c;
-  height: 46px;
+  height: 32px;
   width: 0px;
 }
 #drag .drag_text {
   position: absolute;
   top: 0px;
-  width: 336px;
+  width: 240px;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
@@ -128,29 +124,108 @@
 }
 
 .sub-btn {
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
   background: linear-gradient(180deg, #75ceff 0%, #1976c4 100%);
   border-radius: 4px;
   border: none;
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
-
-  width: 336px;
-  height: 56px;
-  line-height: 56px;
-  font-size: 22px;
-  margin-top: 29px;
+  margin-top: 20px;
 }
 .footer {
+  width: 100%;
+  height: 65px;
   background: #ffffff;
+  font-size: 10px;
   font-weight: 400;
-  color: #999;
+  color: #333333;
+  line-height: 65px;
   text-align: center;
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
-  height: 92px;
-  font-size: 14px;
-  line-height: 92px;
 }
+/* @media screen and (min-width: 1920px) {
+  .content-l p {
+    font-size: 49px;
+    line-height: 59px;
+    letter-spacing: 2px;
+    text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.32);
+  }
+  .content-l img {
+    width: 726px;
+    height: 346px;
+  }
+  .content-r {
+    width: 486px;
+    padding: 41px 76px 53px 74px;
+  }
+  .content-r .con-r-logo img {
+    width: 78px;
+    height: 56px;
+    margin-right: 18px;
+  }
+  .content-r .con-r-logo div p {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .content-r .con-r-logo div div {
+    width: 63px;
+    height: 27px;
+    line-height: 27px;
+    font-size: 17px;
+  }
+  .con-r-form {
+    margin-top: 48px;
+  }
+  .con-r-form p {
+    font-size: 28px;
+    margin-bottom: 29px;
+  }
+  .username,
+  .password {
+    width: 336px;
+    height: 56px;
+    font-size: 16px;
+    background: url("../img/icon-ID.png") 17px 16px no-repeat;
+    background-size: 24px 24px;
+    padding-left: 52px;
+    margin-bottom: 20px;
+  }
+  .password {
+    background: url("../img/icon-password.png") 17px 16px no-repeat;
+    background-size: 24px 24px;
+  }
+  #drag {
+    width: 336px;
+    height: 46px;
+    line-height: 46px;
+  }
+  #drag .handler {
+    width: 46px;
+    height: 46px;
+  }
+  #drag .drag_bg {
+    height: 46px;
+  }
+  #drag .drag_text {
+    width: 336px;
+  }
+  .sub-btn {
+    width: 336px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 22px;
+    margin-top: 29px;
+  }
+  .footer {
+    width: 100%;
+    height: 92px;
+    font-size: 14px;
+    line-height: 92px;
+  }
+} */
