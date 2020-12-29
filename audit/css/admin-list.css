@@ -19,7 +19,7 @@
   padding: 13px 14px;
 }
 .card-2 {
-  width: calc(100% - 157px)
+  width: calc(100% - 157px);
 }
 .card-1 > div {
   width: 100%;
@@ -391,15 +391,14 @@ div::-webkit-scrollbar-corner {
   border-top: none;
 }
 
-
-.breadcrumb{
+.breadcrumb {
   margin-bottom: 0;
   padding: 0;
 }
-.breadcrumb>li a{
+.breadcrumb > li a {
   font-size: 16px;
 }
-.breadcrumb>.active{
+.breadcrumb > .active {
   font-size: 16px;
 }
 
@@ -409,23 +408,28 @@ div::-webkit-scrollbar-corner {
   overflow: hidden !important;
   overflow-y: auto !important;
 }
-.card-tree ul>li{
+.card-tree ul > li {
   margin-left: 0;
   font-size: 14px;
 }
 
-.link .stretch{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 10px;
-    background: url('../img/icon_under.png') 0px 0px no-repeat;
-    background-size: 20px 20px;
+.link .stretch {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  background: url("../img/icon_under.png") 0px 0px no-repeat;
+  background-size: 20px 20px;
 }
 .open .link .stretch {
-    width: 20px;
-    height: 20px;
-    margin-left: 20px;
-    background: url('../img/icon_on.png') 0px 0px no-repeat;
-    background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  background: url("../img/icon_on.png") 0px 0px no-repeat;
+  background-size: 20px 20px;
+}
+
+.sidebar ul li {
+  border-radius: 5px 0 0 5px;
+  list-style: none;
 }

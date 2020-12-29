@@ -405,18 +405,22 @@ div::-webkit-scrollbar-corner {
   font-size: 16px;
 }
 
-.link .stretch{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 10px;
-    background: url('../img/icon_under.png') 0px 0px no-repeat;
-    background-size: 20px 20px;
+.link .stretch {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  background: url("../img/icon_under.png") 0px 0px no-repeat;
+  background-size: 20px 20px;
 }
 .open .link .stretch {
-    width: 20px;
-    height: 20px;
-    margin-left: 20px;
-    background: url('../img/icon_on.png') 0px 0px no-repeat;
-    background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  background: url("../img/icon_on.png") 0px 0px no-repeat;
+  background-size: 20px 20px;
+}
+.sidebar ul li {
+  border-radius: 5px 0 0 5px;
+  list-style: none;
 }
