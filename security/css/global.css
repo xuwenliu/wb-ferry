@@ -173,16 +173,17 @@ ol, .breadcrumb {
     margin: 7px 6px 7px 14px;
 }
 .nav-text{
-    width: 36px;
-    height: 16px;
-    background: #82B3D8;
-    border-radius: 2px;
+    width: 50px;
+    text-align: center;
+    height: 22px;
+    background: #82b3d8;
+    border-radius: 3px;
     opacity: 0.69;
     font-size: 10px;
     font-weight: 400;
-    color: #FFFFFF;
-    line-height: 16px;
-    margin-top: 18px;
+    color: #ffffff;
+    line-height: 22px;
+    margin-top: 14px;
 }
 .nav-avatar{
     width: 27px;
@@ -255,17 +256,21 @@ ol, .breadcrumb {
     display:block;
     white-space: nowrap;
 }
+.sidebar-flod ul li a {
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    background: url(../img/icon-home2.png) center center no-repeat;
+    background-size: 30px 30px;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
 .m-hide{
     display: none;
 }
 .sidebar-flod{
     width: 70px;
-    padding:14px 0;
-}
-.sidebar-flod .icon-sidebar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding:14px;
 }
 .sidebar ul .active{
     background: #E7F2FF;
@@ -291,7 +296,7 @@ ol, .breadcrumb {
     padding: 14px 20px;
 }
 .content-flod{
-    width: 96.35%;
+    width: 94.35%;
 }
 /* 无数据状态 */
 .no-data{
