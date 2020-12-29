@@ -37,6 +37,9 @@ button:focus{
 .card-2{
     width: calc(100% - 157px) !important;
 }
+.card-2 .title {
+    border-radius: 5px 5px 0 0;
+}
 #m-content .card-1 ul>p {
     font-size: 14px;
 }
@@ -44,13 +47,9 @@ button:focus{
     margin-left: 0;
     font-size: 14px;
 }
-.content>p {
-    height: 36px;
-    line-height: 36px;
-}
 ol, .breadcrumb {
     margin-bottom: 0;
-    padding-left: 0;
+    padding: 0;
 }
 .breadcrumb a {
     color: #00499D;
@@ -220,15 +219,6 @@ ol, .breadcrumb {
     width: 17.6px;
     height: 35.2px;
 }
-.sidebar-flod ul li a {
-    width: 100%;
-    height: 30px;
-    padding: 0;
-    background: url(../img/icon-home2.png) center center no-repeat;
-    background-size: 30px 30px;
-    margin-bottom: 30px;
-    white-space: nowrap;
-}
 .sidebar-flod #flod-btn {
     position: absolute;
     background: url('../img/fold2.png') no-repeat no-repeat;
@@ -264,10 +254,14 @@ ol, .breadcrumb {
     width: 70px;
     padding:14px 0;
 }
-.sidebar-flod .icon-sidebar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.sidebar-flod ul li a {
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    background: url(../img/icon-home2.png) center center no-repeat;
+    background-size: 30px 30px;
+    margin-bottom: 30px;
+    white-space: nowrap;
 }
 .m-hide{
     display: none;
@@ -299,7 +293,8 @@ ol, .breadcrumb {
     padding: 14px;
 }
 .content-flod{
-    width: 94.35%;
+    left: 70px;
+    width: calc(100% - 70px);
 }
 /* 无数据状态 */
 .no-data{

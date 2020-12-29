@@ -39,17 +39,16 @@ button:focus{
 .card-2{
     width: calc(100% - 157px) !important;
 }
+.card-2 .title {
+    border-radius: 5px 5px 0 0;
+}
 .card-1 ul>li {
     margin-left: 0;
     font-size: 14px;
 }
-.content>p {
-    height: 36px;
-    line-height: 36px;
-}
 ol, .breadcrumb {
     margin-bottom: 0;
-    padding-left: 0;
+    padding: 0;
 }
 .breadcrumb a {
     color: #00499D;
@@ -293,10 +292,11 @@ ol, .breadcrumb {
     width: calc(100% - 178px);
     height: 1080px;
     box-sizing: border-box;
-    padding: 14px 20px;
+    padding: 14px;
 }
 .content-flod{
-    width: 94.35%;
+    left: 70px;
+    width: calc(100% - 70px);
 }
 /* 无数据状态 */
 .no-data{
