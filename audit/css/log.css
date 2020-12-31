@@ -56,10 +56,17 @@ input[type=checkbox]{
   margin-left: 20px;
 }
 
-.sidebar ul .active .submenu{
+.sidebar ul li.a3 .submenu{
   display: block;
 }
 .open .link .stretch{
   background: url(../img/icon_on.png) 0px 0px no-repeat;
   background-size: 20px 20px;
+}
+.sidebar ul li.a3 .submenu .active{
+  background: #e7f2ff;
+}
+.icon-log{
+  background: url(../img/icon-log2.png) center center no-repeat;
+  background-size: 30px 30px;
 }

@@ -429,3 +429,7 @@ button:focus {
 .sidebar ul li.active .submenu li a.active {
   background: #e7f2ff;
 }
+
+.sidebar ul li .submenu li a:hover{
+  background: #e7f2ff;
+}

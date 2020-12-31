@@ -425,10 +425,18 @@ div::-webkit-scrollbar-corner {
   list-style: none;
 }
 
-.sidebar ul .active .submenu{
+.sidebar ul li.a4 .submenu{
   display: block;
 }
 .open .link .stretch{
   background: url(../img/icon_on.png) 0px 0px no-repeat;
   background-size: 20px 20px;
+}
+
+.sidebar ul li.a4 .submenu .active{
+  background: #e7f2ff;
+}
+.icon-manager {
+  background: url(../img/icon-manager2.png) center center no-repeat;
+  background-size: 30px 30px;
 }
