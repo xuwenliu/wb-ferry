@@ -433,3 +433,12 @@ div::-webkit-scrollbar-corner {
   border-radius: 5px 0 0 5px;
   list-style: none;
 }
+
+
+.sidebar ul .active .submenu{
+  display: block;
+}
+.open .link .stretch{
+  background: url(../img/icon_on.png) 0px 0px no-repeat;
+  background-size: 20px 20px;
+}

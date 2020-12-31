@@ -163,9 +163,7 @@ button:focus {
 .sidebar ul.submenu li a {
   background: none;
 }
-.sidebar ul.submenu li:last-child > a {
-  background: none;
-}
+
 .sidebar > img {
   position: absolute;
   top: 315.18px;
@@ -395,7 +393,7 @@ button:focus {
   border-right: 5px solid transparent;
   border-bottom: 5px solid #fff;
 }
-.nav-tabs .dropdown-menu{
+.nav-tabs .dropdown-menu {
   margin-top: 6px;
 }
 .dropdown-menu li {
@@ -421,4 +419,13 @@ button:focus {
   top: 50%;
   transform: translate(-50%, -50%) !important;
   left: 50%;
+}
+
+.sidebar ul li .submenu li a {
+  background: #f0faff;
+  padding-left: 48px;
+}
+
+.sidebar ul li.active .submenu li a.active {
+  background: #e7f2ff;
 }

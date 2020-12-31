@@ -48,40 +48,28 @@
           <li class="a1"><a href="home.html">系统管理审计</a></li>
           <li class="a2"><a href="safety.html">安全管理审计</a></li>
           <li class="a3">
-            <div class="link"><i class="icon-log"></i>日志管理<i class="stretch"></i></div>
+            <div class="link">
+              <i class="icon-log"></i>日志管理<i class="stretch"></i>
+            </div>
             <ul class="submenu">
               <li>
-                <a
-                  href="log-backups.html"
-                  style="background: none; padding-left: 48px"
-                  >日志备份</a
-                >
+                <a href="log-backups.html">日志备份</a>
               </li>
               <li>
-                <a
-                  href="log-recover.html"
-                  style="background: none; padding-left: 48px"
-                  >日志恢复</a
-                >
+                <a href="log-recover.html">日志恢复</a>
               </li>
             </ul>
           </li>
           <li class="active">
-            <div class="link"><i class="icon-manager"></i>管理员管理<i class="stretch"></i></div>
+            <div class="link">
+              <i class="icon-manager"></i>管理员管理<i class="stretch"></i>
+            </div>
             <ul class="submenu">
               <li>
-                <a
-                  href="admin-list.html"
-                  style="background: none; padding-left: 48px"
-                  >管理员列表</a
-                >
+                <a href="admin-list.html">管理员列表</a>
               </li>
               <li>
-                <a
-                  href="role-list.html"
-                  style="background: none; padding-left: 48px"
-                  >管理员角色列表</a
-                >
+                <a class="active" href="role-list.html">管理员角色列表</a>
               </li>
             </ul>
           </li>
@@ -138,9 +126,9 @@
       </div>
       <div id="m-content" class="content float-right clearfloat">
         <ol class="breadcrumb" style="background: none">
-					<li><a>管理员管理</a></li>
-					<li class="active">管理员角色列表</li>
-				</ol>
+          <li><a>管理员管理</a></li>
+          <li class="active">管理员角色列表</li>
+        </ol>
         <div class="card-1 float-left panel">
           <ul>
             <p>系统管理系统</p>
@@ -346,38 +334,37 @@
           </div>
         </div>
       </div>
- 
-			
-			  <!-- 删除提示 -->
-				<div class="modal fade" tabindex="-1" id="removeModal" role="dialog">
-					<div class="modal-dialog modal-center" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button
-									type="button"
-									class="close"
-									data-dismiss="modal"
-									aria-label="Close"
-								>
-									<span class="modal-close" aria-hidden="true">&times;</span>
-								</button>
-								<h4 class="modal-title">提示</h4>
-							</div>
-							<div class="modal-body" style="padding:26px 0 0 20px">
-								<div class="tip-content">
-									<img src="img/tip.png" alt="" />
-									<span>确定要删除该机构及所有子机构项吗？</span>
-								</div>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn_b">确定</button>
-								<button type="button" class="btn_q" data-dismiss="modal">
-									取消
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
+
+      <!-- 删除提示 -->
+      <div class="modal fade" tabindex="-1" id="removeModal" role="dialog">
+        <div class="modal-dialog modal-center" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span class="modal-close" aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body" style="padding: 26px 0 0 20px">
+              <div class="tip-content">
+                <img src="img/tip.png" alt="" />
+                <span>确定要删除该机构及所有子机构项吗？</span>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn_b">确定</button>
+              <button type="button" class="btn_q" data-dismiss="modal">
+                取消
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div
         class="modal fade"

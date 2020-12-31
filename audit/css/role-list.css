@@ -30,7 +30,7 @@
 .card-1 ul > p,
 .card-1 ul > li {
   list-style: none;
-  font-size: 10px;
+  font-size: 12px;
   color: #666666;
   margin-bottom: 13px;
   margin-left: 11px;
@@ -423,4 +423,12 @@ div::-webkit-scrollbar-corner {
 .sidebar ul li {
   border-radius: 5px 0 0 5px;
   list-style: none;
+}
+
+.sidebar ul .active .submenu{
+  display: block;
+}
+.open .link .stretch{
+  background: url(../img/icon_on.png) 0px 0px no-repeat;
+  background-size: 20px 20px;
 }

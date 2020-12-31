@@ -123,7 +123,7 @@
 
         <div class="card-2 float-right panel">
           <div class="title">
-            <ul>
+            <ul class="clearfloat" style="display: inline-block">
               <li
                 class="btn btn-xs float-left m-btn"
                 data-toggle="modal"
@@ -393,7 +393,7 @@
                 </li>
               </ul>
             </form>
-            <div>
+            <div id="choosed_file">
               <div class="choosed-file">已选文件：</div>
               <div class="modal-table" style="overflow: auto; height: 400px">
                 <table
@@ -833,7 +833,7 @@
                 </ul>
                 <ul class="ul_ul">
                   <li class="left_li">审核结果：</li>
-                  <li class="right_li margin-l" style="display: flex;">
+                  <li class="right_li margin-l" style="display: flex">
                     <span style="display: flex; align-items: center"
                       ><input
                         style="width: 20px !important; height: 20px !important"
@@ -845,14 +845,14 @@
                       通过</span
                     >
                     <span style="display: flex; align-items: center"
-                    ><input
-                      style="width: 20px !important; height: 20px !important"
-                      class="cl_checked input-padding"
-                      type="checkbox"
-                      value="b"
-                    />
-                    不通过</span
-                  >
+                      ><input
+                        style="width: 20px !important; height: 20px !important"
+                        class="cl_checked input-padding"
+                        type="checkbox"
+                        value="b"
+                      />
+                      不通过</span
+                    >
                   </li>
                 </ul>
               </form>
@@ -889,19 +889,24 @@
           defaultDate: "",
         });
         $("#strategy").change(function (e) {
-          console.log(e);
           var value = e.target.value;
           if (value == 1) {
             $(".period").removeClass("showTime");
             $(".fixedTime").removeClass("showTime");
+            $("#choosed_file").show();
+            $("#file_action").show();
           }
           if (value == 2) {
             $(".fixedTime").addClass("showTime");
             $(".period").removeClass("showTime");
+            $("#choosed_file").show();
+            $("#file_action").show();
           }
           if (value == 3) {
             $(".fixedTime").removeClass("showTime");
             $(".period").addClass("showTime");
+            $("#choosed_file").hide();
+            $("#file_action").hide();
           }
         });
       });
