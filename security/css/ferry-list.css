@@ -513,3 +513,6 @@ div::-webkit-scrollbar{
     background: url('../img/icon-user2.png') center center no-repeat;
     background-size: 30px 30px;
 }
+.menu .submenu {
+    display: block;
+}
