@@ -35,12 +35,23 @@ button:focus{
     width: 146px !important;
     overflow: hidden !important;
     overflow-y: auto !important;
+    height: 566px;
 }
 .card-2{
     width: calc(100% - 157px) !important;
 }
 .card-2 .title {
     border-radius: 5px 5px 0 0;
+}
+.card-2 .title .m-btn {
+    height: 24px;
+    line-height: 20px;
+}
+.left_li {
+    width: 75px;
+}
+.left_li, .right_li {
+    font-size: 14px !important;
 }
 .card-1 ul>li {
     margin-left: 0;

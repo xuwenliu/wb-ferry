@@ -51,8 +51,6 @@
     margin-bottom: 0;
 }
 .card-1,.card-2{
-    width: 13%;
-    height: 566px;
     margin-top: 14px;
     border-radius: 5px;
     border: 1px solid #BDDDF4;
@@ -283,7 +281,7 @@ div::-webkit-scrollbar{
     display: flex;
 }
 .modal-form{
-    width: 500px;
+    width: 550px;
 }
 .modal-form ul {
     margin-bottom: 20px;
@@ -318,10 +316,10 @@ div::-webkit-scrollbar{
 .ul_ul li {
     list-style: none;
     position: relative;
-}
+} 
 
 .left_li {
-    width: 90px;
+    width: 100px !important;
     font-size: 10px;
     font-weight: 600;
     color: #000000;
@@ -376,13 +374,13 @@ div::-webkit-scrollbar{
     border-radius: 4px;
     border: 1px solid #DDDDDD;
     padding: 9px 11px;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 400;
     color: #666666;
 }
 .form-control{
     height: 30px;
-    font-size: 10px;
+    font-size: 14px;
     padding: 6px 10px;
     color: #666666;
 }

@@ -51,8 +51,6 @@
     margin-bottom: 0;
 }
 .card-1,.card-2{
-    width: 15%;
-    height: 566px;
     margin-top: 14px;
     border-radius: 5px;
     border: 1px solid #BDDDF4;
@@ -364,13 +362,13 @@ div::-webkit-scrollbar{
     border-radius: 4px;
     border: 1px solid #DDDDDD;
     padding: 9px 11px;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 400;
     color: #666666;
 }
 .form-control{
     height: 30px;
-    font-size: 10px;
+    font-size: 14px;
     padding: 6px 10px;
     color: #666666;
 }

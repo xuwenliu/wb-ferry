@@ -51,7 +51,6 @@
     margin-bottom: 0;
 }
 .card-1,.card-2{
-    width: 10%;
     height: 356px;
     margin-top: 14px;
     border-radius: 5px;
@@ -322,7 +321,7 @@ div::-webkit-scrollbar{
 }
 
 .left_li {
-    width: 90px;
+    width: 104px;
     font-size: 10px;
     font-weight: 600;
     color: #000000;
