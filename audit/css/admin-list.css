@@ -20,6 +20,7 @@
 }
 .card-2 {
   width: calc(100% - 157px);
+  height: auto;
 }
 .card-1 > div {
   width: 100%;
