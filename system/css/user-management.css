@@ -131,7 +131,6 @@
 /* 固定列的table.css */
 .table-cont{
     width: 100%;
-    max-height: 486px;
     position: relative;
     background: #F6F8FA;
 }
